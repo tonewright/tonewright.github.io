@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tonewright: Overtone &amp; Timbre</title>
+<meta name="description" content="Overtone draws your mods in the game; Timbre sorts, previews and switches them.">
+<meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://tonewright.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Tonewright: Overtone &amp; Timbre">
+<meta property="og:description" content="Overtone draws your mods in the game; Timbre sorts, previews and switches them.">
+<meta property="og:image" content="https://tonewright.github.io/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre's library of characters under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=4adf11787c">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="mark.svg" alt="" width="24" height="24"><span>Tonewright</span></a>
+    <a href="guides.html">Guides</a>
+    <a href="whats-new.html">What's new</a>
+    <a class="button button--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1017.0/Timbre_26.1017.0_x64-setup.exe">Download</a>
+  </div>
+</header>
+<main id="main" class="">
+  <section class="hero wrap">
+    <h1>Every mod you own,<br>on the right character.</h1>
+    <p>Overtone draws them in the game. Timbre sorts, previews and switches them on your desktop.</p>
+    <a class="button" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1017.0/Timbre_26.1017.0_x64-setup.exe">Download</a>
+    <small>For Wuthering Waves · Free · Windows 10 and 11 · Beta</small>
+  </section>
+  <div class="wrap shot" id="shot">
+    <div class="tilt"><img src="library.webp" srcset="library-1088.webp 1088w, library.webp 1752w" sizes="(min-width: 1120px) 1088px, 100vw" alt="Timbre's library: every character's portrait with how many mods each has" width="1752" height="1129"><div class="glare"></div></div>
+  </div>
+  <section class="wrap pair">
+    <div>
+      <p class="where">In the game</p>
+      <h2>Overtone</h2>
+      <ul>
+        <li>Draws your mods on DirectX 12</li>
+        <li>Switches from the overlay, or the mod's own keys</li>
+        <li>Keeps mods working through updates that leave a model alone</li>
+      </ul>
+    </div>
+    <div>
+      <p class="where">On your desktop</p>
+      <h2>Timbre</h2>
+      <ul>
+        <li>Sorts your mods by character</li>
+        <li>Shows each outfit on its character before you play</li>
+        <li>Installs Overtone and keeps it up to date</li>
+      </ul>
+    </div>
+  </section>
+  <section class="wrap model">
+    <h2>See an outfit on its character before you play.</h2>
+    <p>Turn the character around, flip switches and hide pieces in Timbre's model view.</p>
+    <div class="stage"><img src="model.webp" srcset="model-1088.webp 1088w, model.webp 1752w" sizes="(min-width: 1120px) 1088px, 100vw" alt="Timbre's model view: a character in a mod's outfit, its switches on the left and its parts on the right" width="1752" height="1129" loading="lazy"></div>
+  </section>
+  <section class="wwmi">
+    <div class="wrap">
+      <h2>Coming from WWMI? Your mods work as they are.</h2>
+      <a href="from-wwmi.html">What changes →</a>
+    </div>
+  </section>
+<script>
+  const shot = document.getElementById("shot");
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let queued = false;
+  const flatten = () => {
+    queued = false;
+    const top = shot.getBoundingClientRect().top;
+    shot.style.setProperty("--p", Math.min(1, Math.max(0, (innerHeight - top) / (innerHeight * 0.75) - 0.35)).toFixed(3));
+  };
+  if (!still) {
+    addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(flatten); } }, { passive: true });
+    addEventListener("resize", flatten);
+    flatten();
+  }
+  const glare = shot.querySelector(".glare");
+  shot.querySelector("img").addEventListener("pointermove", (e) => {
+    glare.style.setProperty("--x", e.offsetX + "px");
+    glare.style.setProperty("--y", e.offsetY + "px");
+  });
+</script>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="24" height="24"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1017.0/Timbre_26.1017.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1017.0 · Overtone 26.1017.0 · MCP server 26.1017.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>
