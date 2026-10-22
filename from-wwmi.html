@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coming from WWMI · Tonewright</title>
+<meta name="description" content="What changes when you move from WWMI and the XXMI Launcher to Overtone and Timbre, what carries over, and how to keep both.">
+<meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://tonewright.github.io/from-wwmi.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Coming from WWMI · Tonewright">
+<meta property="og:description" content="What changes when you move from WWMI and the XXMI Launcher to Overtone and Timbre, what carries over, and how to keep both.">
+<meta property="og:image" content="https://tonewright.github.io/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre's library of characters under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=075c2caf0b">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="mark.svg" alt="" width="24" height="24"><span>Tonewright</span></a>
+    <a href="guides.html" aria-current="page">Guides</a>
+    <a href="whats-new.html">What's new</a>
+    <span class="social"><a href="https://github.com/tonewright/overtone-releases" aria-label="GitHub"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a href="https://discord.gg/QrD7CSGAbC" aria-label="Discord"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></a></span>
+    <a class="button button--small" href="https://github.com/tonewright/overtone-releases/releases">Download</a>
+  </div>
+</header>
+<main id="main" class="wrap guide">
+  <nav class="side" aria-label="Guides"><p>Guides</p><a href="getting-started.html">Getting started</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="from-wwmi.html" aria-current="page">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and presets</a><a href="create-a-mod.html">How to create a mod</a><a href="description.html">Write a description</a><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+  <article class="prose">
+    <h1>Coming from WWMI</h1>
+    <p class="lead">What changes when you move from WWMI and the XXMI Launcher to Overtone and Timbre, what carries over, and how to keep both.</p>
+    <p>Your WWMI mods work in Overtone as they are: Timbre reads their ini files once and converts them. You don't need
+to change a mod, and you don't need the XXMI Launcher.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="what-is-different"><a class="anchor" href="#what-is-different" aria-hidden="true">#</a>What is different</h2><a id="user-content-what-is-different" class="anchor" aria-label="Permalink: What is different" href="#what-is-different"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">WWMI</th>
+<th align="left">Overtone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Graphics</td>
+<td align="left">DirectX 11</td>
+<td align="left">DirectX 12, the game's default</td>
+</tr>
+<tr>
+<td align="left">Started by</td>
+<td align="left">The XXMI Launcher</td>
+<td align="left">The game's own launcher, or Timbre's <strong>Play</strong>
+</td>
+</tr>
+<tr>
+<td align="left">A mod is read</td>
+<td align="left">From its ini files, every time it loads</td>
+<td align="left">From its description, <code>overtone.mod.toml</code>, which Timbre writes from the ini files</td>
+</tr>
+<tr>
+<td align="left">Turning a mod off</td>
+<td align="left">Renaming its folder <code>DISABLED…</code>
+</td>
+<td align="left">A switch in Timbre or the overlay; folder names mean nothing</td>
+</tr>
+<tr>
+<td align="left">A mod's switches</td>
+<td align="left">Its keys, and a menu some mods draw</td>
+<td align="left">Its keys, and a row per switch in the overlay's <strong>Wardrobe</strong> and in Timbre</td>
+</tr>
+<tr>
+<td align="left">Saved choices</td>
+<td align="left"><code>d3dx_user.ini</code></td>
+<td align="left">Each mod's <code>.overtone/state.toml</code>
+</td>
+</tr>
+<tr>
+<td align="left">Several outfits</td>
+<td align="left">All draw, one over the other where they share a part</td>
+<td align="left">Mods on different parts draw together; on a shared part, one draws and you choose which (<a href="outfits.html">Mix outfits and presets</a>)</td>
+</tr>
+<tr>
+<td align="left">After a game update</td>
+<td align="left">Mods may break until their authors fix them</td>
+<td align="left">Mods keep working when the update renumbers bones; a changed model still needs the author's update</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="what-carries-over"><a class="anchor" href="#what-carries-over" aria-hidden="true">#</a>What carries over</h2><a id="user-content-what-carries-over" class="anchor" aria-label="Permalink: What carries over" href="#what-carries-over"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Your mods.</strong> Add them through Timbre (<a href="add-mods.html#bring-a-whole-xxmi-library">Add your mods</a>). Mods whose
+folder starts with <code>DISABLED</code> come in turned off.</li>
+<li>
+<strong>Their keys.</strong> A mod's keys are the ones its author gave it. <strong>F10</strong> still reloads mods.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="what-does-not-carry-over"><a class="anchor" href="#what-does-not-carry-over" aria-hidden="true">#</a>What does not carry over</h2><a id="user-content-what-does-not-carry-over" class="anchor" aria-label="Permalink: What does not carry over" href="#what-does-not-carry-over"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Your choices in <code>d3dx_user.ini</code>.</strong> Every mod starts at its author's defaults. Set them again in the overlay's
+<strong>Wardrobe</strong>, then save them as a preset so they survive.</li>
+<li>
+<strong>A mod's own in-game menu.</strong> Overtone does not draw it. Its choices are switches in the <strong>Wardrobe</strong> instead.</li>
+<li>
+<strong>Glow maps</strong>, and some hair light maps and highlights, which keep the game's. Overtone does not draw these yet.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="things-that-work-differently"><a class="anchor" href="#things-that-work-differently" aria-hidden="true">#</a>Things that work differently</h2><a id="user-content-things-that-work-differently" class="anchor" aria-label="Permalink: Things that work differently" href="#things-that-work-differently"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>A mod's keys work only while it is on screen.</strong> With two mods on screen on the same key, the press goes to the
+one drawn most recently. Switching from the <strong>Wardrobe</strong> never clashes.</li>
+<li>
+<strong>Converted mods no longer load in WWMI.</strong> Timbre moves a mod's ini files into its <code>.overtone/legacy/</code> folder when it
+converts it (<a href="add-mods.html#what-native-means">what native means</a>). Nothing is deleted.</li>
+<li>
+<strong>Two outfits on one part don't draw over each other.</strong> Only one draws there. Turning one on in Timbre turns off
+the one it clashes with, and offers <strong>Keep both</strong> (<a href="outfits.html">Mix outfits and presets</a>).</li>
+<li>
+<strong>Choices are kept per mod</strong>, in its own folder, so moving a mod keeps them.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="keep-wwmi-too"><a class="anchor" href="#keep-wwmi-too" aria-hidden="true">#</a>Keep WWMI too</h2><a id="user-content-keep-wwmi-too" class="anchor" aria-label="Permalink: Keep WWMI too" href="#keep-wwmi-too"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>You can keep using WWMI for comparison, as long as each has its own folder of mods.</p>
+<ol>
+<li>Leave your XXMI <code>Mods</code> folder as it is.</li>
+<li>Give Timbre a copy (<a href="add-mods.html#bring-a-whole-xxmi-library">Add your mods</a>), never XXMI's folder itself.</li>
+<li>To play with WWMI, start the game from the XXMI Launcher. To play with Overtone, start it from Timbre's <strong>Play</strong>
+or the game's launcher on DirectX 12.</li>
+</ol>
+<p>Overtone stays in the game's folder and stands aside when the game starts on DirectX 11. If WWMI does not draw
+with it there, remove Overtone under Timbre's <strong>Settings → Runtime → Setup</strong>; the next <strong>Play</strong> installs it again.</p>
+<p>A mod that looks wrong in Overtone is worth trying in WWMI: if it looks wrong there too, the mod itself is broken
+(<a href="troubleshoot.html#where-to-look">When a mod does not draw right</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element" id="where-things-are"><a class="anchor" href="#where-things-are" aria-hidden="true">#</a>Where things are</h2><a id="user-content-where-things-are" class="anchor" aria-label="Permalink: Where things are" href="#where-things-are"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">You look for</th>
+<th align="left">In Overtone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">The mods folder</td>
+<td align="left">Timbre's library, set under <strong>Settings → Game → Mods folder</strong>
+</td>
+</tr>
+<tr>
+<td align="left">Turning mods on and off</td>
+<td align="left">Timbre's character pages, or the overlay's <strong>Wardrobe</strong> (<strong>Home</strong> in game)</td>
+</tr>
+<tr>
+<td align="left">All mods off</td>
+<td align="left"><strong>F8</strong></td>
+</tr>
+<tr>
+<td align="left">Reload</td>
+<td align="left">Once a file is saved, with <strong>Reload on file change</strong> in the overlay's <strong>Settings</strong> (on); <strong>F10</strong> reloads every mod</td>
+</tr>
+<tr>
+<td align="left">The log</td>
+<td align="left"><code>%LOCALAPPDATA%\Overtone\wuwa\overtone.log</code></td>
+</tr>
+</tbody>
+</table>
+    <p class="describes">Applies to Timbre 26.1019.0 and Overtone 26.1018.0.</p>
+    <div class="steps"><a href="mac-and-linux.html"><small>Previous</small><strong>Timbre on a Mac or Linux</strong></a><a class="later" href="play.html"><small>Next</small><strong>Play with Overtone</strong></a></div>
+  </article>
+  <nav class="toc" aria-label="On this page"><p>On this page</p><a href="#what-is-different">What is different</a><a href="#what-carries-over">What carries over</a><a href="#what-does-not-carry-over">What does not carry over</a><a href="#things-that-work-differently">Things that work differently</a><a href="#keep-wwmi-too">Keep WWMI too</a><a href="#where-things-are">Where things are</a></nav>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="24" height="24"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a></nav>
+    <nav aria-label="Community"><p>Community</p><a class="with-icon" href="https://discord.gg/QrD7CSGAbC"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>Discord</a><a class="with-icon" href="https://github.com/tonewright/overtone-releases"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1019.0 · Overtone 26.1018.0 · MCP server 26.1019.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>

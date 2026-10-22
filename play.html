@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play with Overtone · Tonewright</title>
+<meta name="description" content="Start Wuthering Waves with your mods, from Timbre or without it, the in-game keys and overlay, other tools beside Overtone, and removing it.">
+<meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://tonewright.github.io/play.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Play with Overtone · Tonewright">
+<meta property="og:description" content="Start Wuthering Waves with your mods, from Timbre or without it, the in-game keys and overlay, other tools beside Overtone, and removing it.">
+<meta property="og:image" content="https://tonewright.github.io/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre's library of characters under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=075c2caf0b">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="mark.svg" alt="" width="24" height="24"><span>Tonewright</span></a>
+    <a href="guides.html" aria-current="page">Guides</a>
+    <a href="whats-new.html">What's new</a>
+    <span class="social"><a href="https://github.com/tonewright/overtone-releases" aria-label="GitHub"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a href="https://discord.gg/QrD7CSGAbC" aria-label="Discord"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></a></span>
+    <a class="button button--small" href="https://github.com/tonewright/overtone-releases/releases">Download</a>
+  </div>
+</header>
+<main id="main" class="wrap guide">
+  <nav class="side" aria-label="Guides"><p>Guides</p><a href="getting-started.html">Getting started</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html" aria-current="page">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and presets</a><a href="create-a-mod.html">How to create a mod</a><a href="description.html">Write a description</a><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+  <article class="prose">
+    <h1>Play with Overtone</h1>
+    <p class="lead">Start Wuthering Waves with your mods, from Timbre or without it, the in-game keys and overlay, other tools beside Overtone, and removing it.</p>
+    <p>Modding breaks Kuro Games' terms of service, and the game runs anti-cheat. Play at your own risk.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="start-the-game-from-timbre"><a class="anchor" href="#start-the-game-from-timbre" aria-hidden="true">#</a>Start the game from Timbre</h2><a id="user-content-start-the-game-from-timbre" class="anchor" aria-label="Permalink: Start the game from Timbre" href="#start-the-game-from-timbre"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Press <strong>Play</strong>. Timbre installs or updates Overtone in the game's folder, then starts the game.</p>
+<p>The first Play also downloads Microsoft's shader compiler. Afterwards <strong>Settings → Runtime → Setup</strong> says
+<strong>Installed and current</strong>. When it says <strong>Installed, and a newer build is waiting</strong>, the next Play installs it.</p>
+<p>If Timbre asks <strong>Texture quality</strong>, pick the textures you downloaded in the game's launcher. It asks once; <strong>Settings → Runtime → Launch arguments</strong>
+holds the answer.</p>
+<p>New to Timbre? Start with <a href="getting-started.html">Getting started</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="start-the-game-without-timbre"><a class="anchor" href="#start-the-game-without-timbre" aria-hidden="true">#</a>Start the game without Timbre</h2><a id="user-content-start-the-game-without-timbre" class="anchor" aria-label="Permalink: Start the game without Timbre" href="#start-the-game-without-timbre"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Once installed, Overtone stays in the game's folder. Start the game as you always do, from its launcher, Steam or
+Epic, and Overtone loads with it and draws the same mods.</p>
+<ul>
+<li>Overtone works only in DirectX 12, the game's default. If you switched the launcher to DirectX 11 for WWMI, switch
+it back.</li>
+<li>The overlay works without Timbre, and what you change there is saved for Timbre to see.</li>
+<li>Adding mods and updating Overtone still need Timbre.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="in-game-keys"><a class="anchor" href="#in-game-keys" aria-hidden="true">#</a>In-game keys</h2><a id="user-content-in-game-keys" class="anchor" aria-label="Permalink: In-game keys" href="#in-game-keys"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Home</td>
+<td align="left">Opens and closes the overlay</td>
+</tr>
+<tr>
+<td align="left">F6</td>
+<td align="left">Hides the game's UI until pressed again</td>
+</tr>
+<tr>
+<td align="left">F7</td>
+<td align="left">Stops the game fading your character out when the camera is close</td>
+</tr>
+<tr>
+<td align="left">F8</td>
+<td align="left">Turns every mod off or on</td>
+</tr>
+<tr>
+<td align="left">F9</td>
+<td align="left">Saves a screenshot without the overlay</td>
+</tr>
+<tr>
+<td align="left">F10</td>
+<td align="left">Reloads mods after you change their files</td>
+</tr>
+<tr>
+<td align="left">F11</td>
+<td align="left">Dumps the character on screen as a mod (<a href="create-a-mod.html#1-dump-the-character">How to create a mod</a>)</td>
+</tr>
+<tr>
+<td align="left">F12</td>
+<td align="left">Records the character on screen while she moves, then dumps her; press again to stop early</td>
+</tr>
+</tbody>
+</table>
+<p>A mod's own keys, such as the one that takes off a hat, work only while that mod is on screen.</p>
+<p>To change a key, use <strong>Settings → Keys</strong> in the overlay, or <strong>Settings → Runtime → Keys</strong> in Timbre.</p>
+<p>To hide only your UID and keep the rest of the HUD, turn on <strong>Hide the UID</strong> in <strong>Settings → Drawing</strong> in the overlay, then start the game again. Other text in the same corner, such as the login status, is hidden with it.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="the-overlay"><a class="anchor" href="#the-overlay" aria-hidden="true">#</a>The overlay</h2><a id="user-content-the-overlay" class="anchor" aria-label="Permalink: The overlay" href="#the-overlay"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Press <strong>Home</strong>. Its sections are down the left side:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Section</th>
+<th align="left">Use it to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Wardrobe</strong></td>
+<td align="left">Turn outfits on and off for the character on screen, and set a worn outfit's switches, sliders and looks.</td>
+</tr>
+<tr>
+<td align="left"><strong>Presets</strong></td>
+<td align="left">Save up to eight sets of outfits on a wheel (<strong>Save what I wear here</strong>) and put one back on (<strong>Wear</strong>).</td>
+</tr>
+<tr>
+<td align="left"><strong>Settings</strong></td>
+<td align="left">Change how mods are drawn, loaded and keyed.</td>
+</tr>
+<tr>
+<td align="left"><strong>Tools</strong></td>
+<td align="left">Point at something to see what it is and dump it (<strong>Picker</strong>), or see what Overtone is doing (<strong>Report</strong>).</td>
+</tr>
+</tbody>
+</table>
+<p>Outfits, mixes and presets are in <a href="outfits.html">Mix outfits and presets</a>.</p>
+<p>A setting changed in the overlay lasts until you quit the game. Press <strong>Save</strong> to keep it. Timbre's <strong>Settings →
+Runtime → Options</strong> holds the same settings.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="reshade-and-other-tools"><a class="anchor" href="#reshade-and-other-tools" aria-hidden="true">#</a>ReShade and other tools</h2><a id="user-content-reshade-and-other-tools" class="anchor" aria-label="Permalink: ReShade and other tools" href="#reshade-and-other-tools"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>ReShade, OptiScaler, Special K and DXVK work beside Overtone.</p>
+<ol>
+<li>Install the tool into the game's folder as its own guide says, as <code>dxgi.dll</code> or <code>d3d12.dll</code>.</li>
+<li>Press <strong>Play</strong> in Timbre. Overtone moves the tool's file aside and loads it after itself.</li>
+</ol>
+<p><strong>Settings → Runtime → Setup</strong> lists each tool with a switch to stop loading it.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="remove-overtone"><a class="anchor" href="#remove-overtone" aria-hidden="true">#</a>Remove Overtone</h2><a id="user-content-remove-overtone" class="anchor" aria-label="Permalink: Remove Overtone" href="#remove-overtone"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>In Timbre, open <strong>Settings → Runtime → Setup</strong> and press <strong>Remove</strong> beside Overtone. This takes Overtone out of the
+game's folder and puts back any tool it moved. Your mods are untouched, but mods Timbre made native still do not
+load in XXMI (<a href="add-mods.html#what-native-means">Add your mods</a>).</p>
+<p>The next <strong>Play</strong> installs Overtone again.</p>
+<p>If something looks wrong in game, see <a href="troubleshoot.html">When a mod does not draw right</a>.</p>
+    <p class="describes">Applies to Timbre 26.1019.0 and Overtone 26.1018.0.</p>
+    <div class="steps"><a href="from-wwmi.html"><small>Previous</small><strong>Coming from WWMI</strong></a><a class="later" href="add-mods.html"><small>Next</small><strong>Add your mods</strong></a></div>
+  </article>
+  <nav class="toc" aria-label="On this page"><p>On this page</p><a href="#start-the-game-from-timbre">Start the game from Timbre</a><a href="#start-the-game-without-timbre">Start the game without Timbre</a><a href="#in-game-keys">In-game keys</a><a href="#the-overlay">The overlay</a><a href="#reshade-and-other-tools">ReShade and other tools</a><a href="#remove-overtone">Remove Overtone</a></nav>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="24" height="24"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a></nav>
+    <nav aria-label="Community"><p>Community</p><a class="with-icon" href="https://discord.gg/QrD7CSGAbC"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>Discord</a><a class="with-icon" href="https://github.com/tonewright/overtone-releases"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1019.0 · Overtone 26.1018.0 · MCP server 26.1019.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>
