@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Write a description · Tonewright</title>
+<meta name="description" content="What a mod's description, `overtone.mod.toml`, is, and every key it takes: switches, looks, conditions, parts, textures, materials and their shaders, layers, pieces, hidden parts, meshes and sliders.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/description.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Write a description · Tonewright">
+<meta property="og:description" content="What a mod's description, `overtone.mod.toml`, is, and every key it takes: switches, looks, conditions, parts, textures, materials and their shaders, layers, pieces, hidden parts, meshes and sliders.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=95e0e089fb">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html" aria-current="page">Write a description</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Write a description</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html" aria-current="page">Write a description</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">Write a description</h1>
+      <p class="lead rise" style="--i:2">What a mod's description, <code>overtone.mod.toml</code>, is, and every key it takes: switches, looks, conditions, parts, textures, materials and their shaders, layers, pieces, hidden parts, meshes and sliders.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">Reference</span><span>14 min read</span><span>Timbre 26.1028.0 · Overtone 26.1028.0</span></p>
+      
+      <div class="prose"><div class="markdown-heading"><h2 class="heading-element" id="what-a-description-is"><a class="anchor" href="#what-a-description-is" aria-hidden="true">#</a>What a description is</h2><a id="user-content-what-a-description-is" class="anchor" aria-label="Permalink: What a description is" href="#what-a-description-is"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Every mod Overtone draws has one file beside it, <code>overtone.mod.toml</code>, its <em>description</em>. It says what the mod is,
+which switches it has, and what each one shows and wears. Overtone reads it; it never runs scripts.</p>
+<ul>
+<li>
+<strong>Timbre writes it for you.</strong> It does so when it imports a WWMI mod, from the mod's ini files, and when you dump a character.
+After that it is yours: an update of the mod is merged into it, and what you changed stays.</li>
+<li>
+<strong>You edit it.</strong> The mod's <strong>Inside</strong> tab reads it out; a click on a row opens the file beside it, which marks a
+problem on its line as you type. <strong>Save</strong> refuses a file that does not read, saying <code>not saved:</code> and why. Any text
+editor works too.</li>
+<li>
+<strong>Names, not numbers.</strong> You name switches, choices and pieces. The only numbers are the game's part numbers and
+the mod's shape keys.</li>
+<li>
+<strong>The game picks it up.</strong> It shows a change a moment after you save it (<a href="play.html#see-your-changes-in-game">See your changes in game</a>).</li>
+<li>
+<strong>An update keeps your changes.</strong> Where the author's new version changes a line you changed too, the
+<strong>Inside</strong> lists it under <strong>Changed by you and the update</strong>, with <strong>Apply</strong> to take the author's.</li>
+<li>
+<strong><code>.overtone/</code></strong> beside it holds what Overtone works out from it. Never edit those files.</li>
+</ul>
+<p>It is <a href="https://toml.io" rel="nofollow">TOML</a>. These three spellings mean the same, so write whichever reads best:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">option</span>.<span class="pl-en">Hair</span>.<span class="pl-en">Long</span>]
+<span class="pl-smi">show</span> = [<span class="pl-s"><span class="pl-pds">"</span>Hair 1<span class="pl-pds">"</span></span>]
+
+[<span class="pl-en">option</span>.<span class="pl-en">Hair</span>]
+<span class="pl-smi">Long.show</span> = [<span class="pl-s"><span class="pl-pds">"</span>Hair 1<span class="pl-pds">"</span></span>]
+
+[<span class="pl-en">option</span>.<span class="pl-en">Hair</span>]
+<span class="pl-smi">Long</span> = { <span class="pl-smi">show</span> = [<span class="pl-s"><span class="pl-pds">"</span>Hair 1<span class="pl-pds">"</span></span>] }</pre></div>
+<p>A key Overtone does not know is not an error, but Timbre points it out, and the game's log names its line.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="the-top-of-the-file"><a class="anchor" href="#the-top-of-the-file" aria-hidden="true">#</a>The top of the file</h2><a id="user-content-the-top-of-the-file" class="anchor" aria-label="Permalink: The top of the file" href="#the-top-of-the-file"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="highlight highlight-source-toml"><pre><span class="pl-smi">format</span> = <span class="pl-c1">27</span>
+<span class="pl-smi">id</span>     = <span class="pl-s"><span class="pl-pds">"</span>18d3a98a9189469c0053<span class="pl-pds">"</span></span>
+<span class="pl-smi">name</span>   = <span class="pl-s"><span class="pl-pds">"</span>Summer Dress<span class="pl-pds">"</span></span>
+<span class="pl-smi">object</span> = <span class="pl-s"><span class="pl-pds">"</span>carlotta<span class="pl-pds">"</span></span></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>format</code></td>
+<td align="left">Always <code>26</code>. A <code>24</code> or <code>25</code> is written again as <code>26</code> when Timbre opens the library, or by <code>overtone-mod migrate</code>; left out, or any other number, the file is refused.</td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">Made once by Timbre. It is how the list of what you draw, and your loadouts, find the mod, so it survives a renamed folder. A folder copied whole keeps the same id, and then only one of the two draws: give the copy an <code>id</code> of your own, any text no other mod uses.</td>
+</tr>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left">The mod's name in Timbre and in game. Left out, its folder and the one it is in, such as <code>carlotta/Summer Dress</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>object</code></td>
+<td align="left">The character or weapon it dresses, as the game's list names it (<code>carlotta</code>, <code>rover</code>, <code>abysssurges</code>). Timbre writes it; change it if it is wrong.</td>
+</tr>
+<tr>
+<td align="left"><code>game</code></td>
+<td align="left">The game it is for, such as <code>wuwa</code>; left out, the game this Overtone runs in.</td>
+</tr>
+<tr>
+<td align="left">
+<code>author</code>, <code>link</code>, <code>about</code>, <code>version</code>
+</td>
+<td align="left">Who made it, where it came from, what it is, and its version, such as <code>1.0.0</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>folders</code></td>
+<td align="left">The mod's own folders, where it has more than one.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="switches-optionname"><a class="anchor" href="#switches-optionname" aria-hidden="true">#</a>Switches: <code>[option.&lt;name&gt;]</code>
+</h2><a id="user-content-switches-optionname" class="anchor" aria-label="Permalink: Switches: [option.&lt;name&gt;]" href="#switches-optionname"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A switch is on or off, or steps through choices.</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">option</span>.<span class="pl-en">Hat</span>]
+<span class="pl-smi">key</span>     = <span class="pl-s"><span class="pl-pds">"</span>5<span class="pl-pds">"</span></span>
+<span class="pl-smi">default</span> = <span class="pl-s"><span class="pl-pds">"</span>off<span class="pl-pds">"</span></span>
+<span class="pl-smi">on.show</span> = [<span class="pl-s"><span class="pl-pds">"</span>Straw hat<span class="pl-pds">"</span></span>]
+
+[<span class="pl-en">option</span>.<span class="pl-en">Hair</span>]
+<span class="pl-smi">choices</span>    = [<span class="pl-s"><span class="pl-pds">"</span>Short<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Long<span class="pl-pds">"</span></span>]
+<span class="pl-smi">default</span>    = <span class="pl-s"><span class="pl-pds">"</span>Long<span class="pl-pds">"</span></span>
+<span class="pl-smi">key</span>        = <span class="pl-s"><span class="pl-pds">"</span>/<span class="pl-pds">"</span></span>
+<span class="pl-smi">Short.show</span> = [<span class="pl-s"><span class="pl-pds">"</span>Hair 0<span class="pl-pds">"</span></span>]
+<span class="pl-smi">Long.show</span>  = [<span class="pl-s"><span class="pl-pds">"</span>Hair 1<span class="pl-pds">"</span></span>]</pre></div>
+<p>A switch with no <code>choices</code> is on or off: its choices are <code>on</code> and <code>off</code>, and it starts on unless <code>default = "off"</code>.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>choices</code></td>
+<td align="left">The choices, in the order a key press steps through them: names, or numbers, not both in one list. A name that reads as a number is that number.</td>
+</tr>
+<tr>
+<td align="left"><code>default</code></td>
+<td align="left">The choice it starts at, where that is not the first. Your own choice is kept apart, in <code>.overtone/state.toml</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>key</code></td>
+<td align="left">The key that steps it, as printed on the keyboard, with any modifiers: <code>5</code>, <code>Ctrl+Up</code>, <code>Alt+5</code>. A press goes to the key naming the most of what is held, so <code>5</code> and <code>Alt+5</code> never fire each other within this mod; another mod on the same key still fires.</td>
+</tr>
+<tr>
+<td align="left"><code>back</code></td>
+<td align="left">The key that steps it back.</td>
+</tr>
+<tr>
+<td align="left">
+<code>more_keys</code>, <code>more_back</code>
+</td>
+<td align="left">Other keys that step it forward or back, as a list.</td>
+</tr>
+<tr>
+<td align="left"><code>when</code></td>
+<td align="left">A condition: while false, a key press does nothing.</td>
+</tr>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left">What the switch is called in Timbre and in game, where that is not its key.</td>
+</tr>
+<tr>
+<td align="left"><code>group</code></td>
+<td align="left">A heading to list it under, beside others of that heading.</td>
+</tr>
+<tr>
+<td align="left"><code>labels</code></td>
+<td align="left">Names for numbered choices: <code>{ 0 = "Short hair" }</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>wrap</code></td>
+<td align="left">
+<code>false</code>: stepping stops at the last choice instead of going back to the first.</td>
+</tr>
+</tbody>
+</table>
+<p>Timbre writes a few more when it imports a WWMI mod; you rarely write them yourself:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>kind</code></td>
+<td align="left">How it moves: <code>cycle</code> or <code>toggle</code> (a key that flips between two values) by its key, <code>menu</code> by the mod's own menu, <code>detected</code> by what the game draws. Left out, <code>cycle</code> for a switch with a key, else <code>menu</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>smart</code></td>
+<td align="left">
+<code>false</code>: a press does not first look for the choice the mod's values already stand at.</td>
+</tr>
+<tr>
+<td align="left"><code>drawn</code></td>
+<td align="left">The meshes its key works for, while one of them is drawn.</td>
+</tr>
+<tr>
+<td align="left"><code>also</code></td>
+<td align="left">Other values the same press moves: a list of <code>{ variable, values, default }</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>follows</code></td>
+<td align="left">Folders of other mods whose switch this one is.</td>
+</tr>
+<tr>
+<td align="left"><code>does</code></td>
+<td align="left">What it changes that the file does not say: <code>geometry</code>, <code>textures</code>, <code>drives</code>, <code>hides</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h3 class="heading-element" id="what-a-choice-does"><a class="anchor" href="#what-a-choice-does" aria-hidden="true">#</a>What a choice does</h3><a id="user-content-what-a-choice-does" class="anchor" aria-label="Permalink: What a choice does" href="#what-a-choice-does"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Under each choice, or under <code>on</code> and <code>off</code>:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>show</code></td>
+<td align="left">The pieces drawn while it is chosen. A bare name is every piece of that name; <code>3/Name</code> is the one in part 3.</td>
+</tr>
+<tr>
+<td align="left"><code>wear.&lt;part or piece&gt;</code></td>
+<td align="left">What a part or a piece wears while it is chosen. A material's name fills each role the part does not state itself (<a href="#which-texture-wins">Which texture wins</a>). A table of roles, <code>{ diffuse = "Textures/Blue.dds" }</code>, beats the part's own for those roles; <code>over</code> names a material to start from.</td>
+</tr>
+<tr>
+<td align="left"><code>shapekeys</code></td>
+<td align="left">The weight of each shape key it drives: <code>{ 110 = 0.5 }</code>. A key one choice names weighs 0 at the choices that leave it out.</td>
+</tr>
+<tr>
+<td align="left"><code>scale</code></td>
+<td align="left">The whole mesh's scale while it is chosen; 1 where a choice leaves it out.</td>
+</tr>
+<tr>
+<td align="left"><code>outline</code></td>
+<td align="left">The outline's scale for the pieces it shows. Not drawn yet.</td>
+</tr>
+</tbody>
+</table>
+<p>To rename a switch, right-click its row in Timbre's <strong>Inside</strong> for <strong>Rename a switch</strong>, so your choice follows it. A choice renamed by hand is refused on <strong>Save</strong>; reordering <code>choices</code> changes only the order a key steps through them. A choice
+cannot be called <code>choices</code>, <code>default</code>, <code>when</code> or a key of the tables above: its table would read as that key.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="looks-lookname"><a class="anchor" href="#looks-lookname" aria-hidden="true">#</a>Looks: <code>[look.&lt;name&gt;]</code>
+</h2><a id="user-content-looks-lookname" class="anchor" aria-label="Permalink: Looks: [look.&lt;name&gt;]" href="#looks-lookname"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A look puts on several choices at once, from its key, the overlay or Timbre.</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">look</span>.<span class="pl-en">"Night</span> <span class="pl-en">out"</span>]
+<span class="pl-smi">key</span>    = <span class="pl-s"><span class="pl-pds">"</span>F5<span class="pl-pds">"</span></span>
+<span class="pl-smi">Hair</span>   = <span class="pl-s"><span class="pl-pds">"</span>Long<span class="pl-pds">"</span></span>
+<span class="pl-smi">Hat</span>    = <span class="pl-c1">false</span>
+
+[<span class="pl-en">look</span>.<span class="pl-en">Swim</span>]
+<span class="pl-smi">key</span>   = <span class="pl-s"><span class="pl-pds">"</span>-<span class="pl-pds">"</span></span>
+<span class="pl-smi">back</span>  = <span class="pl-s"><span class="pl-pds">"</span>Alt+-<span class="pl-pds">"</span></span>
+<span class="pl-smi">steps</span> = [{ <span class="pl-smi">Top</span> = <span class="pl-s"><span class="pl-pds">"</span>Bikini<span class="pl-pds">"</span></span>, <span class="pl-smi">Shoes</span> = <span class="pl-c1">false</span> }, { <span class="pl-smi">Top</span> = <span class="pl-s"><span class="pl-pds">"</span>Shirt<span class="pl-pds">"</span></span> }]</pre></div>
+<p>A look sets only what it names.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">a switch's name</td>
+<td align="left">The choice it puts on: a choice's name, a number, or <code>true</code> and <code>false</code> for an on-off switch.</td>
+</tr>
+<tr>
+<td align="left"><code>steps</code></td>
+<td align="left">Choices put on one step a press, in turn. A step may hold its own <code>when</code>; a list inside a step puts on the first of it whose <code>when</code> holds.</td>
+</tr>
+<tr>
+<td align="left">
+<code>key</code>, <code>back</code>, <code>more_keys</code>, <code>more_back</code>, <code>when</code>, <code>wrap</code>, <code>smart</code>, <code>drawn</code>
+</td>
+<td align="left">As a switch's.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="conditions"><a class="anchor" href="#conditions" aria-hidden="true">#</a>Conditions</h2><a id="user-content-conditions" class="anchor" aria-label="Permalink: Conditions" href="#conditions"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A condition is a string, written in a <code>when</code> and in a piece's <code>cut</code>. Single quotes need no escapes.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Written</th>
+<th align="left">Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+<code>Hair is Long</code>, <code>Hair is not Long</code>
+</td>
+<td align="left">That switch is, or is not, at that choice</td>
+</tr>
+<tr>
+<td align="left">
+<code>Hair in [Short, Long]</code>, <code>Hair not in [Short, Long]</code>
+</td>
+<td align="left">It is, or is not, at one of those</td>
+</tr>
+<tr>
+<td align="left">
+<code>Hat</code>, <code>not Hat</code>
+</td>
+<td align="left">An on-off switch is on, or off</td>
+</tr>
+<tr>
+<td align="left">
+<code>a and b</code>, <code>a or b</code>, <code>not (…)</code>
+</td>
+<td align="left">
+<code>and</code> binds tighter than <code>or</code>; brackets group</td>
+</tr>
+<tr>
+<td align="left">
+<code>Size &lt; 3</code> (also <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>)</td>
+<td align="left">A numbered choice compared</td>
+</tr>
+<tr>
+<td align="left">
+<code>Figure is Ice</code>, <code>Figure in [Ice, Liberation]</code>
+</td>
+<td align="left">The character is in that form, as the game's list names her forms. A switch is never called <code>Figure</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>never</code></td>
+<td align="left">Never true</td>
+</tr>
+</tbody>
+</table>
+<p>Quote a choice whose name has a space: <code>Outfit is "Night out"</code>.</p>
+<p>Give a condition you use often a name under <code>[when]</code>, and use the name anywhere a condition goes but inside another
+<code>[when]</code>:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">when</span>]
+<span class="pl-smi">bare_legs</span> = <span class="pl-s"><span class="pl-pds">'</span>not Socks and Skirt is Short<span class="pl-pds">'</span></span></pre></div>
+<div class="markdown-heading"><h2 class="heading-element" id="parts-and-textures-partn"><a class="anchor" href="#parts-and-textures-partn" aria-hidden="true">#</a>Parts and textures: <code>[part.&lt;n&gt;]</code>
+</h2><a id="user-content-parts-and-textures-partn" class="anchor" aria-label="Permalink: Parts and textures: [part.&lt;n&gt;]" href="#parts-and-textures-partn"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A part is one section the game draws, a <code>[part.&lt;n&gt;]</code> table by its number (<code>Part 3</code> in Blender). Write one only where you say something
+about it.</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">part</span>.<span class="pl-en">3</span>]
+<span class="pl-smi">diffuse</span>   = <span class="pl-s"><span class="pl-pds">"</span>Textures/Body_D.dds<span class="pl-pds">"</span></span>
+<span class="pl-smi">normalmap</span> = <span class="pl-s"><span class="pl-pds">"</span>game<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">part</span>.<span class="pl-en">skirt</span>]
+<span class="pl-smi">replaces</span> = <span class="pl-c1">4</span>
+<span class="pl-smi">diffuse</span>  = <span class="pl-s"><span class="pl-pds">"</span>Textures/Skirt.dds<span class="pl-pds">"</span></span></pre></div>
+<p>A part states what it wears by default. What it wears at a switch's choice goes under that choice (<code>wear</code>), or in a
+rule (below); a role written as a list of conditions is refused.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">a role</td>
+<td align="left">What the part wears in that role (below).</td>
+</tr>
+<tr>
+<td align="left"><code>replaces</code></td>
+<td align="left">The part's number, where you give it a name of your own as its key.</td>
+</tr>
+<tr>
+<td align="left"><code>material</code></td>
+<td align="left">A material its pieces wear where theirs says nothing. Its own roles win over the material's.</td>
+</tr>
+<tr>
+<td align="left"><code>draws = "game"</code></td>
+<td align="left">The game draws this part itself, as without the mod.</td>
+</tr>
+<tr>
+<td align="left"><code>mesh</code></td>
+<td align="left">Which mesh it belongs to, where the mod has several.</td>
+</tr>
+<tr>
+<td align="left"><code>outline</code></td>
+<td align="left">The outline's scale: 1 the game's, 0 none. Not drawn yet.</td>
+</tr>
+<tr>
+<td align="left"><code>sheets_move_with</code></td>
+<td align="left">The switches its textures change under. Overtone works this out, so you rarely write it.</td>
+</tr>
+</tbody>
+</table>
+<p>The roles Overtone places: <code>diffuse</code> (colours), <code>lightmap</code>, <code>normalmap</code> (bumps), <code>materialmap</code> and <code>highlight</code> (hair
+highlight). <code>fx</code> is a mask a piece's <code>cut</code> uses. <code>glow</code>, <code>cutoutmap</code> and <code>specialmap</code> are kept but never drawn.</p>
+<table>
+<thead>
+<tr>
+<th align="left">A role's value</th>
+<th align="left">Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>"Textures/Body_D.dds"</code></td>
+<td align="left">A file, from the mesh's folder; a leading <code>/</code> starts at the mod's own folder. DDS is drawn in its own format; PNG and JPEG uncompressed, without mipmaps.</td>
+</tr>
+<tr>
+<td align="left"><code>"game"</code></td>
+<td align="left">The game's own texture.</td>
+</tr>
+<tr>
+<td align="left">
+<code>"#rrggbb"</code> or <code>"#rrggbbaa"</code>
+</td>
+<td align="left">One flat colour that replaces the texture; it never tints.</td>
+</tr>
+<tr>
+<td align="left"><code>"neutral"</code></td>
+<td align="left">The game's typical value; for now the same as <code>"game"</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="materials-materialname"><a class="anchor" href="#materials-materialname" aria-hidden="true">#</a>Materials: <code>[material.&lt;name&gt;]</code>
+</h2><a id="user-content-materials-materialname" class="anchor" aria-label="Permalink: Materials: [material.&lt;name&gt;]" href="#materials-materialname"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A material is a named set of roles that parts, pieces and choices can wear.</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">leather</span>]
+<span class="pl-smi">diffuse</span>   = <span class="pl-s"><span class="pl-pds">"</span>Textures/Leather_D.dds<span class="pl-pds">"</span></span>
+<span class="pl-smi">normalmap</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Leather_N.dds<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">material</span>.<span class="pl-en">leather_red</span>]
+<span class="pl-smi">over</span>    = <span class="pl-s"><span class="pl-pds">"</span>leather<span class="pl-pds">"</span></span>
+<span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>#8a1010<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">piece</span>.<span class="pl-en">Buttons</span>]
+<span class="pl-smi">material</span> = <span class="pl-s"><span class="pl-pds">"</span>leather_red<span class="pl-pds">"</span></span></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">a role</td>
+<td align="left">What the material places in that role, as a part's; its files start at the mod's own folder.</td>
+</tr>
+<tr>
+<td align="left"><code>over</code></td>
+<td align="left">The material it takes the roles it does not state from: another, <code>game</code>, <code>neutral</code>, or <code>own</code> for the roles of what wears it.</td>
+</tr>
+<tr>
+<td align="left"><code>hlsl</code></td>
+<td align="left">The shader your mod ships for it: <code>{ vertex = "Shaders/Body.hlsl", pixel = "Shaders/Body.hlsl" }</code>. A stage you leave out draws as the part does.</td>
+</tr>
+<tr>
+<td align="left">
+<code>inputs</code>, <code>params</code>
+</td>
+<td align="left">What that shader reads beside your textures, keyed as your ini binds it (<code>ps-cb4</code>, <code>ps-t11</code>): a file of your mod, <code>false</code> for nothing, or <code>{ game = "ps-cb4" }</code> for what the game bound there; and the <code>x</code>, <code>y</code>, <code>z</code> and <code>w</code> values your ini sets for it, <code>params = { x200 = "Shoes", x255 = { time = 1 } }</code>, each a number, a switch or the clock.</td>
+</tr>
+<tr>
+<td align="left">
+<code>blend</code>, <code>depth_write</code>, <code>depth</code>, <code>write</code>
+</td>
+<td align="left">
+<code>"alpha"</code>, <code>"add"</code> or <code>"multiply"</code>: how it lands on what is drawn under it; <code>depth_write = false</code> draws it without hiding what is behind; <code>depth = "equal"</code> draws it only where the part is drawn already, as an ini's <code>depth_func</code>; <code>write = "rgb"</code> writes only the colour, as an ini's <code>mask</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>two_sided</code></td>
+<td align="left">
+<code>true</code> to draw both sides, as an ini's <code>cull = none</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>game_shader</code></td>
+<td align="left">A part of the game whose own shader draws it: <code>{ object = "galbrena", part = 15702 }</code>. Yours goes before <code>hlsl</code>, and stays when the mod is read again.</td>
+</tr>
+</tbody>
+</table>
+<p><code>game</code>, <code>neutral</code> and <code>own</code> are built in: a <code>[material.game]</code> or a name holding a <code>/</code> is read past, and Timbre says so.</p>
+<p>Overtone writes every key but <code>game_shader</code> from your ini, and <code>over = "own"</code> where your ini gives the material no textures.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="layers-layername"><a class="anchor" href="#layers-layername" aria-hidden="true">#</a>Layers: <code>[layer.&lt;name&gt;]</code>
+</h2><a id="user-content-layers-layername" class="anchor" aria-label="Permalink: Layers: [layer.&lt;name&gt;]" href="#layers-layername"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A layer draws a material again over a part or a piece, after it, such as wet skin or oil. Overtone writes one where
+your ini draws again in a shader of yours over what another of its draws draws:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">layer</span>.<span class="pl-en">Oil</span>]
+<span class="pl-smi">on</span>       = <span class="pl-s"><span class="pl-pds">"</span>Body<span class="pl-pds">"</span></span>
+<span class="pl-smi">material</span> = <span class="pl-s"><span class="pl-pds">"</span>Oil<span class="pl-pds">"</span></span>
+<span class="pl-smi">when</span>     = <span class="pl-s"><span class="pl-pds">'</span>Oil is on<span class="pl-pds">'</span></span></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>on</code></td>
+<td align="left">The part or the piece it is drawn over.</td>
+</tr>
+<tr>
+<td align="left"><code>material</code></td>
+<td align="left">The material it wears, which says how it blends.</td>
+</tr>
+<tr>
+<td align="left"><code>when</code></td>
+<td align="left">Where it is drawn, within where <code>on</code> is; left out, wherever <code>on</code> is. Overtone writes none yet.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="rules-rule"><a class="anchor" href="#rules-rule" aria-hidden="true">#</a>Rules: <code>[[rule]]</code>
+</h2><a id="user-content-rules-rule" class="anchor" aria-label="Permalink: Rules: [[rule]]" href="#rules-rule"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>What to wear while a condition holds that no single choice spells:</p>
+<div class="highlight highlight-source-toml"><pre>[[<span class="pl-en">rule</span>]]
+<span class="pl-smi">when</span>   = <span class="pl-s"><span class="pl-pds">'</span>Colour is Red and Hat<span class="pl-pds">'</span></span>
+<span class="pl-smi">wear.3</span> = { <span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Brim_Red.dds<span class="pl-pds">"</span></span> }</pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>when</code></td>
+<td align="left">The condition; a rule has one.</td>
+</tr>
+<tr>
+<td align="left"><code>wear.&lt;part or piece&gt;</code></td>
+<td align="left">What it wears while that holds, as a choice's <code>wear</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Write a rule only where no single choice says it: Timbre marks one a choice's <code>wear</code> would say. Two rules, or a rule
+and a choice, that set one role under the same condition, or under conditions that each hold where the other does
+not and both hold somewhere, are refused. Conditions that never hold together, or one inside the other, are fine: the
+narrower wins.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="which-texture-wins"><a class="anchor" href="#which-texture-wins" aria-hidden="true">#</a>Which texture wins</h2><a id="user-content-which-texture-wins" class="anchor" aria-label="Permalink: Which texture wins" href="#which-texture-wins"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A piece with its own <code>material</code> wears that material instead of its part's roles. Otherwise a role is taken from the
+first of these that states it:</p>
+<ol>
+<li>A choice's <code>wear</code> table or a rule naming the piece, the narrowest condition first.</li>
+<li>A choice's <code>wear</code> table or a rule naming the part, the narrowest condition first.</li>
+<li>The part's own roles.</li>
+<li>A material a choice wears.</li>
+<li>The part's <code>material</code>.</li>
+<li>The game's texture.</li>
+</ol>
+<p>So a texture you change under <code>[part.3]</code> shows only where no piece's <code>material</code>, and no <code>wear</code> table or rule,
+covers it: if your change does not show, look for one.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="pieces-piecename"><a class="anchor" href="#pieces-piecename" aria-hidden="true">#</a>Pieces: <code>[piece.&lt;name&gt;]</code>
+</h2><a id="user-content-pieces-piecename" class="anchor" aria-label="Permalink: Pieces: [piece.&lt;name&gt;]" href="#pieces-piecename"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A piece is one object of the mod's model, by its name in Blender. A piece is drawn while every switch that shows it
+is at a choice that shows it, and every <code>[piece]</code> <code>when</code> covering it holds. A piece nothing mentions is always drawn.</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">piece</span>.<span class="pl-en">"*"</span>]
+<span class="pl-smi">when</span> = <span class="pl-s"><span class="pl-pds">'</span>Outfit is not Swim<span class="pl-pds">'</span></span>
+
+[<span class="pl-en">piece</span>.<span class="pl-en">"skirt/Frills"</span>]
+<span class="pl-smi">cut</span> = <span class="pl-s"><span class="pl-pds">'</span>Sheer<span class="pl-pds">'</span></span></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>when</code></td>
+<td align="left">Drawn only while this holds too.</td>
+</tr>
+<tr>
+<td align="left"><code>material</code></td>
+<td align="left">The material it wears, in whichever part it is drawn.</td>
+</tr>
+<tr>
+<td align="left"><code>cut</code></td>
+<td align="left">Cut by its part's <code>fx</code> mask: <code>true</code> always, a condition while it holds, <code>false</code> never.</td>
+</tr>
+<tr>
+<td align="left"><code>label</code></td>
+<td align="left">What it is called in Timbre and in game; the piece keeps its name.</td>
+</tr>
+<tr>
+<td align="left"><code>outline</code></td>
+<td align="left">The outline's scale for it. Not drawn yet.</td>
+</tr>
+</tbody>
+</table>
+<p><code>[piece."*"]</code> covers every piece and <code>[piece."3/*"]</code> every piece of part 3. For <code>cut</code> and <code>material</code>, a
+piece named outright wins over <code>3/*</code>, which wins over <code>*</code>; every <code>when</code> among them must hold. A piece a
+switch shows takes its condition from that switch: Timbre marks a <code>when</code> on it.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="hide-the-games-parts-removekey-and-adjustkey"><a class="anchor" href="#hide-the-games-parts-removekey-and-adjustkey" aria-hidden="true">#</a>Hide the game's parts: <code>[remove.&lt;key&gt;]</code> and <code>[adjust.&lt;key&gt;]</code>
+</h2><a id="user-content-hide-the-games-parts-removekey-and-adjustkey" class="anchor" aria-label="Permalink: Hide the game's parts: [remove.&lt;key&gt;] and [adjust.&lt;key&gt;]" href="#hide-the-games-parts-removekey-and-adjustkey"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">remove</span>.<span class="pl-en">6</span>]
+
+[<span class="pl-en">remove</span>.<span class="pl-en">hair_accessory</span>]
+<span class="pl-smi">mesh</span>     = <span class="pl-s"><span class="pl-pds">"</span>hair_accessory<span class="pl-pds">"</span></span>
+<span class="pl-smi">replaces</span> = [<span class="pl-c1">0</span>]
+<span class="pl-smi">when</span>     = <span class="pl-s"><span class="pl-pds">'</span>not (Hair is Short and Hat)<span class="pl-pds">'</span></span></pre></div>
+<p><code>[remove.6]</code> hides the game's part 6 of the mod's own mesh. With a name as the key:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>mesh</code></td>
+<td align="left">The mesh it is of, where that is not its key.</td>
+</tr>
+<tr>
+<td align="left"><code>replaces</code></td>
+<td align="left">The parts it hides.</td>
+</tr>
+<tr>
+<td align="left"><code>when</code></td>
+<td align="left">Hidden only while this holds, where the mod draws nothing of that mesh; otherwise the part is always hidden.</td>
+</tr>
+<tr>
+<td align="left"><code>folder</code></td>
+<td align="left">The mod folder it came from; turning that folder off brings the part back.</td>
+</tr>
+</tbody>
+</table>
+<p>An <code>[adjust.&lt;key&gt;]</code> takes the same keys and keeps the game's parts drawn as the game draws them, with an <code>outline</code> and
+a <code>material</code> of its own. It is read and kept, but not drawn yet.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="meshes-meshkey"><a class="anchor" href="#meshes-meshkey" aria-hidden="true">#</a>Meshes: <code>[mesh.&lt;key&gt;]</code>
+</h2><a id="user-content-meshes-meshkey" class="anchor" aria-label="Permalink: Meshes: [mesh.&lt;key&gt;]" href="#meshes-meshkey"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A mesh's own settings, by its key; a mod's own folder is <code>main</code>.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>model</code></td>
+<td align="left">The <code>.glb</code> it is built from. Saving it in Blender rebuilds the mod.</td>
+</tr>
+<tr>
+<td align="left"><code>scale</code></td>
+<td align="left">Scales the whole mesh.</td>
+</tr>
+<tr>
+<td align="left"><code>when</code></td>
+<td align="left">The mesh is drawn only while this holds.</td>
+</tr>
+<tr>
+<td align="left"><code>folder</code></td>
+<td align="left">The mod folder it came from.</td>
+</tr>
+<tr>
+<td align="left"><code>sheets_move_with</code></td>
+<td align="left">As a part's.</td>
+</tr>
+<tr>
+<td align="left"><code>defaults</code></td>
+<td align="left">Written by older imports; it changes nothing, but each value must be one of its switch's choices.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="sliders-slidername"><a class="anchor" href="#sliders-slidername" aria-hidden="true">#</a>Sliders: <code>[slider.&lt;name&gt;]</code>
+</h2><a id="user-content-sliders-slidername" class="anchor" aria-label="Permalink: Sliders: [slider.&lt;name&gt;]" href="#sliders-slidername"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A value that moves smoothly rather than in steps, such as a body shape.</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">slider</span>.<span class="pl-en">bbs</span>]
+<span class="pl-smi">range</span>   = [<span class="pl-c1">-0.2</span>, <span class="pl-c1">1.0</span>]
+<span class="pl-smi">default</span> = <span class="pl-c1">0.0</span>
+<span class="pl-smi">key</span>     = <span class="pl-s"><span class="pl-pds">"</span>Up<span class="pl-pds">"</span></span>
+<span class="pl-smi">back</span>    = <span class="pl-s"><span class="pl-pds">"</span>Down<span class="pl-pds">"</span></span>
+<span class="pl-smi">rate</span>    = <span class="pl-c1">0.6</span>
+<span class="pl-smi">drives</span>  = [{ <span class="pl-smi">shapekey</span> = <span class="pl-c1">110</span> }]</pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>drives</code></td>
+<td align="left">What it moves: <code>{ shapekey = 110 }</code>, or <code>{ mesh_scale = true }</code>. A slider that drives nothing is ignored.</td>
+</tr>
+<tr>
+<td align="left"><code>range</code></td>
+<td align="left">The lowest and highest value; left out, 0 to 1 (0.1 to 5 for the mesh's scale).</td>
+</tr>
+<tr>
+<td align="left"><code>default</code></td>
+<td align="left">Where it starts; left out, 0.</td>
+</tr>
+<tr>
+<td align="left">
+<code>key</code>, <code>back</code>
+</td>
+<td align="left">Held, raise and lower it; with <code>stops</code>, step forward and back.</td>
+</tr>
+<tr>
+<td align="left"><code>rate</code></td>
+<td align="left">How much a held key moves it each second.</td>
+</tr>
+<tr>
+<td align="left"><code>stops</code></td>
+<td align="left">Values a press steps through, instead of moving while held.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="not-built-yet"><a class="anchor" href="#not-built-yet" aria-hidden="true">#</a>Not built yet</h2><a id="user-content-not-built-yet" class="anchor" aria-label="Permalink: Not built yet" href="#not-built-yet"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p><code>[adjust.&lt;key&gt;]</code>, every <code>outline</code>, a material's shader keys and layers are read and kept, but not drawn yet. <code>Figure</code> is read, but Overtone does not yet
+tell which form a character is in, so what you hold to a form draws as the game's.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="create-a-mod.html">How to create a mod</a>: a description's switches and textures, step by step.</li>
+<li>
+<a href="edit-in-blender.html">Edit a mod in Blender</a>: the pieces a description names.</li>
+<li>
+<a href="troubleshoot.html#a-change-to-a-description-does-not-show">When a mod does not draw right</a>: a change that does not show.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1028.0 and Overtone 26.1028.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="paint.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Paint a mod's textures</strong></a><a class="card later" href="troubleshoot.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>When a mod does not draw right</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#what-a-description-is">What a description is</a><a href="#the-top-of-the-file">The top of the file</a><a href="#switches-optionname">Switches: [option.&amp;lt;name&amp;gt;]</a><a href="#looks-lookname">Looks: [look.&amp;lt;name&amp;gt;]</a><a href="#conditions">Conditions</a><a href="#parts-and-textures-partn">Parts and textures: [part.&amp;lt;n&amp;gt;]</a><a href="#materials-materialname">Materials: [material.&amp;lt;name&amp;gt;]</a><a href="#layers-layername">Layers: [layer.&amp;lt;name&amp;gt;]</a><a href="#rules-rule">Rules: [[rule]]</a><a href="#which-texture-wins">Which texture wins</a><a href="#pieces-piecename">Pieces: [piece.&amp;lt;name&amp;gt;]</a><a href="#hide-the-games-parts-removekey-and-adjustkey">Hide the game's parts: [remove.&amp;lt;key&amp;gt;] and [adjust.&amp;lt;key&amp;gt;]</a><a href="#meshes-meshkey">Meshes: [mesh.&amp;lt;key&amp;gt;]</a><a href="#sliders-slidername">Sliders: [slider.&amp;lt;name&amp;gt;]</a><a href="#not-built-yet">Not built yet</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1028.0 · Overtone 26.1028.0 · MCP server 26.1028.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>

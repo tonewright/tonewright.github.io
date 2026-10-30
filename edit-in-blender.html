@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit a mod in Blender · Tonewright</title>
+<meta name="description" content="Edit a dump or any mod Timbre added in Blender: reshape it, add pieces, bring in meshes from other mods or WWMI-Tools, hide parts, and see every save in game; and how it compares with WWMI-Tools.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/edit-in-blender.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Edit a mod in Blender · Tonewright">
+<meta property="og:description" content="Edit a dump or any mod Timbre added in Blender: reshape it, add pieces, bring in meshes from other mods or WWMI-Tools, hide parts, and see every save in game; and how it compares with WWMI-Tools.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=95e0e089fb">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html" aria-current="page">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Edit a mod in Blender</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html" aria-current="page">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">Edit a mod in Blender</h1>
+      <p class="lead rise" style="--i:2">Edit a dump or any mod Timbre added in Blender: reshape it, add pieces, bring in meshes from other mods or WWMI-Tools, hide parts, and see every save in game; and how it compares with WWMI-Tools.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">How-to</span><span>11 min read</span><span>Timbre 26.1028.0 · Overtone 26.1028.0</span></p>
+      
+      <div class="prose"><p>Open a mod in Blender, change it, press <strong>Ctrl+S</strong>, and the game shows the change a moment later. If you have made
+mods with WWMI-Tools, three chores are gone:</p>
+<ul>
+<li>
+<strong>No export.</strong> Saving is exporting: no ini to write, no buffer files, no <strong>F10</strong>.</li>
+<li>
+<strong>No vertex group numbers.</strong> The skeleton's bones have names such as <code>upper arm.L</code>, and any piece may use any of
+them.</li>
+<li>
+<strong>Meshes from anywhere.</strong> Put a mesh from another mod into a part and save: Overtone keeps it where you placed it,
+bends it with the character and weights it for you.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Blender is installed. Timbre finds it on Windows and a Mac; if not, and always on Linux, press <strong>Choose</strong> under
+<strong>Settings → Folders → Blender</strong> and pick Blender's program.</li>
+<li>The mod is <em>native</em>: a dump you made (<a href="create-a-mod.html">How to create a mod</a>), or a WWMI mod you added through
+Timbre, which makes it native as it lands (<a href="add-mods.html#what-native-means">What native means</a>).</li>
+<li>To see each save in game, start the game with Overtone (<a href="play.html#see-your-changes-in-game">See your changes in game</a>).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="what-you-see-in-blender"><a class="anchor" href="#what-you-see-in-blender" aria-hidden="true">#</a>What you see in Blender</h2><a id="user-content-what-you-see-in-blender" class="anchor" aria-label="Permalink: What you see in Blender" href="#what-you-see-in-blender"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">In Blender</th>
+<th align="left">What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">The top collection</td>
+<td align="left">The mod, named after it.</td>
+</tr>
+<tr>
+<td align="left">
+<code>Part 0</code>, <code>Face · Part 2</code>, …</td>
+<td align="left">One collection for each section the game draws, such as hair, body or a jacket, named by what it is where Overtone knows the character. <code>Part 3</code> is the game's part 3, the one WWMI-Tools calls <code>Component 3</code>. A collection you rename keeps your name.</td>
+</tr>
+<tr>
+<td align="left">An object inside a <code>Part</code>
+</td>
+<td align="left">A <em>piece</em>: one mesh of the mod. Its name is the name the mod's switches use.</td>
+</tr>
+<tr>
+<td align="left"><code>Rig</code></td>
+<td align="left">The character's skeleton. Every piece bends with it through an <strong>Armature</strong> modifier.</td>
+</tr>
+<tr>
+<td align="left">
+<code>Rig</code>'s bones</td>
+<td align="left">Named for what they are, such as <code>upper arm.L</code>, <code>hand.R</code> or <code>hair 3.2.L</code>, and sorted into bone collections (<strong>Body</strong>, <strong>Fingers</strong>, <strong>Face</strong>, <strong>Hair</strong>, <strong>Skirt</strong>, <strong>Cloth</strong>). A bone Overtone could not name keeps a number, such as <code>c3.b17</code>.</td>
+</tr>
+<tr>
+<td align="left">
+<code>model Part 0</code>, <code>weapon Rig</code>, …</td>
+<td align="left">A mod the game shows as several models, such as an outfit and its weapon: a collection for each model file, its parts and skeleton named after it, such as <code>model Part 0</code> for the outfit and <code>weapon Rig</code> for the weapon.</td>
+</tr>
+</tbody>
+</table>
+<p>Each piece wears its part's colours, so you can see what you are editing. Those colours are only a preview.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="open-a-mod-and-save-it"><a class="anchor" href="#open-a-mod-and-save-it" aria-hidden="true">#</a>Open a mod and save it</h2><a id="user-content-open-a-mod-and-save-it" class="anchor" aria-label="Permalink: Open a mod and save it" href="#open-a-mod-and-save-it"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>In Timbre, open the mod and press <strong>Blender</strong>.</li>
+<li>Edit it: move, add or delete vertices, weight-paint, sculpt, add modifiers.</li>
+<li>Press <strong>Ctrl+S</strong>. Saving is all it takes.</li>
+</ol>
+<p>The status bar at the bottom of Blender says what happened:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Status bar</th>
+<th align="left">Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>taken; the game draws it at its next reload</code></td>
+<td align="left">Done. The game shows it a moment later.</td>
+</tr>
+<tr>
+<td align="left"><code>written, N pieces exported</code></td>
+<td align="left">Saved. <code>taken</code> follows once Overtone has read it.</td>
+</tr>
+<tr>
+<td align="left"><code>saved; the game or Timbre rebuilds the mod when it next reads it</code></td>
+<td align="left">Saved while the game is closed. You see it the next time you play or open Timbre.</td>
+</tr>
+<tr>
+<td align="left"><code>unchanged</code></td>
+<td align="left">Nothing changed since the last save.</td>
+</tr>
+<tr>
+<td align="left">
+<code>not taken:</code> and why, with a popup</td>
+<td align="left">The game keeps showing your last good save. Fix what it says and save again (<a href="#when-a-save-is-not-taken">When a save is not taken</a>).</td>
+</tr>
+<tr>
+<td align="left">
+<code>was not written:</code> and why, with a popup</td>
+<td align="left">Nothing was saved. Usually a piece's UV maps were renamed or reordered: put them back as the message lists them.</td>
+</tr>
+<tr>
+<td align="left"><code>meshes not skinned to an armature left out</code></td>
+<td align="left">Those meshes are not in a <code>Part</code> collection and do not bend with <code>Rig</code>, so they stay out of the mod.</td>
+</tr>
+</tbody>
+</table>
+<p>Timbre's mod page also shows <strong>Last Blender save not applied:</strong> and the reason.</p>
+<p>Save as often as you like: each save sends only the pieces you changed. Posing <code>Rig</code> to check your work changes
+nothing in the mod. Modifiers are applied as you save, and stay editable in Blender.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="add-a-piece"><a class="anchor" href="#add-a-piece" aria-hidden="true">#</a>Add a piece</h2><a id="user-content-add-a-piece" class="anchor" aria-label="Permalink: Add a piece" href="#add-a-piece"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The quickest way is to copy a piece that already bends right.</p>
+<ol>
+<li>Click a piece in the part the new one belongs to, and press <strong>Shift+D</strong> to duplicate it.</li>
+<li>Edit the copy into what you want: a strap, a longer skirt, a hat.</li>
+<li>Rename it in the outliner (<strong>F2</strong>). The name is how switches find it.</li>
+<li>Press <strong>Ctrl+S</strong>.</li>
+</ol>
+<p>The copy keeps its part, its <strong>Armature</strong> modifier and its weights, so it bends with the character at once. A new
+piece is always drawn until a switch says otherwise (<a href="create-a-mod.html#3-make-a-piece-switchable">Make a piece switchable</a>).</p>
+<p>To move a piece to another part, press <strong>M</strong> and pick that part's collection. The next save says <code>moved to Part 4</code>.
+A piece still in Edit Mode as you save is not moved until the next save; the status bar says
+<code>left as it was while in Edit Mode</code>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="bring-in-a-mesh-from-elsewhere"><a class="anchor" href="#bring-in-a-mesh-from-elsewhere" aria-hidden="true">#</a>Bring in a mesh from elsewhere</h2><a id="user-content-bring-in-a-mesh-from-elsewhere" class="anchor" aria-label="Permalink: Bring in a mesh from elsewhere" href="#bring-in-a-mesh-from-elsewhere"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A hat from another mod, a model you made, a mesh from a WWMI-Tools project.</p>
+<ol>
+<li>Bring it into the scene: <strong>File → Append</strong> from another <code>.blend</code>, or <strong>File → Import</strong>.</li>
+<li>Press <strong>M</strong> and move it into the <code>Part</code> collection whose look it should have: a part of the body for skin, of
+the clothes for cloth. A new piece is drawn the way its part is drawn.</li>
+<li>Make sure it has a UV map (<strong>Object Data Properties → UV Maps</strong>). Its first UV map is the one textures use.</li>
+<li>Leave Edit Mode, and press <strong>Ctrl+S</strong>.</li>
+</ol>
+<p>The status bar says <code>taken into Part 3</code> with the mesh's name. As it saves, Overtone:</p>
+<ul>
+<li>keeps it where you placed it, and makes it bend with the character;</li>
+<li>swaps the skeleton it came with for <code>Rig</code> (delete the old skeleton when you like);</li>
+<li>copies weights from the nearest surface of the character, unless every vertex already weighs on <code>Rig</code>'s bones,
+and the status bar adds <code>weighted from the pieces under it</code>. Weights it had on <code>Rig</code>'s bones are then replaced.</li>
+</ul>
+<p>Pose a bone of <code>Rig</code> and watch the mesh follow. This happens once, on the save that brings the mesh in: after that
+it is a piece like any other, and your weight painting is kept.</p>
+<div class="markdown-heading"><h3 class="heading-element" id="when-to-paint-weights-yourself"><a class="anchor" href="#when-to-paint-weights-yourself" aria-hidden="true">#</a>When to paint weights yourself</h3><a id="user-content-when-to-paint-weights-yourself" class="anchor" aria-label="Permalink: When to paint weights yourself" href="#when-to-paint-weights-yourself"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Copied weights follow the skin under the mesh. That suits clothing, not everything:</p>
+<table>
+<thead>
+<tr>
+<th align="left">The mesh</th>
+<th align="left">Copied weights</th>
+<th align="left">Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Lies on the body: a top, straps, stockings</td>
+<td align="left">Follow the body well</td>
+<td align="left">Pose <code>Rig</code> to check, and touch up</td>
+</tr>
+<tr>
+<td align="left">Hangs away from the body: long hair, a loose skirt, a cape</td>
+<td align="left">Take the weights of the thigh or back it hangs near</td>
+<td align="left">Weight-paint it on the hair, skirt or cloth bones</td>
+</tr>
+<tr>
+<td align="left">Should not bend: a hat, a badge, a weapon</td>
+<td align="left">Bend with the skin or hair under it</td>
+<td align="left">Give every vertex full weight on one bone, such as the head</td>
+</tr>
+</tbody>
+</table>
+<p>Paint with <code>Rig</code> selected and Blender names each vertex group after its bone for you. Overtone keeps the strongest
+four or eight weights on each vertex, as the character has, so you need not limit or normalize them. To skip the
+copy, weight every vertex on <code>Rig</code>'s bones before the first save: one vertex with none, and the whole mesh is
+weighted again. Bone numbers such as <code>c3.b17</code> from another mod
+mean a different bone there, so they are not counted.</p>
+<p>Its own textures do not come with it: it wears its part's textures until you <a href="#give-a-piece-its-own-textures">give it its own</a>.</p>
+<div class="markdown-heading"><h3 class="heading-element" id="give-a-piece-its-own-textures"><a class="anchor" href="#give-a-piece-its-own-textures" aria-hidden="true">#</a>Give a piece its own textures</h3><a id="user-content-give-a-piece-its-own-textures" class="anchor" aria-label="Permalink: Give a piece its own textures" href="#give-a-piece-its-own-textures"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Textures you set up in Blender change only Blender's preview. To give a piece textures of its own:</p>
+<ol>
+<li>
+<p>Put its textures in the mod's folder, for example under <code>Textures/</code>.</p>
+</li>
+<li>
+<p>In Timbre, open the mod's <strong>Inside</strong> and click a row: its description opens beside it. Add a material, then give
+it to the piece by name:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">hat</span>]
+<span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Hat_D.dds<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">piece</span>.<span class="pl-en">"Straw</span> <span class="pl-en">hat"</span>]
+<span class="pl-smi">material</span> = <span class="pl-s"><span class="pl-pds">"</span>hat<span class="pl-pds">"</span></span></pre></div>
+</li>
+<li>
+<p>Press <strong>Save</strong>.</p>
+</li>
+</ol>
+<p>The roles a material takes are listed in <a href="description.html#parts-and-textures-componentn">Parts and textures</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="hide-or-remove-pieces"><a class="anchor" href="#hide-or-remove-pieces" aria-hidden="true">#</a>Hide or remove pieces</h2><a id="user-content-hide-or-remove-pieces" class="anchor" aria-label="Permalink: Hide or remove pieces" href="#hide-or-remove-pieces"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Hidden in Blender is hidden in game.</strong> Hide a piece with its eye, its monitor icon or its collection's, and it
+draws nothing. Hide or delete every piece of a part, and that part of the character is gone.</li>
+<li>
+<strong>A piece a switch shows is the exception.</strong> The switch decides, whatever Blender shows. To see what each choice
+of a switch shows, open the sidebar (<strong>N</strong>), then <strong>Overtone → State</strong>, and set each option's list to a choice.</li>
+<li>
+<strong>Renaming a piece a switch names.</strong> The next save is not taken until the description uses the new name too.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="start-over"><a class="anchor" href="#start-over" aria-hidden="true">#</a>Start over</h2><a id="user-content-start-over" class="anchor" aria-label="Permalink: Start over" href="#start-over"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Button on the mod's page</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Reset</strong></td>
+<td align="left">Opens the model fresh from <code>model.glb</code>, dropping what only Blender holds: modifiers (their result stays), helper objects and the like. One backup is kept. Its tip says when the model changed outside Blender.</td>
+</tr>
+<tr>
+<td align="left"><strong>Re-derive</strong></td>
+<td align="left">Builds the mod again from the WWMI files it came with. Your Blender changes go to the Recycle Bin (the Trash on a Mac). Shown only for a WWMI mod you have edited. Close Blender and the game first.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="coming-from-wwmi-tools"><a class="anchor" href="#coming-from-wwmi-tools" aria-hidden="true">#</a>Coming from WWMI-Tools</h2><a id="user-content-coming-from-wwmi-tools" class="anchor" aria-label="Permalink: Coming from WWMI-Tools" href="#coming-from-wwmi-tools"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Task</th>
+<th align="left">WWMI-Tools</th>
+<th align="left">Overtone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Start from</td>
+<td align="left">A frame dump, and objects extracted from it</td>
+<td align="left">A dump (<strong>F11</strong>), or any mod Timbre added</td>
+</tr>
+<tr>
+<td align="left">Put a mesh on the character</td>
+<td align="left">Move it into <code>Component 3</code> and rename it to match</td>
+<td align="left">Move it into the <code>Part 3</code> collection (<strong>M</strong>), under any name</td>
+</tr>
+<tr>
+<td align="left">Line it up with the character</td>
+<td align="left">Apply its transforms by hand</td>
+<td align="left">Done as you save, where you placed it</td>
+</tr>
+<tr>
+<td align="left">Remove the skeleton it came with</td>
+<td align="left">By hand</td>
+<td align="left">Done as you save</td>
+</tr>
+<tr>
+<td align="left">Weights</td>
+<td align="left">Transfer them by hand</td>
+<td align="left">Copied as you save, unless every vertex already weighs on <code>Rig</code>'s bones</td>
+</tr>
+<tr>
+<td align="left">Vertex group names</td>
+<td align="left">Must match the character's numbers exactly, often per component</td>
+<td align="left">The bones' names, such as <code>upper arm.L</code>; any bone, even another part's</td>
+</tr>
+<tr>
+<td align="left">Four weights a vertex, normalized</td>
+<td align="left">By hand, or at export</td>
+<td align="left">Not needed</td>
+</tr>
+<tr>
+<td align="left">See it in game</td>
+<td align="left">
+<strong>Export Mod</strong>, then <strong>F10</strong>
+</td>
+<td align="left"><strong>Ctrl+S</strong></td>
+</tr>
+<tr>
+<td align="left">Switches and textures</td>
+<td align="left">Written into the ini</td>
+<td align="left">The mod's description (<a href="description.html">Write a description</a>)</td>
+</tr>
+</tbody>
+</table>
+<p>What stays yours, as in WWMI: making the weights right for hair, skirts and things that should not bend
+(<a href="#when-to-paint-weights-yourself">When to paint weights yourself</a>).</p>
+<p>To move a mod you made with WWMI-Tools to Overtone:</p>
+<ol>
+<li>Export it from WWMI-Tools as usual.</li>
+<li>Drop the exported folder on Timbre's window and press <strong>Import</strong>. Timbre makes it native.</li>
+<li>Press <strong>Blender</strong> on it. Each <code>Component N</code> is the <code>Part N</code> collection, and its objects are pieces named as your
+WWMI-Tools objects were.</li>
+<li>Keep editing it here from now on. WWMI-Tools does not open Overtone's files, and a WWMI export does not carry
+what you saved here.</li>
+</ol>
+<p>To bring over one mesh from a WWMI-Tools <code>.blend</code>, use <strong>File → Append</strong>, then follow
+<a href="#bring-in-a-mesh-from-elsewhere">Bring in a mesh from elsewhere</a>. Its numbered vertex groups are left alone, and it
+is weighted from the character.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="when-a-save-is-not-taken"><a class="anchor" href="#when-a-save-is-not-taken" aria-hidden="true">#</a>When a save is not taken</h2><a id="user-content-when-a-save-is-not-taken" class="anchor" aria-label="Permalink: When a save is not taken" href="#when-a-save-is-not-taken"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">The message says</th>
+<th align="left">Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>belongs to no part</code></td>
+<td align="left">Move the object into a <code>Part</code> collection (<strong>M</strong>).</td>
+</tr>
+<tr>
+<td align="left"><code>has no UV map</code></td>
+<td align="left">Give the object one (<strong>Object Data Properties → UV Maps</strong>, then unwrap it).</td>
+</tr>
+<tr>
+<td align="left"><code>has no weights</code></td>
+<td align="left">Weight-paint it on <code>Rig</code>'s bones.</td>
+</tr>
+<tr>
+<td align="left"><code>saved without normals and tangents</code></td>
+<td align="left">In Blender without Timbre, tick <strong>Tangents</strong> on export.</td>
+</tr>
+<tr>
+<td align="left"><code>saved without its vertex colours</code></td>
+<td align="left">In Blender without Timbre, tick <strong>Attributes</strong> on export.</td>
+</tr>
+<tr>
+<td align="left"><code>one part draws with at most 256</code></td>
+<td align="left">Weight the part to fewer of <code>Rig</code>'s bones.</td>
+</tr>
+<tr>
+<td align="left">
+<code>is not the character's</code>, or <code>weighted to … a part the mesh does not have</code>
+</td>
+<td align="left">Weight it only to <code>Rig</code>'s own bones. A bone you add is not taken.</td>
+</tr>
+<tr>
+<td align="left">A shape key the game does not have</td>
+<td align="left">Delete it. You can reshape the character's own shape keys, not add new ones.</td>
+</tr>
+<tr>
+<td align="left">A piece name that no longer resolves</td>
+<td align="left">Rename the piece back, or rename it in the description too.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="keys"><a class="anchor" href="#keys" aria-hidden="true">#</a>Keys</h2><a id="user-content-keys" class="anchor" aria-label="Permalink: Keys" href="#keys"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">To</th>
+<th align="left">Press</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Save, and see it in game</td>
+<td align="left"><strong>Ctrl+S</strong></td>
+</tr>
+<tr>
+<td align="left">Duplicate a piece</td>
+<td align="left"><strong>Shift+D</strong></td>
+</tr>
+<tr>
+<td align="left">Rename a piece</td>
+<td align="left"><strong>F2</strong></td>
+</tr>
+<tr>
+<td align="left">Move a piece to another part</td>
+<td align="left"><strong>M</strong></td>
+</tr>
+<tr>
+<td align="left">Open the sidebar, for <strong>Overtone → State</strong>
+</td>
+<td align="left"><strong>N</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="what-you-cant-do-yet"><a class="anchor" href="#what-you-cant-do-yet" aria-hidden="true">#</a>What you can't do yet</h2><a id="user-content-what-you-cant-do-yet" class="anchor" aria-label="Permalink: What you can't do yet" href="#what-you-cant-do-yet"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Add a part.</strong> A mod replaces parts the game draws. A new piece is drawn with its part's shader.</li>
+<li>
+<strong>Add bones.</strong> Weights go only to <code>Rig</code>'s bones, at most 256 bones a part. Hair and skirt bones keep the game's
+own physics.</li>
+<li>
+<strong>Add shape keys.</strong> Edit the character's own instead.</li>
+<li>
+<strong>Use Blender materials in game.</strong> Use the description (<a href="#give-a-piece-its-own-textures">Give a piece its own textures</a>).</li>
+<li>
+<strong>See glow maps, or an outline colour of the mod's own, in game.</strong> Neither is drawn yet.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="create-a-mod.html#3-make-a-piece-switchable">Make a piece switchable</a> and <a href="create-a-mod.html#4-swap-a-texture">swap a texture</a>.</li>
+<li>
+<a href="paint.html">Paint a mod's textures</a>: change the look on the character, in Timbre.</li>
+<li>
+<a href="description.html">Write a description</a>: every key a description takes.</li>
+<li>
+<a href="troubleshoot.html">When a mod does not draw right</a>.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="for-authors-blender-without-timbre-and-where-things-are"><a class="anchor" href="#for-authors-blender-without-timbre-and-where-things-are" aria-hidden="true">#</a>For authors: Blender without Timbre, and where things are</h2><a id="user-content-for-authors-blender-without-timbre-and-where-things-are" class="anchor" aria-label="Permalink: For authors: Blender without Timbre, and where things are" href="#for-authors-blender-without-timbre-and-where-things-are"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Use <strong>File → Import → glTF 2.0 (.glb/.gltf)</strong> and <strong>File → Export → glTF 2.0 (.glb/.gltf)</strong> on <code>model.glb</code>. On export, tick <strong>Data → Mesh → Tangents</strong> and <strong>Attributes</strong>,
+<strong>Data → Armature → Include All Bone Influences</strong>, and <strong>Include → Custom Properties</strong>. Without Tangents or
+Attributes the save is not taken, and the message names them. Without <strong>Include All Bone Influences</strong>, weights past
+four a vertex are lost without a warning. A new object also needs the custom property <code>overtone_part</code> set to its
+part's number, which Timbre's Blender sets from its collection.</p>
+<table>
+<thead>
+<tr>
+<th align="left">File</th>
+<th align="left">What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>model.glb</code></td>
+<td align="left">The model. A mod of several meshes has a <code>.glb</code> for each. Saving rewrites it.</td>
+</tr>
+<tr>
+<td align="left"><code>.overtone/blender/model.blend</code></td>
+<td align="left">Your Blender scene, kept between sessions. A mod opens in one Blender at a time.</td>
+</tr>
+<tr>
+<td align="left"><code>.overtone/built/</code></td>
+<td align="left">What the game draws, made from each save. Never edit it.</td>
+</tr>
+<tr>
+<td align="left"><code>.overtone/legacy/</code></td>
+<td align="left">The WWMI files a mod came with, which <strong>Re-derive</strong> builds from.</td>
+</tr>
+</tbody>
+</table></div>
+      <p class="applies">Applies to Timbre 26.1028.0 and Overtone 26.1028.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="create-a-mod.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>How to create a mod</strong></a><a class="card later" href="paint.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Paint a mod's textures</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#what-you-see-in-blender">What you see in Blender</a><a href="#open-a-mod-and-save-it">Open a mod and save it</a><a href="#add-a-piece">Add a piece</a><a href="#bring-in-a-mesh-from-elsewhere">Bring in a mesh from elsewhere</a><a href="#hide-or-remove-pieces">Hide or remove pieces</a><a href="#start-over">Start over</a><a href="#coming-from-wwmi-tools">Coming from WWMI-Tools</a><a href="#when-a-save-is-not-taken">When a save is not taken</a><a href="#keys">Keys</a><a href="#what-you-cant-do-yet">What you can't do yet</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1028.0 · Overtone 26.1028.0 · MCP server 26.1028.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to create a mod · Tonewright</title>
+<meta name="description" content="Dump a character from the game, reshape her in Blender, and give her switches and textures of your own.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/create-a-mod.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="How to create a mod · Tonewright">
+<meta property="og:description" content="Dump a character from the game, reshape her in Blender, and give her switches and textures of your own.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=95e0e089fb">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html" aria-current="page">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>How to create a mod</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html" aria-current="page">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">How to create a mod</h1>
+      <p class="lead rise" style="--i:2">Dump a character from the game, reshape her in Blender, and give her switches and textures of your own.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">How-to</span><span>8 min read</span><span>Timbre 26.1028.0 · Overtone 26.1028.0</span></p>
+      
+      <div class="prose"><p>Make a mod from the character as the game draws her, and see each change in game as you save. If you have made mods
+with WWMI-Tools:</p>
+<ul>
+<li>
+<strong>Nothing to extract.</strong> One key copies her from the screen into your library as a mod that already draws.</li>
+<li>
+<strong>No export.</strong> Saving in Blender is all it takes; there is no ini to write.</li>
+<li>
+<strong>Names, not numbers.</strong> Switches name your pieces in a short settings file instead of hashes and buffer ranges.</li>
+</ul>
+<p>An existing WWMI mod works the same way once Timbre has made it native (<a href="add-mods.html">Add your mods</a>): open it in
+Blender and skip step 1.</p>
+<p><strong>Words used here:</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Word</th>
+<th align="left">Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><em>dump</em></td>
+<td align="left">A copy of a character as the game draws her, saved as a mod you can edit</td>
+</tr>
+<tr>
+<td align="left"><em>part</em></td>
+<td align="left">One section of the character the game draws, such as hair, body or jacket: <code>Part &lt;n&gt;</code> in Blender and in Timbre's <strong>Model</strong>, <code>[part.&lt;n&gt;]</code> in the description</td>
+</tr>
+<tr>
+<td align="left"><em>piece</em></td>
+<td align="left">One object of yours in Blender, inside a part</td>
+</tr>
+<tr>
+<td align="left"><em>role</em></td>
+<td align="left">What a texture does: <code>diffuse</code> for the colours, <code>normalmap</code> for the bumps, and so on</td>
+</tr>
+<tr>
+<td align="left"><em>description</em></td>
+<td align="left">
+<code>overtone.mod.toml</code>, the mod's settings file (<a href="description.html">Write a description</a>)</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Overtone is installed and the game starts with it (<a href="getting-started.html">Getting started</a>).</li>
+<li>Blender is installed (<a href="edit-in-blender.html#before-you-start">Edit a mod in Blender</a>).</li>
+<li>The game shows each change a moment after you save it (<a href="play.html#see-your-changes-in-game">Play with Overtone</a>).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="1-dump-the-character"><a class="anchor" href="#1-dump-the-character" aria-hidden="true">#</a><span class="n">1</span>Dump the character</h2><a id="user-content-1-dump-the-character" class="anchor" aria-label="Permalink: 1. Dump the character" href="#1-dump-the-character"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>In game, bring the character close to the camera. A dump keeps the detail the game is drawing, and from far away
+that is a simpler model.</li>
+<li>For a clean base, turn off every mod of that character, or press <strong>F8</strong> to turn off all mods.</li>
+<li>Dump her one of three ways:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">How</th>
+<th align="left">Use it when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>F11</strong></td>
+<td align="left">Quickest. Dumps the character Overtone knows with the largest model on screen, usually the one you play.</td>
+</tr>
+<tr>
+<td align="left">
+<strong>F12</strong> (record)</td>
+<td align="left">You will weight-paint, add pieces that bend with her, or need accurate bones. See below.</td>
+</tr>
+<tr>
+<td align="left">Overlay <strong>Tools → Picker</strong>
+</td>
+<td align="left">You want a particular character, or one Overtone does not know: it asks <strong>Who is this?</strong> Press <strong>Dump</strong> or <strong>Record</strong> on her row.</td>
+</tr>
+</tbody>
+</table>
+<p>Timbre's <strong>In game</strong> page also has <strong>Dump</strong>, and <strong>Who is this?</strong> for a character Overtone does not know.</p>
+<p>A message says <strong>Dumping</strong> or <strong>Recording</strong> and her name. <strong>No known character on screen</strong> means Overtone recognised
+nobody: use the picker. <strong>Already capturing</strong> means a dump is still running. In the picker, her row reads
+<strong>Watching</strong> (or <strong>Recording</strong>), then <strong>Copying</strong>, then <strong>Dumped:</strong> and the folder, or <strong>Failed:</strong> and why. A dump
+takes a few seconds, longer while the game is still loading her textures.</p>
+<div class="markdown-heading"><h3 class="heading-element" id="record-better-bones"><a class="anchor" href="#record-better-bones" aria-hidden="true">#</a>Record: better bones</h3><a id="user-content-record-better-bones" class="anchor" aria-label="Permalink: Record: better bones" href="#record-better-bones"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Overtone works out the character's skeleton from how her bones move. Standing still, many bones never move, so
+their places are guesses. A recording watches her move for up to 3,600 frames, a minute at 60 FPS.</p>
+<ol>
+<li>
+<p>Press <strong>F12</strong>, or <strong>Record</strong> in the picker.</p>
+</li>
+<li>
+<p>Move her: run, turn, jump, attack, crouch. A line at the top of the screen shows the time, the poses kept and how
+many bones have moved so far:</p>
+<pre lang="text"><code>REC 0:24    60 poses    151 of 180 bones moved
+</code></pre>
+<p><code>no pose yet</code> means none of her parts' bones has been read yet: keep her on screen.</p>
+</li>
+<li>
+<p>Stop when most bones have moved: press <strong>F12</strong> again, or open the overlay and press <strong>Stop</strong> on that line. It
+also stops on its own at 3,600 frames, or when its memory budget is full.</p>
+</li>
+</ol>
+<p>Each later dump or recording of her also improves her bones: Overtone reads up to eight of your earlier ones of her
+with the same parts.</p>
+<div class="markdown-heading"><h3 class="heading-element" id="where-the-dump-goes"><a class="anchor" href="#where-the-dump-goes" aria-hidden="true">#</a>Where the dump goes</h3><a id="user-content-where-the-dump-goes" class="anchor" aria-label="Permalink: Where the dump goes" href="#where-the-dump-goes"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>It lands in her folder in your library (<a href="add-mods.html#where-things-are">Where things are</a>), or in <code>character/others/</code>
+for anything Overtone cannot name as a character. A new dump starts off: open its tile in Timbre and turn on
+<strong>Wear</strong>. Untouched, it looks exactly like what was on screen.</p>
+<table>
+<thead>
+<tr>
+<th align="left">What was on screen</th>
+<th align="left">Its name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">No mod on</td>
+<td align="left">
+<code>&lt;Character&gt; - Vanilla</code>; her next costume <code>&lt;Character&gt; (costume 2) - Vanilla</code>
+</td>
+</tr>
+<tr>
+<td align="left">A look the game, your mods or the picker's <strong>Which figure?</strong> names (<strong>Overworld</strong>, <strong>Menu</strong>, <strong>Ultimate</strong>, <strong>Prop</strong>)</td>
+<td align="left">
+<code>&lt;Character&gt; - &lt;look&gt; - Vanilla</code>, such as <code>Carlotta - Overworld - Vanilla</code>
+</td>
+</tr>
+<tr>
+<td align="left">A mod on</td>
+<td align="left">
+<code>&lt;Character&gt; - &lt;mod&gt; - Snapshot</code>; several mods joined by <code>+</code>
+</td>
+</tr>
+<tr>
+<td align="left">Her far-away model, where Overtone can tell</td>
+<td align="left">
+<code>&lt;Character&gt; - Vanilla (lower detail)</code>. Dump her again closer, or press <strong>Dump full detail</strong> on her row in the picker.</td>
+</tr>
+<tr>
+<td align="left">A character Overtone cannot name</td>
+<td align="left">
+<code>Unknown-&lt;hex&gt; - Vanilla</code>. Name her with <strong>Who is this?</strong> in the picker, and dump her again.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A new dump of the same look or mod replaces the last one, folder and all.</strong> It stays on if that one was on. These
+are kept:</p>
+<ul>
+<li>A dump you opened in Blender, painted in Timbre's <strong>Paint</strong> or tuned in its <strong>Model</strong>: it moves aside, its name
+ending <code>- Edited</code> instead of <code>- Vanilla</code> or <code>- Snapshot</code>.</li>
+<li>A dump you renamed so its name no longer ends in <code>- Vanilla</code> or <code>- Snapshot</code>, or moved out of its character folder.</li>
+</ul>
+<p>Changes to its description or textures alone do not keep it. Rename the folder before you edit it there.</p>
+<p>Inside the folder:</p>
+<table>
+<thead>
+<tr>
+<th align="left">File</th>
+<th align="left">What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>overtone.mod.toml</code></td>
+<td align="left">The description: yours to edit</td>
+</tr>
+<tr>
+<td align="left"><code>model.glb</code></td>
+<td align="left">The geometry, opened in Blender. A character drawn as several models has a <code>.glb</code> for each.</td>
+</tr>
+<tr>
+<td align="left"><code>Textures/</code></td>
+<td align="left">The textures she was drawn with, the game's or a Snapshot's mod's, <code>c&lt;n&gt;-&lt;role&gt;.dds</code>. A texture several parts share is one file, named for the first of them; a second model's are in <code>Textures/main 2/</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>Textures/unnamed/</code></td>
+<td align="left">Textures the game bound that no role names: kept, used nowhere</td>
+</tr>
+<tr>
+<td align="left"><code>.overtone/</code></td>
+<td align="left">Overtone's own files: never edit them</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="2-edit-it-in-blender"><a class="anchor" href="#2-edit-it-in-blender" aria-hidden="true">#</a><span class="n">2</span>Edit it in Blender</h2><a id="user-content-2-edit-it-in-blender" class="anchor" aria-label="Permalink: 2. Edit it in Blender" href="#2-edit-it-in-blender"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>In Timbre, open the mod and press <strong>Blender</strong>. Each part is a collection named by its number, such as <code>Part 3</code> or <code>Face · Part 2</code>; the skeleton is <code>Rig</code>.</li>
+<li>Reshape, add or delete vertices, weight-paint, or duplicate a piece (<strong>Shift+D</strong>) to add one.</li>
+<li>Press <strong>Ctrl+S</strong>. Saving is exporting: Blender's status bar says whether the game took it, and the game shows it a
+moment later.</li>
+</ol>
+<p>What each message means, adding pieces, bringing in meshes from elsewhere and hiding pieces are in
+<a href="edit-in-blender.html">Edit a mod in Blender</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="3-make-a-piece-switchable"><a class="anchor" href="#3-make-a-piece-switchable" aria-hidden="true">#</a><span class="n">3</span>Make a piece switchable</h2><a id="user-content-3-make-a-piece-switchable" class="anchor" aria-label="Permalink: 3. Make a piece switchable" href="#3-make-a-piece-switchable"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>
+<p>In Blender, name the object, for example <code>Straw hat</code>, and save.</p>
+</li>
+<li>
+<p>In Timbre, open the mod's <strong>Inside</strong> and click a row: its description opens beside it. Add:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">option</span>.<span class="pl-en">Hat</span>]
+<span class="pl-smi">key</span>     = <span class="pl-s"><span class="pl-pds">"</span>5<span class="pl-pds">"</span></span>
+<span class="pl-smi">default</span> = <span class="pl-s"><span class="pl-pds">"</span>off<span class="pl-pds">"</span></span>
+<span class="pl-smi">on.show</span> = [<span class="pl-s"><span class="pl-pds">"</span>Straw hat<span class="pl-pds">"</span></span>]</pre></div>
+</li>
+<li>
+<p>Press <strong>Save</strong>. In game, <strong>5</strong> puts the hat on and takes it off while the mod is on screen. In the overlay's
+<strong>Wardrobe</strong>, the mod's row now counts one switch: open it to see <code>Hat</code>.</p>
+</li>
+</ol>
+<p>A piece the description never mentions is always drawn. For more than on and off, give the switch <code>choices</code>
+(<a href="description.html#switches-optionname">Switches</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element" id="4-swap-a-texture"><a class="anchor" href="#4-swap-a-texture" aria-hidden="true">#</a><span class="n">4</span>Swap a texture</h2><a id="user-content-4-swap-a-texture" class="anchor" aria-label="Permalink: 4. Swap a texture" href="#4-swap-a-texture"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>To change how a texture looks, paint it in Timbre (<a href="paint.html">Paint a mod's textures</a>). To give a part another file,
+edit the description. The dump's description places each texture by part and role:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">part</span>.<span class="pl-en">3</span>]
+<span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/c3-diffuse.dds<span class="pl-pds">"</span></span></pre></div>
+<p><code>3</code> is the part's number (<code>Part 3</code> in Blender). Point the role at a new file, or overwrite the file: check first
+which parts name it, as a shared texture changes on every one of them. A role also takes <code>"game"</code>, the game's own
+texture, or a colour; every role and value is in <a href="description.html#parts-and-textures-componentn">Parts and textures</a>.
+In a <code>- Vanilla</code> dump, delete the line of a texture you never changed: the part wears the game's own, the same
+picture, with one fewer file to load. Before you change a dump's description or textures without opening it in
+Blender, rename its folder, or the next dump of her replaces it, edits and all.</p>
+<p>To switch textures with a key, let a choice wear them:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">option</span>.<span class="pl-en">Colour</span>]
+<span class="pl-smi">choices</span> = [<span class="pl-s"><span class="pl-pds">"</span>Black<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Blue<span class="pl-pds">"</span></span>]
+<span class="pl-smi">key</span>     = <span class="pl-s"><span class="pl-pds">"</span>6<span class="pl-pds">"</span></span>
+<span class="pl-smi">Blue.wear.3</span> = { <span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Jacket_Blue.dds<span class="pl-pds">"</span></span> }</pre></div>
+<p>To texture one piece rather than a whole part, name a material, a set of roles, and give it to the piece:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">metal</span>]
+<span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Metal_D.dds<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">piece</span>.<span class="pl-en">Buttons</span>]
+<span class="pl-smi">material</span> = <span class="pl-s"><span class="pl-pds">"</span>metal<span class="pl-pds">"</span></span></pre></div>
+<p>A texture you change under <code>[part.3]</code> shows only where no piece's <code>material</code>, and no <code>wear</code> table or rule,
+covers it
+(<a href="description.html#which-texture-wins">Which texture wins</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element" id="5-check-the-result"><a class="anchor" href="#5-check-the-result" aria-hidden="true">#</a><span class="n">5</span>Check the result</h2><a id="user-content-5-check-the-result" class="anchor" aria-label="Permalink: 5. Check the result" href="#5-check-the-result"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Where</th>
+<th align="left">What it tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Blender's status bar</td>
+<td align="left">Whether each save was taken. Timbre also shows <strong>Last Blender save not applied:</strong> and why.</td>
+</tr>
+<tr>
+<td align="left">Timbre's <strong>Inside</strong>
+</td>
+<td align="left">Problems marked on their line as you type. A file that does not read is not saved, and Timbre says why.</td>
+</tr>
+<tr>
+<td align="left"><code>overtone.log</code></td>
+<td align="left">Each line of a description the game passed over, and why one did not read (<a href="troubleshoot.html#a-change-to-a-description-does-not-show">When a mod does not draw right</a>).</td>
+</tr>
+<tr>
+<td align="left">Timbre's <strong>Model</strong>
+</td>
+<td align="left">The mod's geometry; its <strong>Variants</strong> set the switches to see what each changes.</td>
+</tr>
+<tr>
+<td align="left">The overlay's <strong>Wardrobe</strong>
+</td>
+<td align="left">The mod's switches, under its row.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="what-you-cant-do-yet"><a class="anchor" href="#what-you-cant-do-yet" aria-hidden="true">#</a>What you can't do yet</h2><a id="user-content-what-you-cant-do-yet" class="anchor" aria-label="Permalink: What you can't do yet" href="#what-you-cant-do-yet"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Change what Blender cannot.</strong> New parts, bones or shape keys (<a href="edit-in-blender.html#what-you-cant-do-yet">Edit a mod in Blender</a>).</li>
+<li>
+<strong>Dump an effect, or anything that does not bend with a skeleton.</strong> A character or look is dumped only while the
+game draws it.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="edit-in-blender.html">Edit a mod in Blender</a>: add pieces and bring in meshes from other mods.</li>
+<li>
+<a href="paint.html">Paint a mod's textures</a>: tattoos, freckles and recolours, painted on the character.</li>
+<li>
+<a href="description.html">Write a description</a>: every key a description takes.</li>
+<li>
+<a href="troubleshoot.html">When a mod does not draw right</a>.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1028.0 and Overtone 26.1028.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="mac-and-linux.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Timbre on a Mac or Linux</strong></a><a class="card later" href="edit-in-blender.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Edit a mod in Blender</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#1-dump-the-character">Dump the character</a><a href="#2-edit-it-in-blender">Edit it in Blender</a><a href="#3-make-a-piece-switchable">Make a piece switchable</a><a href="#4-swap-a-texture">Swap a texture</a><a href="#5-check-the-result">Check the result</a><a href="#what-you-cant-do-yet">What you can't do yet</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1028.0 · Overtone 26.1028.0 · MCP server 26.1028.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>

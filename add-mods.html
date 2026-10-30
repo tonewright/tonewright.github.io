@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Add your mods · Tonewright</title>
+<meta name="description" content="Add WWMI mods through Timbre: from GameBanana, from an archive or folder, copied in by hand, or a whole XXMI library, and keep them up to date.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/add-mods.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Add your mods · Tonewright">
+<meta property="og:description" content="Add WWMI mods through Timbre: from GameBanana, from an archive or folder, copied in by hand, or a whole XXMI library, and keep them up to date.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=95e0e089fb">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html" aria-current="page">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Add your mods</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html" aria-current="page">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Play with mods</span></p>
+      <h1 class="rise" style="--i:1">Add your mods</h1>
+      <p class="lead rise" style="--i:2">Add WWMI mods through Timbre: from GameBanana, from an archive or folder, copied in by hand, or a whole XXMI library, and keep them up to date.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">How-to</span><span>7 min read</span><span>Timbre 26.1028.0 · Overtone 26.1028.0</span></p>
+      
+      <div class="prose"><p>Timbre takes WWMI mods as they are published, from a link, an archive or a whole XXMI library:</p>
+<ul>
+<li>
+<strong>Filed for you.</strong> Each mod goes under the character its files change, whatever the archive is called.</li>
+<li>
+<strong>Made native as it lands.</strong> Timbre rebuilds each mod in Overtone's own format, so it opens in Blender and survives
+game updates that renumber bones (<a href="#what-native-means">what that changes</a>). You do nothing extra.</li>
+<li>
+<strong>Updates in one press.</strong> Timbre notices a newer file on the mod's page and keeps your changes when it updates.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Your mods folder is set (<a href="getting-started.html#2-choose-your-mods-folder">Getting started</a>).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="from-gamebanana"><a class="anchor" href="#from-gamebanana" aria-hidden="true">#</a>From GameBanana</h2><a id="user-content-from-gamebanana" class="anchor" aria-label="Permalink: From GameBanana" href="#from-gamebanana"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Press <strong>Add a mod</strong>.</li>
+<li>Copy the mod's page link and press <strong>Ctrl+V</strong> in Timbre's window (<strong>⌘V</strong> on a Mac; there you can also drag the
+link from your browser onto the window). If the page has several files, pick one.</li>
+<li>Press <strong>Download</strong>. Where the mod is already in your library, the button reads <strong>Update</strong>: it opens the update,
+which picks the file that replaces your copy whole, says what any other file would leave out, and offers to install
+one beside your copy instead.</li>
+</ol>
+<p>A download waits in <strong>Downloads</strong> on the left bar until it is in.</p>
+<p><strong>Browse</strong> on the left bar shows GameBanana inside Timbre: the week's most liked mods, what is new for each of your
+characters, and your mods the site has a newer version of. Press a mod to open its page. To search the site, press
+<strong>Ctrl+K</strong> (<strong>⌘K</strong> on a Mac), or just start typing on Browse.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="from-an-archive-or-a-folder"><a class="anchor" href="#from-an-archive-or-a-folder" aria-hidden="true">#</a>From an archive or a folder</h2><a id="user-content-from-an-archive-or-a-folder" class="anchor" aria-label="Permalink: From an archive or a folder" href="#from-an-archive-or-a-folder"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>For a <code>.zip</code>, <code>.rar</code> or <code>.7z</code> you downloaded, or a mod folder you already have.</p>
+<ol>
+<li>Drop it on Timbre's window. Or press <strong>Add a mod</strong>: the window dims and says <strong>Drop a mod anywhere</strong>. Drop it,
+or press <strong>Choose files</strong> to pick archives. A folder is added by dropping it.</li>
+<li>If the archive has a password, Timbre asks for it.</li>
+<li>Untick any files you do not want, such as a readme.</li>
+<li>Press <strong>Import</strong>. The window closes, each mod shows in <strong>Downloads</strong> as it is added, and it appears in your
+library once it is in.</li>
+</ol>
+<p>A mod you did not mean to add is taken out again from <strong>History</strong> with <strong>Take back</strong>.</p>
+<p>Your archive or folder is left as it was: Timbre copies the mod into the library. A folder holding mods for several
+characters becomes one mod per character, each filed under its own. If the folder also holds files of its own, such
+as a readme, untick them, or it stays one folder.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="choices-when-you-add-a-mod"><a class="anchor" href="#choices-when-you-add-a-mod" aria-hidden="true">#</a>Choices when you add a mod</h2><a id="user-content-choices-when-you-add-a-mod" class="anchor" aria-label="Permalink: Choices when you add a mod" href="#choices-when-you-add-a-mod"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Choice</th>
+<th align="left">Default</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Wear after adding</strong></td>
+<td align="left">off, then what you chose last</td>
+<td align="left">Wears the mod as it lands. Off, turn on <strong>Wear</strong> on its page later. <strong>Settings → Library → Wear after adding</strong> is the same choice.</td>
+</tr>
+<tr>
+<td align="left"><strong>Name</strong></td>
+<td align="left">What the mod is called, without its character</td>
+<td align="left">The folder becomes <code>&lt;Character&gt; - &lt;Name&gt;</code>, such as <code>Chisa - Radiant</code>; Timbre shows <code>Radiant</code> on Chisa's page.</td>
+</tr>
+<tr>
+<td align="left"><strong>Character</strong></td>
+<td align="left">The character the mod's files change</td>
+<td align="left">Read from its files, never from the archive's name; <strong>From the mod</strong> where its files name no one character. Pick one only to file it elsewhere.</td>
+</tr>
+<tr>
+<td align="left"><strong>Edit author, version and link</strong></td>
+<td align="left">What the mod's files or its page say</td>
+<td align="left">Change one only to correct it.</td>
+</tr>
+</tbody>
+</table>
+<p>A mod whose files name no character goes under its GameBanana page's character, or the character whose page you
+dropped it on, or under <code>character/others</code> when there is neither.</p>
+<p>Dropped on a mod's page, Timbre asks what the archive is, in the tabs over its name:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Dropped</th>
+<th align="left">Choices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">One archive</td>
+<td align="left">
+<strong>Update</strong> (the default) replaces its files, and <strong>Take back</strong> in History puts the old ones back for 30 days; <strong>Alternate</strong> shares the mod's tile, one worn at a time; <strong>Separate</strong> gets a tile of its own.</td>
+</tr>
+<tr>
+<td align="left">Several archives</td>
+<td align="left">
+<strong>Separate</strong> (the default) gives each a tile of its own; <strong>Alternate</strong> groups them all with the mod.</td>
+</tr>
+</tbody>
+</table>
+<p>A line above the buttons says what you should know first: amber where you can go ahead, such as files the update
+lacks, red where the archive cannot be added, such as a damaged one.</p>
+<p>To keep the archives you download, choose a folder under <strong>Settings → Folders → Downloaded archives</strong>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="update-a-mod"><a class="anchor" href="#update-a-mod" aria-hidden="true">#</a>Update a mod</h2><a id="user-content-update-a-mod" class="anchor" aria-label="Permalink: Update a mod" href="#update-a-mod"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A mod whose GameBanana page has a newer file says <strong>New version available</strong> on its page: press <strong>Update</strong>. To ask
+every mod's page at once, press <strong>Ctrl+K</strong> (<strong>⌘K</strong>) and pick <strong>Check for updates</strong>. Timbre imports the new version, keeps your
+changes, and makes it native again.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="copy-a-folder-in-by-hand"><a class="anchor" href="#copy-a-folder-in-by-hand" aria-hidden="true">#</a>Copy a folder in by hand</h2><a id="user-content-copy-a-folder-in-by-hand" class="anchor" aria-label="Permalink: Copy a folder in by hand" href="#copy-a-folder-in-by-hand"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Close the game.</li>
+<li>Copy the mod's folder anywhere in your library.</li>
+<li>Start Timbre, or restart it if it was open. It describes the mod and makes it native.</li>
+<li>Turn the mod on in Timbre.</li>
+</ol>
+<p>The first time Timbre finds folders outside their character folders, it asks whether to organize them by
+character:</p>
+<ul>
+<li>
+<strong>Organize</strong> moves them, now and from then on.</li>
+<li>
+<strong>Keep as it is</strong> leaves every folder where it is.</li>
+<li>
+<strong>Not now</strong> asks again at the next start.</li>
+</ul>
+<p>Mods draw the same either way. <strong>Settings → Library → Sort into character folders</strong> changes the answer later.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="weapon-mods"><a class="anchor" href="#weapon-mods" aria-hidden="true">#</a>Weapon mods</h2><a id="user-content-weapon-mods" class="anchor" aria-label="Permalink: Weapon mods" href="#weapon-mods"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A weapon mod changes one weapon, whoever holds it. Timbre files one you add alone under <code>weapon/&lt;weapon&gt;/</code>. One that
+came inside a character's mod stays in that mod's folder and is still a mod of its own. Turning the outfit on turns
+its weapon on too, and turning the outfit off turns it off. Turn the weapon off alone to wear the outfit without it.</p>
+<p>Once your library holds a weapon mod, the top of the library shows <strong>Characters</strong> and <strong>Weapons</strong>. Press <strong>Weapons</strong>
+to see every weapon with the number of mods on it.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="bring-a-whole-xxmi-library"><a class="anchor" href="#bring-a-whole-xxmi-library" aria-hidden="true">#</a>Bring a whole XXMI library</h2><a id="user-content-bring-a-whole-xxmi-library" class="anchor" aria-label="Permalink: Bring a whole XXMI library" href="#bring-a-whole-xxmi-library"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Native mods no longer load in XXMI, so give Timbre a copy and leave XXMI's folder alone.</p>
+<ol>
+<li>Under <strong>Settings → Folders</strong>, press <strong>Use</strong> beside <strong>Suggested mods folder</strong>: it makes an empty folder near the
+game and sets it as <strong>Mods</strong>. The suggestion shows once <strong>Game</strong> is set and while <strong>Mods</strong> is empty; otherwise
+press <strong>Choose</strong> beside <strong>Mods</strong> and pick an empty folder of your own.</li>
+<li>Close the game, and copy everything inside your XXMI <code>Mods</code> folder into it.</li>
+<li>Start Timbre again. It describes the mods, makes them native and asks whether to organize them by character, as
+for <a href="#copy-a-folder-in-by-hand">a folder copied in by hand</a>.</li>
+<li>Open <strong>Health</strong>. Anything still under <strong>New mods</strong>: press <strong>Describe</strong>; under <strong>Not native yet</strong>: press
+<strong>Make native</strong>.</li>
+</ol>
+<p>Mods whose folder name starts with <code>DISABLED</code> stay off; nothing is renamed. To bring only some mods, import them one
+at a time as above.</p>
+<p>If you set Timbre's <strong>Mods</strong> to XXMI's own <code>Mods</code> folder instead, Overtone still draws those mods but never makes
+them native, so they cannot be edited in Blender.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="what-native-means"><a class="anchor" href="#what-native-means" aria-hidden="true">#</a>What native means</h2><a id="user-content-what-native-means" class="anchor" aria-label="Permalink: What native means" href="#what-native-means"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A native mod is rebuilt once from its own files, instead of being read from its ini files every time it loads.</p>
+<ul>
+<li>It opens in Blender, and saving there changes it in game (<a href="edit-in-blender.html">Edit a mod in Blender</a>).</li>
+<li>It keeps working when a game update renumbers the character's bones. An update that changes her model still needs
+the author's new version.</li>
+<li>Nothing is deleted: the ini files, and the <code>.buf</code> files they name, move into the mod's <code>.overtone/legacy/</code> folder.
+Textures stay where they are.</li>
+<li>It no longer loads in XXMI.</li>
+</ul>
+<p>A mod Timbre cannot make native is listed under <strong>Health → Couldn't be made native</strong>, with the reason. It still
+draws as before. <strong>Try again</strong> appears once a newer Timbre can do something different.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="where-things-are"><a class="anchor" href="#where-things-are" aria-hidden="true">#</a>Where things are</h2><a id="user-content-where-things-are" class="anchor" aria-label="Permalink: Where things are" href="#where-things-are"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Where</th>
+<th align="left">What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>character/&lt;character&gt;/</code></td>
+<td align="left">That character's mods. Timbre's library shows one page per character.</td>
+</tr>
+<tr>
+<td align="left"><code>weapon/&lt;weapon&gt;/</code></td>
+<td align="left">That weapon's mods. Timbre's library shows them under <strong>Weapons</strong>.</td>
+</tr>
+<tr>
+<td align="left"><code>character/others/</code></td>
+<td align="left">Mods whose character is not known yet.</td>
+</tr>
+<tr>
+<td align="left"><strong>Health → Tidy up</strong></td>
+<td align="left">
+<strong>No character</strong>, <strong>Folder names</strong>, <strong>Downloaded twice</strong>, <strong>Two folders, one mod</strong> and <strong>Leftover files</strong>.</td>
+</tr>
+</tbody>
+</table>
+<p>A mod shows on its character's page even if you keep its folder somewhere else. To file mods under another
+character, select them with the round check on each tile and press <strong>Move to</strong>.</p>
+<p>Timbre names a mod's folder after its character and the mod, such as <code>Chisa - Radiant</code>, and renames it when you
+rename the mod or move it to another character. <strong>Folder names</strong> lists the folders named another way, with the name
+each would get, and renames them all at once.</p>
+<p>A running game shows a new mod a moment after Timbre adds it (<a href="play.html#see-your-changes-in-game">Play with Overtone</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="play.html">Play with Overtone</a>: start the game with your mods.</li>
+<li>
+<a href="outfits.html">Mix outfits and loadouts</a>: several mods on one character.</li>
+<li>
+<a href="share-a-mod.html">Share a mod</a>: send a mod to a friend, or add one you are sent.</li>
+<li>
+<a href="edit-in-blender.html">Edit a mod in Blender</a>: change a native mod.</li>
+<li>
+<a href="troubleshoot.html">When a mod does not draw right</a>.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1028.0 and Overtone 26.1028.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="play.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Play with Overtone</strong></a><a class="card later" href="outfits.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Mix outfits and loadouts</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#from-gamebanana">From GameBanana</a><a href="#from-an-archive-or-a-folder">From an archive or a folder</a><a href="#choices-when-you-add-a-mod">Choices when you add a mod</a><a href="#update-a-mod">Update a mod</a><a href="#copy-a-folder-in-by-hand">Copy a folder in by hand</a><a href="#weapon-mods">Weapon mods</a><a href="#bring-a-whole-xxmi-library">Bring a whole XXMI library</a><a href="#what-native-means">What native means</a><a href="#where-things-are">Where things are</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1028.0 · Overtone 26.1028.0 · MCP server 26.1028.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>

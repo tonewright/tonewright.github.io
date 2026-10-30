@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When a mod does not draw right · Tonewright</title>
+<meta name="description" content="What to check, by symptom, when a mod does not show, looks wrong, ignores its key or the game crashes, and how to report what is left.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/troubleshoot.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="When a mod does not draw right · Tonewright">
+<meta property="og:description" content="What to check, by symptom, when a mod does not show, looks wrong, ignores its key or the game crashes, and how to report what is left.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=95e0e089fb">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><p class="title">When something's wrong</p><a href="troubleshoot.html" aria-current="page">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>When a mod does not draw right</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="troubleshoot.html" aria-current="page">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>When something's wrong</span></p>
+      <h1 class="rise" style="--i:1">When a mod does not draw right</h1>
+      <p class="lead rise" style="--i:2">What to check, by symptom, when a mod does not show, looks wrong, ignores its key or the game crashes, and how to report what is left.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">Explanation</span><span>11 min read</span><span>Timbre 26.1028.0 · Overtone 26.1028.0</span></p>
+      
+      <div class="prose"><p>Most problems end at the first or second check of their symptom. Find yours, and work down its list:</p>
+<table>
+<thead>
+<tr>
+<th align="left">You see</th>
+<th align="left">Go to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">The overlay does not open in game</td>
+<td align="left"><a href="#the-overlay-does-not-open">The overlay does not open</a></td>
+</tr>
+<tr>
+<td align="left">No trace of the mod</td>
+<td align="left"><a href="#the-mod-does-not-show-at-all">The mod does not show at all</a></td>
+</tr>
+<tr>
+<td align="left">The mod broke after a game update</td>
+<td align="left"><a href="#it-worked-before-a-game-update">It worked before a game update</a></td>
+</tr>
+<tr>
+<td align="left">Some parts are the game's own</td>
+<td align="left"><a href="#part-of-the-mod-shows-as-the-games-own">Part of the mod shows as the game's own</a></td>
+</tr>
+<tr>
+<td align="left">Wrong colours, plain or missing textures</td>
+<td align="left"><a href="#wrong-or-missing-textures">Wrong or missing textures</a></td>
+</tr>
+<tr>
+<td align="left">A saved change does not show</td>
+<td align="left"><a href="#a-change-to-a-description-does-not-show">A change to a description does not show</a></td>
+</tr>
+<tr>
+<td align="left">Flicker, stretching, parts vanishing</td>
+<td align="left"><a href="#parts-flicker-stretch-or-vanish">Parts flicker, stretch or vanish</a></td>
+</tr>
+<tr>
+<td align="left">A mod's key does nothing</td>
+<td align="left"><a href="#a-key-does-nothing">A key does nothing</a></td>
+</tr>
+<tr>
+<td align="left">A crash or a hang</td>
+<td align="left"><a href="#the-game-crashes-or-hangs">The game crashes or hangs</a></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="where-to-look"><a class="anchor" href="#where-to-look" aria-hidden="true">#</a>Where to look</h2><a id="user-content-where-to-look" class="anchor" aria-label="Permalink: Where to look" href="#where-to-look"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Where</th>
+<th align="left">What it tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Timbre's <strong>Health</strong>
+</td>
+<td align="left">Each mod Timbre could not describe, make native or draw, under its cause, such as <strong>Files missing</strong> or <strong>Made by a newer Overtone</strong>, with what to do.</td>
+</tr>
+<tr>
+<td align="left">The overlay's <strong>Wardrobe</strong> (<strong>Home</strong> in game)</td>
+<td align="left">Every mod Overtone loaded, by character, on or off. A green dot means it is on screen.</td>
+</tr>
+<tr>
+<td align="left">The overlay's <strong>Tools → Report</strong>
+</td>
+<td align="left">Whether mods are drawing at all, from a few seconds after the game starts.</td>
+</tr>
+<tr>
+<td align="left">Timbre's <strong>In game</strong> panel (press <strong>In game</strong> or <strong>On screen</strong>, where <strong>Play</strong> is, while the game runs)</td>
+<td align="left">What is on screen, and each enabled mod that is <strong>Not on screen</strong>, <strong>Drawn as the game's</strong> or <strong>Passed over for</strong> another.</td>
+</tr>
+<tr>
+<td align="left">Timbre's <strong>Settings → Help</strong>
+</td>
+<td align="left">How the last time you played went: <strong>The last run went fine</strong>, <strong>The last run had complaints</strong> or <strong>Something failed last time you played</strong>.</td>
+</tr>
+<tr>
+<td align="left">The log</td>
+<td align="left">
+<code>%LOCALAPPDATA%\Overtone\wuwa\overtone.log</code>; paste the path into Explorer. Each game start adds a run beginning <code>=== run started</code>. Search it for the mod's name: no mention means Overtone never loaded it.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Is it the mod or Overtone?</strong> If you have the XXMI Launcher, install the mod's archive into XXMI's own <code>Mods</code>
+folder (not your Overtone library) and look at it there. A mod that looks wrong in XXMI too is broken: tell its
+author.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="the-overlay-does-not-open"><a class="anchor" href="#the-overlay-does-not-open" aria-hidden="true">#</a>The overlay does not open</h2><a id="user-content-the-overlay-does-not-open" class="anchor" aria-label="Permalink: The overlay does not open" href="#the-overlay-does-not-open"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The overlay's key (<strong>Home</strong> unless you changed it) opens nothing, so Overtone is not running.</p>
+<ol>
+<li>The game must run on DirectX 12. If the log's last run says <code>the game was started on DirectX 11</code>, set the game's
+launcher, or the XXMI Launcher, to DirectX 12.</li>
+<li>In Timbre, <strong>Settings → Play</strong> must say <strong>Overtone is installed</strong>. If not, press <strong>Play</strong> once.</li>
+<li>If the log's last run holds <code>a swap chain was made on a device that is not DirectX 12</code>, the game drew with
+DirectX 11 even though its launcher says DirectX 12. Start it with <strong>Play</strong> in Timbre instead, which asks for
+DirectX 12, and not from the game's own launcher.</li>
+<li>If the log's last run holds <code>no DirectX 12 device had been made through Overtone</code> and a minute of play passed, the
+game may have loaded Overtone's file but draw through another one. In Timbre, open <strong>Settings → Help</strong>, press
+<strong>Save</strong> beside <strong>Save diagnostics</strong>, and send the file to whoever helps you: it names the program and each
+DirectX file it loaded.</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="the-mod-does-not-show-at-all"><a class="anchor" href="#the-mod-does-not-show-at-all" aria-hidden="true">#</a>The mod does not show at all</h2><a id="user-content-the-mod-does-not-show-at-all" class="anchor" aria-label="Permalink: The mod does not show at all" href="#the-mod-does-not-show-at-all"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>
+<strong>Mods on?</strong> <strong>F8</strong> turns every mod off and on.</li>
+<li>
+<strong>Ray tracing off?</strong> With ray tracing on, reflections, ray-traced shadows and far-away characters show the
+game's outfit. If no mod draws at all, <strong>Tools → Report</strong> says <strong>Ray tracing is on</strong>: turn ray tracing off in the
+game's graphics settings, and start the game again.</li>
+<li>
+<strong>Is the mod in the Wardrobe?</strong>
+<ul>
+<li>It says <strong>No described mods in the library</strong>: Timbre describes a mod when it adds it. Add your mods through
+Timbre (<a href="add-mods.html">Add your mods</a>), or open <strong>Health</strong> and press <strong>Describe</strong> under <strong>New mods</strong>.</li>
+<li>Listed but off: turn it on with its switch, there or in Timbre.</li>
+<li>Not listed: Timbre has not described it yet. Open <strong>Health</strong> and press <strong>Describe</strong> under <strong>New mods</strong>; the
+game shows it a moment later, or at <strong>F10</strong>.</li>
+<li>
+<strong>Health</strong> lists it under <strong>Files missing</strong> or <strong>Can't read its files</strong>: install it again through Timbre. Under
+<strong>Made by a newer Overtone</strong>, a newer Timbre described it: update Timbre, then press <strong>Play</strong>. Under <strong>Not moved
+to this version</strong>, an update could not bring it along: close any other Overtone tool, then press <strong>Try again</strong>.</li>
+<li>Marked <strong>Not read</strong>: Timbre and Overtone in the game are of different versions. The notice above the list says
+which to update.</li>
+<li>
+<strong>Health</strong> lists it under <strong>Draws nothing</strong>, naming a file that ends in <code>.INI</code>: rename the file so it ends in
+<code>.ini</code>, in lower case. The game reads no other spelling, with Overtone or without it.</li>
+<li>Not listed, and it sits in a folder another mod manager made (<code>IMM_TEMP_</code> and a number, <code>IMM_INI_BACKUP</code>, or a
+restore point named <code>RESTORE-</code> and a date): those folders are ignored. Add the mod again in Timbre from its
+download. <strong>Health → Tidy up → Leftover files</strong> offers to send their files to the Recycle Bin, under
+<strong>Other managers' files</strong>.</li>
+</ul>
+</li>
+<li>
+<strong>Is it on screen?</strong> Listed, but never with a green dot:
+<ul>
+<li>A mod for a skin draws only while the character wears that skin.</li>
+<li>Of two mods for the same outfit, only one draws. Timbre's <strong>In game</strong> panel marks the other <strong>Passed over for</strong>
+the one drawn, and the log says <code>&lt;mod&gt; is passed over for &lt;other&gt;</code>. Turn one off, or
+<a href="outfits.html#mix-pieces-of-several-outfits">mix them</a>.</li>
+<li>
+<strong>Tools → Report</strong> says <strong>No mod matched</strong>: after a game update, see the next section.</li>
+</ul>
+</li>
+<li>
+<strong>Still nothing?</strong> Search the log for the mod's name. A line ending in <code>not drawn</code> says why.</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="it-worked-before-a-game-update"><a class="anchor" href="#it-worked-before-a-game-update" aria-hidden="true">#</a>It worked before a game update</h2><a id="user-content-it-worked-before-a-game-update" class="anchor" aria-label="Permalink: It worked before a game update" href="#it-worked-before-a-game-update"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>An update can change the character's model so a mod no longer fits it, and the mod draws nothing. Overtone cannot
+repair this yet. The log may say <code>on screen and never drawn:</code> and the mod's mesh.</p>
+<p>Install the author's updated version through Timbre (<a href="add-mods.html#update-a-mod">Update a mod</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element" id="part-of-the-mod-shows-as-the-games-own"><a class="anchor" href="#part-of-the-mod-shows-as-the-games-own" aria-hidden="true">#</a>Part of the mod shows as the game's own</h2><a id="user-content-part-of-the-mod-shows-as-the-games-own" class="anchor" aria-label="Permalink: Part of the mod shows as the game's own" href="#part-of-the-mod-shows-as-the-games-own"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A file of the mod is missing. Timbre's <strong>In game</strong> panel marks the mod <strong>Drawn as the game's</strong>, and the log says
+<code>mesh &lt;name&gt; claims nothing, and the game draws its own: &lt;file&gt; cannot be read</code>. Install the mod again through
+Timbre.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="wrong-or-missing-textures"><a class="anchor" href="#wrong-or-missing-textures" aria-hidden="true">#</a>Wrong or missing textures</h2><a id="user-content-wrong-or-missing-textures" class="anchor" aria-label="Permalink: Wrong or missing textures" href="#wrong-or-missing-textures"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>
+<strong>Replace textures</strong> must be on (the default), in Timbre's <strong>Settings → Developer</strong> or the overlay's
+<strong>Tools → Debug</strong>.</li>
+<li>Textures that start blurred and sharpen are still loading.</li>
+<li>Some textures get their role, the job they do (colour, bumps), only the first time the mod is played. If one is
+still wrong, open the mod in Timbre (<strong>In game → Model</strong>), click a part's colour swatch, and give each texture
+under <strong>Swapped here, no role yet</strong> a role. <strong>Use</strong>, with the number of suggestions, takes Timbre's guesses. A
+texture in the slot its ini names (<code>ps-t3</code>) that has no role yet is listed under <strong>On this part</strong>, and pointing at
+it says <code>Drawn in game, no role yet · ps-t3</code>.</li>
+<li>A tattoo or lace part shows as a solid panel: <strong>Cut parts by their masks</strong> must be on (the default), in the same
+place.</li>
+<li>Glow maps are not drawn yet, so glowing parts look plain.</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="a-change-to-a-description-does-not-show"><a class="anchor" href="#a-change-to-a-description-does-not-show" aria-hidden="true">#</a>A change to a description does not show</h2><a id="user-content-a-change-to-a-description-does-not-show" class="anchor" aria-label="Permalink: A change to a description does not show" href="#a-change-to-a-description-does-not-show"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>
+<strong>Reload when files change</strong> must be on, as it is unless you turned it off
+(<a href="play.html#see-your-changes-in-game">Play with Overtone</a>); otherwise press <strong>F10</strong> after each save.</li>
+<li>A piece's <code>material</code>, a choice's <code>wear</code> table or a rule covers what <code>[part.&lt;n&gt;]</code> says
+(<a href="description.html#which-texture-wins">Which texture wins</a>).</li>
+<li>Search the log for the mod's name. <code>line &lt;n&gt;: ...; it is passed over</code> names a line Overtone ignored, such as a
+misspelt role or a part that names no mesh; <code>would not read:</code> says why the whole file was refused.</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="parts-flicker-stretch-or-vanish"><a class="anchor" href="#parts-flicker-stretch-or-vanish" aria-hidden="true">#</a>Parts flicker, stretch or vanish</h2><a id="user-content-parts-flicker-stretch-or-vanish" class="anchor" aria-label="Permalink: Parts flicker, stretch or vanish" href="#parts-flicker-stretch-or-vanish"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Check the mod in XXMI first (see <a href="#where-to-look">Where to look</a>). Each setting below is on by default: under
+<strong>Look</strong> in the overlay's <strong>Settings</strong> or Timbre's <strong>Settings → In game</strong>, and <strong>See-through parts</strong> under Timbre's
+<strong>Settings → Developer</strong> or the overlay's <strong>Tools → Debug</strong>.</p>
+<table>
+<thead>
+<tr>
+<th align="left">You see</th>
+<th align="left">Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">The mod turns into the game's model from far away</td>
+<td align="left">
+<strong>Keep mods at a distance</strong> is on</td>
+</tr>
+<tr>
+<td align="left">A see-through part, such as sheer cloth, is missing</td>
+<td align="left">
+<strong>See-through parts</strong> is on</td>
+</tr>
+<tr>
+<td align="left">The character fades out when the camera is close</td>
+<td align="left">That is the game. <strong>F7</strong> stops it, but may show what the game hides on purpose.</td>
+</tr>
+<tr>
+<td align="left">A few vertices stretch for one frame, a clone takes another's pose, or the face does not move</td>
+<td align="left">Send a report (<a href="#reporting-a-problem">below</a>)</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="a-key-does-nothing"><a class="anchor" href="#a-key-does-nothing" aria-hidden="true">#</a>A key does nothing</h2><a id="user-content-a-key-does-nothing" class="anchor" aria-label="Permalink: A key does nothing" href="#a-key-does-nothing"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>A mod's keys work only while it is on screen, with a green dot in the <strong>Wardrobe</strong>.</li>
+<li>While the overlay is open, it keeps the keys it uses itself: arrows, Enter, Space, Esc, Tab, PgUp, PgDn, Delete,
+Q, E and /, any key with Ctrl, and every key while you type in a search box.</li>
+<li>Two mods on screen with the same key: mods one character wears, such as an outfit, a face and her weapon, all take
+the press, as in WWMI. Between two characters on screen at once, such as in the character menu, it goes to the
+one drawn most, and does nothing where they are drawn alike.</li>
+<li>Use the <strong>Wardrobe</strong> instead: its arrows step a switch and <strong>Wear</strong> puts on a look, without any key.</li>
+<li>To change a mod's key, open the mod in Timbre and click the key in its <strong>Variants</strong> list. <strong>The game uses this</strong>
+marks a key the game already needs.</li>
+<li>Still nothing: <a href="#reporting-a-problem">report it</a>. The log says what each press moved, or why it moved nothing.</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="the-game-crashes-or-hangs"><a class="anchor" href="#the-game-crashes-or-hangs" aria-hidden="true">#</a>The game crashes or hangs</h2><a id="user-content-the-game-crashes-or-hangs" class="anchor" aria-label="Permalink: The game crashes or hangs" href="#the-game-crashes-or-hangs"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Before starting the game again, <a href="#reporting-a-problem">report it</a>. The report file holds the log, any crash report,
+your settings and your mod list.</li>
+<li>Press <strong>F8</strong> to turn mods off. If the crash stops, press <strong>F8</strong> again, turn your newest mods off in Timbre, and
+turn them back on one at a time to find the one.</li>
+<li>If it crashes at start, under <strong>Settings → Play</strong> try <strong>Skip the game's launcher</strong>, and switch off
+ReShade or any other tool listed there.</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="reporting-a-problem"><a class="anchor" href="#reporting-a-problem" aria-hidden="true">#</a>Reporting a problem</h2><a id="user-content-reporting-a-problem" class="anchor" aria-label="Permalink: Reporting a problem" href="#reporting-a-problem"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>In Timbre, press <strong>Report a problem</strong>, the speech bubble near the foot of the left bar. When the game closes
+after a problem, Timbre also offers <strong>Report it</strong> in a banner, which opens the page with <strong>Game crashed</strong> picked.</li>
+<li>Pick what went wrong, from <strong>Game crashed</strong>, <strong>Mod looks wrong</strong>, <strong>Timbre misbehaves</strong> or <strong>Something else</strong>,
+and say what happened.</li>
+<li>Under <strong>Which mod</strong>, tick the mods from your last session that are involved. Overtone notes each mod the first
+time it shows in a game session, so the tiles are what was on screen.</li>
+<li>Press <code>4 attachments · 3 MB</code> (the count and size are your own) to see what the report carries. <strong>Logs</strong> and
+<strong>Your setup</strong> always go, and pressing one shows its files. Switch <strong>Hang dump</strong> on only if the game froze, as it
+may hold your user name.</li>
+<li>Press <strong>Send report</strong>. Timbre saves the report file beside its logs, shows it in its folder, and opens GitHub with
+your note filled in. You need a free GitHub account.</li>
+<li>Drag the file onto the page on GitHub, then submit the issue.</li>
+</ol>
+<p>Your report stays on the page under its day, marked <strong>Waiting for you</strong> until its issue is on GitHub. Its
+<strong>Add the file on GitHub</strong> button opens the page and shows the file again. What you write is kept until you send it.</p>
+<p>Timbre then follows each report on GitHub while the page is open, at most every ten minutes, without signing in:</p>
+<table>
+<thead>
+<tr>
+<th align="left">The card says</th>
+<th align="left">What it means</th>
+<th align="left">What you can do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Waiting for you</strong></td>
+<td align="left">No issue holds your report yet.</td>
+<td align="left">Add the file on GitHub and submit it.</td>
+</tr>
+<tr>
+<td align="left"><strong>On GitHub</strong></td>
+<td align="left">Your issue is open, with how many others said they have it.</td>
+<td align="left">Nothing: it is in the queue.</td>
+</tr>
+<tr>
+<td align="left"><strong>Fixed</strong></td>
+<td align="left">A release fixes it, and you don't have that release yet.</td>
+<td align="left">Update Timbre.</td>
+</tr>
+<tr>
+<td align="left"><strong>You have the fix</strong></td>
+<td align="left">You have every release that fixes it.</td>
+<td align="left">If it still happens, press <strong>Still happening</strong>.</td>
+</tr>
+<tr>
+<td align="left">
+<strong>Closed</strong>, <strong>Not planned</strong> or <strong>Duplicate</strong>
+</td>
+<td align="left">GitHub closed it without a release naming it.</td>
+<td align="left">
+<strong>Still happening</strong> opens the issue to say so.</td>
+</tr>
+</tbody>
+</table>
+<p>Open a card to see its steps, or press <strong>Remove</strong> to take it off the page with its file. <strong>Known problems</strong> opens
+the issues others have already reported.</p>
+<p>Without Timbre, attach <code>overtone.log</code>, and <code>overtone-native-crash.txt</code> or an <code>overtone-hang-</code> dump if there is one,
+from <code>%LOCALAPPDATA%\Overtone\wuwa</code>. Copy them before starting the game again.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="play.html">Play with Overtone</a>: every key and setting named here.</li>
+<li>
+<a href="from-wwmi.html">Coming from WWMI</a>: what works differently from WWMI.</li>
+<li>
+<a href="add-mods.html">Add your mods</a>: add a mod again, or its update.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="for-mod-authors"><a class="anchor" href="#for-mod-authors" aria-hidden="true">#</a>For mod authors</h2><a id="user-content-for-mod-authors" class="anchor" aria-label="Permalink: For mod authors" href="#for-mod-authors"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A <em>mesh</em> here is one model of a mod; <em>sheets</em> are its textures; a <em>palette</em> is the bones a mesh draws with.</p>
+<ul>
+<li>
+<strong>Tools → Report → Mods on screen</strong> has an entry per mesh of each mod. <code>waiting</code> means its files are still loading.
+<code>refused</code> or <code>no palette</code> with no <code>drawn</code> count means Overtone found the mod and gave its draws back to the game:
+send a report.</li>
+<li>No <code>sheets placed</code> count under a mesh with <strong>Replace textures</strong> on means the description gives those parts no role.</li>
+<li>The log's line per mesh, <code>sheets N placed (N no-role: N abstained, N wrong-kind; N no-view)</code>, says why textures
+were left out. <strong>Tools → Debug → Survey game textures</strong> logs what the game bound at each slot.</li>
+<li>Under <strong>Tools → Report → Counters</strong>, <code>toggles → ambiguous</code> counts key presses two characters' mods tied over. The
+log's <code>&lt;key&gt; pressed:</code> line names the mods a press went to and what each moved, or why it moved nothing: a tie, no
+mod binding it drawn, its keys waiting for parts not drawn, or its conditions.</li>
+<li>The log's <code>N mods read from &lt;folder&gt;</code> line, or <code>N mods drawn from &lt;folder&gt;, chosen by …</code> where a profile chose them,
+says how many mods were read, and from where.</li>
+<li>
+<strong>Settings → Help → Log detail</strong> keeps more in the log; raise it only when asked for a bug report.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1028.0 and Overtone 26.1028.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="description.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Write a description</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#where-to-look">Where to look</a><a href="#the-overlay-does-not-open">The overlay does not open</a><a href="#the-mod-does-not-show-at-all">The mod does not show at all</a><a href="#it-worked-before-a-game-update">It worked before a game update</a><a href="#part-of-the-mod-shows-as-the-games-own">Part of the mod shows as the game's own</a><a href="#wrong-or-missing-textures">Wrong or missing textures</a><a href="#a-change-to-a-description-does-not-show">A change to a description does not show</a><a href="#parts-flicker-stretch-or-vanish">Parts flicker, stretch or vanish</a><a href="#a-key-does-nothing">A key does nothing</a><a href="#the-game-crashes-or-hangs">The game crashes or hangs</a><a href="#reporting-a-problem">Reporting a problem</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1028.0 · Overtone 26.1028.0 · MCP server 26.1028.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paint a mod's textures · Tonewright</title>
+<meta name="description" content="Paint on a character in Timbre: tattoos, freckles, recolours and repairs, in layers that never touch the mod's own textures, seen in game as you work.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/paint.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Paint a mod's textures · Tonewright">
+<meta property="og:description" content="Paint on a character in Timbre: tattoos, freckles, recolours and repairs, in layers that never touch the mod's own textures, seen in game as you work.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=95e0e089fb">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html" aria-current="page">Paint a mod's textures</a><a href="description.html">Write a description</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Paint a mod's textures</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="paint.html" aria-current="page">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">Paint a mod's textures</h1>
+      <p class="lead rise" style="--i:2">Paint on a character in Timbre: tattoos, freckles, recolours and repairs, in layers that never touch the mod's own textures, seen in game as you work.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">How-to</span><span>8 min read</span><span>Timbre 26.1028.0 · Overtone 26.1028.0</span></p>
+      <figure class="figure rise"><img src="shots/paint.webp" srcset="shots/paint-1120.webp 1120w, shots/paint.webp 2400w" sizes="(min-width: 860px) 720px, 100vw" alt="" width="2400" height="1250"><figcaption>Paint in Timbre, on Shorekeeper – Faerie Court by Ceeji</figcaption></figure>
+      <div class="prose"><p>Change how a mod looks without leaving Timbre: paint straight on the character, and the game shows each change a
+moment later. Compared with editing texture files in an image editor:</p>
+<ul>
+<li>
+<strong>You paint on the body, not on a flat sheet.</strong> A stroke is the same size everywhere and crosses UV seams whole.</li>
+<li>
+<strong>Every texture follows.</strong> Filling over a logo also fixes the normal map and light map under it.</li>
+<li>
+<strong>Nothing is lost.</strong> Your work is kept as layers over the mod's own textures. Turn a layer off, or all of them, and
+the mod is as it was.</li>
+<li>
+<strong>No export.</strong> There is no DDS to save, no mipmaps to build and no compression to pick: Paint does that for you.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>The mod is a dump you made (<a href="create-a-mod.html">How to create a mod</a>) or a mod you added through Timbre
+(<a href="add-mods.html">Add your mods</a>).</li>
+<li>To see your changes in game while you paint, start the game with Overtone
+(<a href="play.html#see-your-changes-in-game">See your changes in game</a>).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="your-first-stroke"><a class="anchor" href="#your-first-stroke" aria-hidden="true">#</a>Your first stroke</h2><a id="user-content-your-first-stroke" class="anchor" aria-label="Permalink: Your first stroke" href="#your-first-stroke"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Freckles on a character's shoulders, start to finish, in about a minute.</p>
+<ol>
+<li>In Timbre, open a mod of the character and press <strong>Model</strong>.</li>
+<li>Press <strong>Paint</strong> at the top of the model window, or press <strong>P</strong>.</li>
+<li>At the top, open the part's name and pick the part with her bare skin, such as the body.</li>
+<li>Press <strong>B</strong> for the brush. At the left of the bar at the top, open the brush's preset (it reads <strong>Custom</strong>) and
+pick <strong>Freckles</strong>.</li>
+<li>Press <strong>I</strong>, then click her skin on the texture in the corner to take its colour. In the colour well at the foot
+of the tools, make it a little darker.</li>
+<li>Press <strong>B</strong> again, then drag across her shoulder. A layer called <code>Brush 1</code> appears on the right.</li>
+<li>Look at the game: the freckles are there. The top bar reads <strong>Saved</strong>.</li>
+</ol>
+<p>To take them back, hide the layer with its eye, or press <strong>Ctrl+Z</strong>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="how-paint-works"><a class="anchor" href="#how-paint-works" aria-hidden="true">#</a>How Paint works</h2><a id="user-content-how-paint-works" class="anchor" aria-label="Permalink: How Paint works" href="#how-paint-works"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Three ideas carry everything else.</p>
+<ul>
+<li>
+<p><strong>The mod's own textures are never changed.</strong> They are the bottom layer, <strong>Original</strong>. Everything you do is a layer
+above it, and the game draws the result. Hold <strong>\</strong> to see the texture without your layers.</p>
+</li>
+<li>
+<p><strong>A part wears several textures, painted together.</strong> You pick one to paint on at the top:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Texture</th>
+<th align="left">What it holds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Diffuse</strong></td>
+<td align="left">The colours you see</td>
+</tr>
+<tr>
+<td align="left"><strong>Normal map</strong></td>
+<td align="left">Small bumps and creases, such as stitching</td>
+</tr>
+<tr>
+<td align="left"><strong>Light map</strong></td>
+<td align="left">How the surface takes light and shadow</td>
+</tr>
+<tr>
+<td align="left"><strong>ID map</strong></td>
+<td align="left">Which material each spot is, such as skin, cloth or metal</td>
+</tr>
+<tr>
+<td align="left"><strong>Highlight</strong></td>
+<td align="left">The shine on hair, on a hair part</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fill</strong> mends every texture at once, so a filled-over logo leaves no bump behind. <strong>Heal</strong> and <strong>Clone</strong> mend only
+the texture shown: switch to the <strong>Normal map</strong> and go over the spot again.</p>
+</li>
+<li>
+<p><strong>You can paint on the model or on the flat texture.</strong> <strong>Tab</strong> swaps the two; the model view shows the texture
+small in a corner, and the buttons at the top right show either large, or both side by side. On the model a stroke
+crosses seams whole; on the texture, <strong>0</strong> fits it to the window. Picking a colour, an <strong>Area</strong> or a <strong>Lasso</strong> works
+on the texture only: on the model those turn the camera.</p>
+</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="common-jobs"><a class="anchor" href="#common-jobs" aria-hidden="true">#</a>Common jobs</h2><a id="user-content-common-jobs" class="anchor" aria-label="Permalink: Common jobs" href="#common-jobs"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="markdown-heading"><h3 class="heading-element" id="add-a-tattoo-or-a-logo"><a class="anchor" href="#add-a-tattoo-or-a-logo" aria-hidden="true">#</a>Add a tattoo or a logo</h3><a id="user-content-add-a-tattoo-or-a-logo" class="anchor" aria-label="Permalink: Add a tattoo or a logo" href="#add-a-tattoo-or-a-logo"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Press <strong>V</strong> (<strong>Place a picture</strong>), then <strong>On the model</strong>, and choose a PNG with a transparent background.</li>
+<li>It lands on the part in view. Click a part to move it there; drag the box to move it, its corners to resize it.</li>
+<li>In the bar, set its <strong>Size</strong>, <strong>Turn</strong> and <strong>Mirror</strong>.</li>
+<li>To make it raised, like a scar or stitching, set <strong>Relief from</strong> to <strong>Normal map</strong> or <strong>Height</strong>.</li>
+<li>Press <strong>Done</strong>.</li>
+</ol>
+<p>On the model the picture wraps around the body and over seams. If the spot is out of view, turn the model to it first.</p>
+<div class="markdown-heading"><h3 class="heading-element" id="change-a-colour"><a class="anchor" href="#change-a-colour" aria-hidden="true">#</a>Change a colour</h3><a id="user-content-change-a-colour" class="anchor" aria-label="Permalink: Change a colour" href="#change-a-colour"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Press <strong>A</strong> (<strong>Adjust</strong>).</li>
+<li>In the bar at the top, pick <strong>Recolour</strong>. A <strong>Recolour</strong> layer is added.</li>
+<li>Press the eyedropper beside <strong>From</strong>, then click the colour to change on the texture.</li>
+<li>Set <strong>To</strong> to the new colour. Widen <strong>Range</strong> to catch more shades. <strong>Softness</strong>, in the layer's settings, blends
+the edges.</li>
+</ol>
+<p>Other adjustments change <strong>Hue</strong>, <strong>Saturation</strong> and <strong>Brightness</strong>, <strong>Curves</strong> for <strong>Shadows</strong>, <strong>Midtones</strong> and
+<strong>Highlights</strong>, or map light and dark to two new colours (<strong>Gradient map</strong>).</p>
+<p>To change only part of the texture, open the layer's <strong>Limit to</strong> and pick an <strong>Area</strong> (click it on the texture;
+<strong>Add an area</strong> adds more) or draw a <strong>Lasso</strong> around it.</p>
+<div class="markdown-heading"><h3 class="heading-element" id="remove-a-mark-a-logo-or-a-seam"><a class="anchor" href="#remove-a-mark-a-logo-or-a-seam" aria-hidden="true">#</a>Remove a mark, a logo or a seam</h3><a id="user-content-remove-a-mark-a-logo-or-a-seam" class="anchor" aria-label="Permalink: Remove a mark, a logo or a seam" href="#remove-a-mark-a-logo-or-a-seam"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">What</th>
+<th align="left">Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">A spot or scar on skin</td>
+<td align="left">Press <strong>J</strong> (<strong>Heal</strong>), <strong>Alt</strong>+click clean skin nearby, then paint over the mark</td>
+</tr>
+<tr>
+<td align="left">A logo or pattern on cloth</td>
+<td align="left">Press <strong>G</strong> (<strong>Fill</strong>) and paint over it: it is filled from around it, on every texture</td>
+</tr>
+<tr>
+<td align="left">A copy of something exact</td>
+<td align="left">Press <strong>S</strong> (<strong>Clone</strong>), <strong>Alt</strong>+click the spot to copy, then paint where it goes</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h3 class="heading-element" id="paint-freckles-hair-or-makeup"><a class="anchor" href="#paint-freckles-hair-or-makeup" aria-hidden="true">#</a>Paint freckles, hair or makeup</h3><a id="user-content-paint-freckles-hair-or-makeup" class="anchor" aria-label="Permalink: Paint freckles, hair or makeup" href="#paint-freckles-hair-or-makeup"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Press <strong>B</strong> (<strong>Brush</strong>), then open <strong>Preset</strong> in the bar.</li>
+<li>Pick one: <strong>Soft round</strong>, <strong>Hard round</strong>, <strong>Airbrush</strong>, <strong>Pencil</strong>, <strong>Freckles</strong> or <strong>Fine hair</strong>.</li>
+<li>Pick a colour from the well at the foot of the tools, or press <strong>I</strong> and click a colour on the texture.</li>
+<li>Press <strong>B</strong> again, and paint. Turn on <strong>Both sides</strong> to mirror each stroke to the other side of the body.</li>
+</ol>
+<p><strong>Fine hair</strong> has a <strong>Strands</strong> tip that lays single hairs along your stroke, raised on the normal map. Under
+<strong>More</strong>, a pen can make a lighter touch thinner (<strong>Pressure sizes</strong>) or fainter (<strong>Pressure fades</strong>). To keep your
+own brush, press <strong>Keep this brush</strong> and name it.</p>
+<p>On a texture of values rather than colours, such as the <strong>Light map</strong>, the well at the foot of the tools sets each
+value to paint instead of a colour. On an <strong>ID map</strong>, turn its value on in the well before you paint; it takes a value
+only where a stroke covers most of a spot, so materials keep sharp edges.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="layers"><a class="anchor" href="#layers" aria-hidden="true">#</a>Layers</h2><a id="user-content-layers" class="anchor" aria-label="Permalink: Layers" href="#layers"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Layers are listed on the right, top first, with <strong>Original</strong> at the bottom.</p>
+<ul>
+<li>
+<strong>A tool makes its layer.</strong> A stroke goes into the chosen layer when it is the same tool's, on the texture shown;
+otherwise Paint adds a layer for you, and a note says so with <strong>Undo</strong>. Each layer keeps what you did, so a stroke can be taken back long after.</li>
+<li>
+<strong>Add</strong> offers a <strong>Paint layer</strong>, an <strong>Image on the sheet</strong>, a <strong>Decal on the model</strong> or an <strong>Adjustment</strong>.</li>
+<li>
+<strong>Choosing a layer.</strong> Click it, and set its <strong>Opacity</strong>. Double-click it, or press its <strong>Layer settings</strong> button,
+for the texture it paints on (<strong>Map</strong>) and where it shows (<strong>Limit to</strong>: <strong>All</strong>, an <strong>Area</strong> or a <strong>Lasso</strong>), with
+<strong>Rename</strong>, <strong>Duplicate</strong> and <strong>Delete</strong>.</li>
+<li>
+<strong>Hiding a layer.</strong> Its eye shows or hides it.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="saving-and-seeing-it-in-game"><a class="anchor" href="#saving-and-seeing-it-in-game" aria-hidden="true">#</a>Saving and seeing it in game</h2><a id="user-content-saving-and-seeing-it-in-game" class="anchor" aria-label="Permalink: Saving and seeing it in game" href="#saving-and-seeing-it-in-game"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Paint saves by itself after every change. The top bar says <strong>Saving</strong>, then <strong>Finishing</strong> once the game can show it,
+then <strong>Saved</strong> once the finer version is done. The game shows the change a moment after <strong>Finishing</strong>. If it reads
+<strong>Not saved</strong>, point at it for why.</p>
+<p>The mod's own files are never changed. <strong>Ctrl+Z</strong> undoes and <strong>Ctrl+Shift+Z</strong> redoes (<strong>⌘</strong> on a Mac) while the part
+is open; your layers stay after you close it, but this list of steps does not.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="tools-and-keys"><a class="anchor" href="#tools-and-keys" aria-hidden="true">#</a>Tools and keys</h2><a id="user-content-tools-and-keys" class="anchor" aria-label="Permalink: Tools and keys" href="#tools-and-keys"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The tools are down the left side; the bar at the top shows the settings of the tool in hand.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Tool</th>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Brush</strong></td>
+<td align="left"><strong>B</strong></td>
+<td align="left">Paints colour, or the values of the texture shown</td>
+</tr>
+<tr>
+<td align="left"><strong>Eraser</strong></td>
+<td align="left"><strong>E</strong></td>
+<td align="left">Takes back what the chosen layer painted; with none chosen, the bar says <strong>Choose a layer first</strong>
+</td>
+</tr>
+<tr>
+<td align="left"><strong>Clone</strong></td>
+<td align="left"><strong>S</strong></td>
+<td align="left">Copies from another spot: <strong>Alt</strong>+click sets where from; <strong>Aligned</strong> or <strong>Fixed</strong> in the bar</td>
+</tr>
+<tr>
+<td align="left"><strong>Heal</strong></td>
+<td align="left"><strong>J</strong></td>
+<td align="left">Copies from another spot and blends it in: for scars, spots and seams</td>
+</tr>
+<tr>
+<td align="left"><strong>Fill</strong></td>
+<td align="left"><strong>G</strong></td>
+<td align="left">Paint over something, and it is filled from what is around it</td>
+</tr>
+<tr>
+<td align="left"><strong>Place a picture</strong></td>
+<td align="left"><strong>V</strong></td>
+<td align="left">Puts a PNG on the model or the sheet: a tattoo, a logo</td>
+</tr>
+<tr>
+<td align="left"><strong>Adjust</strong></td>
+<td align="left"><strong>A</strong></td>
+<td align="left">Adds a layer that changes colours under it</td>
+</tr>
+<tr>
+<td align="left"><strong>Lasso</strong></td>
+<td align="left"><strong>L</strong></td>
+<td align="left">Draws an outline; then limit a layer to it in the bar</td>
+</tr>
+<tr>
+<td align="left"><strong>Area</strong></td>
+<td align="left"><strong>W</strong></td>
+<td align="left">Picks whole areas, such as all the skin (<strong>Shift</strong> adds more); then limit a layer to them in the bar</td>
+</tr>
+<tr>
+<td align="left"><strong>Pick a colour</strong></td>
+<td align="left"><strong>I</strong></td>
+<td align="left">Takes the colour under the pointer</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">To</th>
+<th align="left">Press</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Open or leave Paint</td>
+<td align="left"><strong>P</strong></td>
+</tr>
+<tr>
+<td align="left">Switch between model and sheet</td>
+<td align="left"><strong>Tab</strong></td>
+</tr>
+<tr>
+<td align="left">Fit the sheet to the window</td>
+<td align="left"><strong>0</strong></td>
+</tr>
+<tr>
+<td align="left">See the texture without your layers</td>
+<td align="left">Hold <strong>\</strong>
+</td>
+</tr>
+<tr>
+<td align="left">Set where Clone and Heal copy from</td>
+<td align="left">
+<strong>Alt</strong>+click</td>
+</tr>
+<tr>
+<td align="left">Add another area, with <strong>Area</strong>
+</td>
+<td align="left">
+<strong>Shift</strong>+click</td>
+</tr>
+<tr>
+<td align="left">Open the ring of brushes; size the brush</td>
+<td align="left">Right-click without dragging; turn the wheel over its middle</td>
+</tr>
+<tr>
+<td align="left">Turn the model</td>
+<td align="left">Drag with the right button</td>
+</tr>
+<tr>
+<td align="left">Move the view</td>
+<td align="left">Drag with the middle button, or <strong>Shift</strong>+drag</td>
+</tr>
+<tr>
+<td align="left">Zoom</td>
+<td align="left">Turn the wheel</td>
+</tr>
+<tr>
+<td align="left">Undo; redo</td>
+<td align="left">
+<strong>Ctrl+Z</strong>; <strong>Ctrl+Shift+Z</strong> (<strong>⌘</strong> on a Mac)</td>
+</tr>
+<tr>
+<td align="left">Stop what you are doing</td>
+<td align="left"><strong>Esc</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="what-you-cant-do-yet"><a class="anchor" href="#what-you-cant-do-yet" aria-hidden="true">#</a>What you can't do yet</h2><a id="user-content-what-you-cant-do-yet" class="anchor" aria-label="Permalink: What you can't do yet" href="#what-you-cant-do-yet"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Paint the game's own parts.</strong> Only parts the mod replaces are offered.</li>
+<li>
+<strong>Save on Zenless Zone Zero.</strong> Its layers show in Timbre but are not saved yet.</li>
+<li><strong>Move makeup between characters or match skin tone automatically.</strong></li>
+<li>
+<strong>Keep undo after closing the part.</strong> Your layers stay; the list of steps does not.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="edit-in-blender.html">Edit a mod in Blender</a>: change the shape instead of the look.</li>
+<li>
+<a href="outfits.html">Mix outfits and loadouts</a>: wear your painted mod with others.</li>
+<li>
+<a href="troubleshoot.html">When a mod does not draw right</a>.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="for-bug-reports-where-things-are"><a class="anchor" href="#for-bug-reports-where-things-are" aria-hidden="true">#</a>For bug reports: where things are</h2><a id="user-content-for-bug-reports-where-things-are" class="anchor" aria-label="Permalink: For bug reports: where things are" href="#for-bug-reports-where-things-are"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">What</th>
+<th align="left">Where in the mod's folder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Your layers</td>
+<td align="left">
+<code>.overtone/stacks/</code>: one <code>.toml</code> per texture set, and its strokes and pictures beside it</td>
+</tr>
+<tr>
+<td align="left">What the game draws</td>
+<td align="left">
+<code>.overtone/built/baked/</code>, made from your layers on each save. Never edit it.</td>
+</tr>
+</tbody>
+</table>
+<p>In the sheet view's bar, <strong>Overlaps</strong> shows spots several places on the body share, such as a texture used for
+both arms: painting one paints the others. <strong>Seams</strong> shows where the body's edges split on the flat texture.</p></div>
+      <p class="applies">Applies to Timbre 26.1028.0 and Overtone 26.1028.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="edit-in-blender.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Edit a mod in Blender</strong></a><a class="card later" href="description.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Write a description</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#your-first-stroke">Your first stroke</a><a href="#how-paint-works">How Paint works</a><a href="#common-jobs">Common jobs</a><a href="#layers">Layers</a><a href="#saving-and-seeing-it-in-game">Saving and seeing it in game</a><a href="#tools-and-keys">Tools and keys</a><a href="#what-you-cant-do-yet">What you can't do yet</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1028.0 · Overtone 26.1028.0 · MCP server 26.1028.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>

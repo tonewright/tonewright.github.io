@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What's new · Tonewright</title>
+<meta name="description" content="What each release of Overtone, Timbre and the MCP server changed.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/whats-new.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="What's new · Tonewright">
+<meta property="og:description" content="What each release of Overtone, Timbre and the MCP server changed.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=95e0e089fb">
+<link rel="stylesheet" href="news.css?v=1f183b9eba">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="news">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html">Guides</a><a href="whats-new.html" aria-current="page">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <section class="page-head wrap">
+    <p class="eyebrow eyebrow--gold rise">What's new</p>
+    <h1 class="rise" style="--i:1">What changed, release by release.</h1>
+    <p class="rise" style="--i:2">Every release of Overtone, Timbre and the MCP server, newest first. Timbre brings each one to you.</p>
+    <div class="head-row rise" style="--i:3"><div class="chips" id="chips"><button type="button" class="chip" data-f="all" aria-pressed="true">All</button><button type="button" class="chip" data-f="timbre" aria-pressed="false"><i></i>Timbre</button><button type="button" class="chip" data-f="runtime" aria-pressed="false"><i></i>Overtone</button><button type="button" class="chip" data-f="mcp" aria-pressed="false"><i></i>MCP server</button></div><a class="btn btn--quiet btn--small" href="https://github.com/tonewright/overtone-releases/releases">All releases on GitHub<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div>
+  </section>
+  <section class="feed wrap" id="feed"><section class="day"><div class="when"><time datetime="2026-10-28">28 October</time><small>2026</small><span class="latest"><i></i>Latest</span></div><div class="told"><article class="card rel rise" data-p="timbre"><div class="rel__head"><i class="dot"></i><h2>Timbre</h2><span>26.1028.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/timbre-v26.1028.0" aria-label="Timbre 26.1028.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Timbre has a new look: slanted buttons, glass panels and one gold action to a screen, from your Library to Paint.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Dragging a model now turns it the way Blender does; Settings → Appearance can reverse it.</li>
+<li>The texture picker lists the likeliest textures first for each map, and the model view's bars line up.</li>
+<li>Paint's sheet view and the layers sit beside the model instead of over it.</li>
+<li>Pointing at a texture in the texture picker shows it on the model before you choose it.</li>
+<li>The model view's tools, panels and bars sit side by side and no longer cover each other, at any window size.</li>
+<li>When an update can't bring a few mods along, the rest of your library still opens, and Health lists those mods with Try again.</li>
+<li>Importing your convene history needs one press: open Convene History in the game and Timbre carries on, banner by banner.</li>
+<li>In game opens as a full page: a tab for each character on screen, and pointing at her or a part lights it in the game.</li>
+<li>Convene is on the rail: import your pull history, see your pity and plan pulls along it.</li>
+<li>Timbre has a new icon: a glowing Chladni figure, the pattern sand draws on a plate ringing at an overtone.</li>
+<li>Convene is one page: plan pulls along your pity, see what each five-star took, and replay every ten-pull.</li>
+<li>A character wearing a mix shows one outfit at a time on her page; point at a band or pick a bar to see another.</li>
+<li>The tools, bars and panels of Paint, Fit and the model view wear the same glass and square-cut corners as the rest of Timbre.</li>
+<li>Health refreshes as mods appear or leave the library, and Check again rereads every tidy-up.</li>
+<li>Inside opens straight on the mod's description, scrolls, and a tap on the slant gives the text the whole page.</li>
+<li>The update page shows the new Timbre downloading, and offers Update now once it has arrived.</li>
+<li>On a mod's Inside tab, each change kept over an update shows a picture of your texture and the update's.</li>
+<li>Quitting Timbre with an unsaved description edit now asks whether to save it first.</li>
+<li>A mod's page has an Inside tab that reads its description in plain words; a row opens the file right on the picture.</li>
+<li>A mod's description reads as clean text, each problem said in plain words under its line.</li>
+<li>Browse's and Downloads' top picture now sits below the window's bar, so search and Play stand clear of it.</li>
+<li>Search and Play stay readable over pictures at the top of a page, on a soft patch of glass.</li>
+<li>Health shows every kind of problem and tidy-up in a list on the left, and the one you pick beside it with its fix.</li>
+<li>The buttons that choose how a mod's picture shows stand on their own glass, readable on any picture.</li>
+<li>Strings and numbers in a mod's description are now coloured apart.</li>
+<li>Every mod's pictures open in one viewer with zoom, copy, remove and make cover, from the pane, a row or the grid.</li>
+<li>Tap a mod's picture to see it whole right on its page, then copy it or make it the cover.</li>
+<li>Downloads shows each step a mod takes as it lands, and an archive that will not open asks for another file.</li>
+<li>Rename a character or weapon, or change its picture, right on its page: press Edit and type over its name.</li>
+<li>A weapon's page now opens on the same big header as a character's, and a weapon mod can be filed under any weapon when you add it.</li>
+<li>Hints look the same everywhere and never hide behind the header, and the Library's selection marks match the buttons.</li>
+<li>Adding mods from files no longer keeps the import window open: they show in Downloads and land there, one after another.</li>
+<li>Browse and Downloads open on a wide picture running to the window's top, and Downloads shows what is next beside the arriving mod.</li>
+<li>The Mod grid setting offers Even and Masonry; a grid set to Slanted shows as Even.</li>
+<li>Your Mod grid choice now shapes the mod pictures on GameBanana, Downloads and History too.</li>
+<li>Tooltips now wear the same dark plate and sharp corners as the rest of Timbre.</li>
+<li>Dialogs, menus and floating bars now have the same sharp corners as the buttons they hold.</li>
+<li>Rows, small buttons and banners across Timbre now share the slanted cut of its buttons, and a chosen row lights its edge.</li>
+<li>History takes back your last 30 days, and Health's Tidy up shows the space old versions take, with Let go to free it.</li>
+<li>Every mod you add or update shows in History, where Take back removes it again and Put back returns it.</li>
+<li>Report a problem now follows each report on GitHub and says when a release fixes it, and when you have the fix.</li>
+<li>Downloads opens on the same hero as Browse, turning through what you added last while nothing is arriving.</li>
+<li>Play now shows what the game is doing: each step as it starts, who is on screen, and why your mods are missing.</li>
+<li>Opening a character is smooth: her portrait flies into her page, which arrives complete, and her mods rise in.</li>
+<li>Banners are frosted glass, show the mod's cover in its character's colour, and put Open on the right.</li>
+<li>What's new lists every earlier release under its version, so you can read any release's notes in Timbre.</li>
+<li>History takes back any change, not only the newest, wherever the mods it changed are still as it left them.</li>
+<li>Downloads and History are pages of their own: watch what's arriving, cancel a download outright, and take back a change from its card.</li>
+<li>Updates and what's new open as a full page: the highlights with their pictures, every change one press away, readable offline.</li>
+<li>Type a setting's name in the Ctrl+K search to jump straight to it in Settings.</li>
+<li>Settings → In game → Keys marks a key two of Overtone's actions share in amber and names the other.</li>
+<li>Settings opens as a page of its own beside the rail, with a search and every section listed down the side.</li>
+<li>Opening a mod no longer stretches or jumps its picture, and a worn mod in the Slanted grid shows a lit edge.</li>
+<li>The top of Timbre's window now shows its name, centred above the app.</li>
+<li>Messages now arrive as cards in the bottom-right corner: trouble stays until you deal with it, and progress shrinks to a slim strip.</li>
+<li>Settings → Appearance can keep the window's controls always shown instead of hiding them at the top edge.</li>
+<li>Choose how a character's mods are laid out in Settings → Appearance: an even grid, slanted tiles or masonry.</li>
+<li>Ctrl+K searches GameBanana, and Browse's hero adds a mod to your library in one press.</li>
+<li>Browse opens on the week's most liked mod, your characters with what is new for each, and rows that open whole.</li>
+<li>Browse's tiles show a mod's other pictures as you move across them and say what you already have.</li>
+<li>Settings → Appearance → Mod pictures chooses how every mod's page shows its picture.</li>
+<li>A mod's page can show its picture fitted, whole, or behind the whole page, switched from the picture.</li>
+<li>Installing from a GameBanana page now shows its progress there and turns the page into the installed mod.</li>
+<li>A character's header fits your window and shows each mod's picture whole, without cutting off heads.</li>
+<li>Choosing a character in Health and the in-game panel uses the same search as adding a mod.</li>
+<li>Choosing whom a mod is for now looks like its files: a search and every character by her element.</li>
+<li>Choose mods with the round check on each tile, then Wear, Mix, Group, Move or Delete them from the bar below.</li>
+<li>Adding a mod now flows from the Add panel into its page, and the page no longer shows the library through it.</li>
+<li>Clicking a mod on a character's page opens its full page; Back returns to her mods.</li>
+<li>A character's page has a row above her mods with Find, Mix and the filter, and her header is quieter.</li>
+<li>Adding a mod from a link, an archive or an update now opens as a full page with room for its pictures and files.</li>
+<li>Add a mod links to the game's page on GameBanana, to find a mod to paste.</li>
+<li>Add a mod now dims the window: drop a mod anywhere, paste a GameBanana link, or choose files.</li>
+<li>Opening a mod now carries its picture from the grid into its panel and on to its full page.</li>
+<li>A character whose mods change the same part now shows an amber dot on her Library tile.</li>
+<li>A mod's side panel and its full page now look like the character page, with Wear in place of Enabled.</li>
+<li>A character's page opens on a large picture of what she wears, which folds into the top bar as you scroll.</li>
+<li>Ctrl+K shows your recent characters, pictures for every result, and what each character is wearing.</li>
+<li>Adding or updating a mod now shows it as its page will look, with clearer, shorter messages when something is wrong.</li>
+<li>The Library shows each character's avatar on her element's colour, with what she wears, and filters by element.</li>
+<li>While the game runs with Overtone, Play becomes In game and opens what the game is drawing.</li>
+<li>The top bar stays clear until the page scrolls under it, and Search is a button in the bar.</li>
+<li>Downloads stay in the left bar with a ring that fills as they arrive, and the bar's marker glides to where you are.</li>
+<li>The window now takes the colour of the character you're looking at, and the colour of whoever your pointer rests on in the Library.</li>
+<li>A mod's pane and page let you set its cover, hide a picture with Undo, and add pictures by dropping or pasting them.</li>
+<li>A mod's page shows every screenshot whole in its strip, and its arrows sit centred.</li>
+<li>A mod's page edits its author, version and link the way adding a mod does: ✎, type, Enter.</li>
+<li>Updating a mod from its GameBanana page now picks the file that replaces it whole and warns about any other, as a mod's own Update does.</li>
+<li>Opening an archive in a list of several now unfolds it into the same sheet as a single import, and nothing jumps while archives load.</li>
+<li>Adding a mod from GameBanana and importing an archive now look the same, with the author, version and link editable in place.</li>
+<li>Meshes you bring into a mod in Blender, from another mod, WWMI-Tools or a file, now bend with the character as soon as you save.</li>
+<li>On a Mac you can drag a GameBanana link from your browser onto Timbre to add the mod.</li>
+<li>Every screen has one back arrow in the same corner, and it returns to the screen you were on before.</li>
+<li>The import window is narrower, so a mod's picture and fields sit closer together.</li>
+<li>Add a mod opens on an empty card to drop a mod on, and the import window shows at once while archives are read.</li>
+<li>A GameBanana link in the import dialog fills in the mod's author, version and pictures, and its cover unless you picked one.</li>
+<li>A mod from GameBanana that holds several characters is filed under each of them, and the character picker says where a mod goes.</li>
+<li>Importing a mod is simpler: pick the cover, add or remove pictures, and fix names right in the list.</li>
+<li>On Linux, Delete in Timbre now moves a mod to the Trash, where your file manager can put it back.</li>
+<li>Timbre now installs on a Mac with Apple silicon and on Linux to manage your mods, and keeps itself up to date there.</li>
+<li>On a Mac, Timbre manages your library, deletes go to the Trash and shortcuts use ⌘; playing and updating stay on Windows.</li>
+<li>A mod you edited in Blender now picks up better texture placement too, and keeps your edit.</li>
+<li>A problem report now includes what your game showed Overtone about each character, so a fix can reach every player.</li>
+<li>Mods get their textures right on a fresh install, without anyone having to play each character first.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="better">Better</h3><a id="user-content-better" class="anchor" aria-label="Permalink: Better" href="#better"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Updating a mod no longer freezes the preview and Paint while the new version is merged.</li>
+<li>Adding a mod no longer freezes the preview and Paint while it is made native.</li>
+<li>Timbre stays quick while the game runs with many mods on, even when the game draws a mesh none of them describes.</li>
+<li>GameBanana pages you opened before appear at once, even after restarting Timbre.</li>
+<li>A GameBanana page you open again appears at once while Timbre checks it for changes.</li>
+<li>Timbre notices what changed in your mods folder faster.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>The model view's parts list and counts show only the figure you have chosen.</li>
+<li>The model view centres each character on what is drawn, holds its size between tabs, and Paint's panels line up.</li>
+<li>The model view centres its switches and the model on the window, keeps your camera as you switch tabs, and eases panels in.</li>
+<li>The model view has Undo and Redo buttons, and its switches stand on their own without a bar around them.</li>
+<li>The part card's buttons are icons: show only this part, hide it, or paint it.</li>
+<li>Copy picture in the model view puts the picture on the clipboard again.</li>
+<li>The texture picker holds still as you try textures, suggests by map, and a click on the model picks a part instead of hiding it.</li>
+<li>A mod made by a newer Overtone now says to update Timbre in its Inside notes, as the Health page does.</li>
+<li>Settings saved by an early beta now carry over to each game instead of being skipped.</li>
+<li>After a power cut, textures and edited models that were cut short are rebuilt instead of drawing broken.</li>
+<li>A model you save from Blender is no longer left broken by a power cut during the save.</li>
+<li>Timbre's icon in the Windows taskbar is sharp instead of blurry.</li>
+<li>Pressing a dropdown's edge or scrollbar no longer closes it.</li>
+<li>The Library's tiles show each character's and weapon's name and the outfit it wears in full, without repeating the character.</li>
+<li>Rebuilding Timbre's index keeps every mod where you had it, its page and History included.</li>
+<li>Pointing at another mod on the Downloads hero shows its cover, name and buttons, and clicking opens that mod.</li>
+<li>The Health page's mod panel shows an update of its mod as soon as it lands.</li>
+<li>Downloads shows the cover of a mod you just added from your own files, not a blurred picture of its character.</li>
+<li>Mods you add from your own files, or rename and move after they arrive, now open from Downloads with their covers.</li>
+<li>A character wearing a mix of outfits centres each outfit's picture in its band on her page.</li>
+<li>A rescan, or an update of the mod you are looking at, now shows at once on the page you have open.</li>
+<li>A mod you install while its character's page is open now shows on that page at once, turned on if you asked.</li>
+<li>Banners, the Loadout wheel, Downloads' covers, Browse's picture and the search panel now sit right in the window.</li>
+<li>Moving between pages keeps one top bar: Play no longer doubles or jumps.</li>
+<li>The split picture on a History card leans like every other slanted edge.</li>
+<li>A character's page opens with her outfit and mods in place, instead of blinking while the library is busy.</li>
+<li>Report a problem's cards and text box have the same sharp corners as its buttons, and its side column lines up.</li>
+<li>Report a problem's kinds slide a slanted plate to the one you pick.</li>
+<li>Redo now puts back only what Undo took, in order, and never a change you took back from its History card.</li>
+<li>Report a problem's attachment rows highlight as you point at them, and each optional file is switched by its whole row.</li>
+<li>Settings no longer jumps when you open Help.</li>
+<li>Browse and Downloads say how long ago something was the same way, down to the minute.</li>
+<li>The sidebar's first icon now lines up with the page title.</li>
+<li>What's new no longer flashes as it opens, shows where its notes will be while it reads them, and follows the highlight you point at.</li>
+<li>A missing cover or screenshot looks the same everywhere, washed in its character's colours where Timbre knows whose it is.</li>
+<li>What's new lines the list of changes up with the update's details, and says plainly when a release has no highlights.</li>
+<li>When Timbre can't reach GitHub, About says so in one sentence instead of a wall of error text.</li>
+<li>The back arrow at the top left is easier to see.</li>
+<li>Reduce motion's Always now calms every animation Timbre draws, and the system's setting is followed as it changes.</li>
+<li>Reduce transparency now turns off every blur and see-through panel, and Never keeps the window's colour wash.</li>
+<li>A mod's name keeps one size from its GameBanana page to its own page, and Escape while renaming no longer closes it.</li>
+<li>Browse says when a character's highlights could not load and offers Retry, and Space previews the mod you are on.</li>
+<li>A mod's page shows its description, outfit and Blender buttons again, and typing its page link fetches its pictures.</li>
+<li>A mod's page opens from wherever you pick it with its picture gliding in and its details already there.</li>
+<li>The variants on a mod's page line their names up in one column, and their redundant tooltips are gone.</li>
+<li>A mod page's picture layout switch is a rounded control, and the layout now wipes in with its blur already in place.</li>
+<li>Changing the picture layout on a mod's page wipes across like a change of picture, and the switch no longer flickers.</li>
+<li>The picture layout switch on a mod's page shows its icons again on macOS.</li>
+<li>Clicking the picture in a character's header opens the mod she wears.</li>
+<li>The picture layout switch on a mod's page is a segmented control again, and the picture glides into its new layout.</li>
+<li>The picture layout buttons on a mod's page stay readable over bright pictures.</li>
+<li>In Backdrop the picture strip sits above the character's outlined name.</li>
+<li>Installing a mod from its GameBanana page now opens the new mod's page in Timbre once it lands.</li>
+<li>A mod's page in Backdrop fills the window behind the rail, its blur fades in, and switching mods wipes.</li>
+<li>Install on a GameBanana page starts at once, and Cancel shows it is stopping straight away.</li>
+<li>A GameBanana mod's page now opens in its character's colour, its buttons where adding a mod puts them.</li>
+<li>A character's page glows in her colour behind both the header and her mods.</li>
+<li>Opening a character or a mod takes on its colour as the page opens, not a moment after.</li>
+<li>A GameBanana mod's page now fills the window, its pictures to the top, like adding a mod.</li>
+<li>Imported mods no longer take their cover or screenshots from texture folders.</li>
+<li>The selection bar blurs only over mods beneath it, the folded header blurs too, and a short window no longer scrolls past the grid.</li>
+<li>Clicking a mod opens it at once, and the selection bar sits below the grid instead of over it.</li>
+<li>Adding a mod no longer flickers as its page opens, its pictures show, and its colour lights the whole window.</li>
+<li>Clicking a mod opens it again first time, double-click wears it, and the selection bar sits flat along the bottom.</li>
+<li>An outfit with no mods shows one centred line, and a missing picture is only the blurred character.</li>
+<li>Delete is red again, a mod pane's buttons show on bright pictures, and a selected tile's outline is no longer cut off.</li>
+<li>Timbre's hints and notes are shorter and say only what to do.</li>
+<li>A mod with many variants shows six and a Show all button, and its page scrolls without a bar over the pictures.</li>
+<li>Opening a mod's pane or page and going back no longer flashes at the end.</li>
+<li>On a GameBanana page Install no longer overlaps the pictures, and I have this is a button.</li>
+<li>A mod's own page starts at the top of the window, its pictures filling the height.</li>
+<li>Opening a mod and stepping through its pictures no longer flickers.</li>
+<li>A character page with nothing worn shows her softly blurred instead of a stretched portrait.</li>
+<li>Settings → Appearance → Opacity now reaches from see-through to fully solid.</li>
+<li>A mod drawn from several of a character's meshes now reads each part's textures and Mix labels from the right mesh.</li>
+<li>A power cut while a mod is saved, made native or borrowed no longer leaves an empty file in its place.</li>
+<li>Updating a mod from its page keeps the pictures you added to it, and the cover you chose among them.</li>
+<li>Pictures you add when importing a mod keep their names, so fetching the mod's page no longer replaces them.</li>
+<li>Timbre keeps your comments and layout in a mod's notes file, and leaves one a newer Timbre wrote untouched.</li>
+<li>Thumbnails under a GameBanana mod's pictures are the size of the ones on your own mods' pages.</li>
+<li>An update or an alternate dropped on a mod keeps its pictures, author, version and link.</li>
+<li>Every weapon shows its own picture; The Last Dance, Red Spring, Somnoire Anchor and two rectifiers showed another's.</li>
+<li>An import with no screenshot shows the character's portrait, and the add-picture slot is a full thumbnail.</li>
+<li>A mod whose folders name different authors now shows the author named nearest its top.</li>
+<li>A GameBanana page and an archive no longer jump while they load, and typing a name in Japanese or Chinese no longer imports on Enter.</li>
+<li>A mod that names its author in its ini keeps that author when its page names another.</li>
+<li>A mod's own author is no longer replaced by the one its download page names, on install or update.</li>
+<li>An author or version you correct when adding a mod now stays even where the mod names its own, and one you empty is cleared.</li>
+<li>A borrowed model keeps finding the character and the mod it was made from after you rename or move their folders yourself.</li>
+<li>Renaming or refiling a mod in Timbre keeps every borrowed model made from it working.</li>
+<li>A mod nobody gave a version no longer shows 1.0.0, and its GameBanana page no longer overwrites a version its author set.</li>
+<li>Dropping a mod on Add a mod's card works on a Mac.</li>
+<li>A borrowed model keeps finding the character and the mod it was made from after your mods folder moves.</li>
+<li>An imported mod no longer gets a second copy of a picture it already has from its GameBanana page, and its pictures arrive faster.</li>
+<li>On a Mac or Linux, Timbre no longer remakes a mod you have open in Blender, or opens it in a second Blender.</li>
+<li>Timbre also recognises a mod on its page by its BMP and GIF pictures.</li>
+<li>A cover picked from a screenshots folder inside a zip or rar now shows as the mod's picture.</li>
+<li>Ticking files in the import dialog no longer makes its list jump taller and shorter.</li>
+</ul></article><article class="card rel rise" data-p="runtime"><div class="rel__head"><i class="dot"></i><h2>Overtone</h2><span>26.1028.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/runtime-v26.1028.0" aria-label="Overtone 26.1028.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Mods for every character get their textures right on a fresh install of the game's latest version, on HD and UHD textures.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Lynae's black undershirt no longer shows over outfits that replace her body.</li>
+<li>Suoming's skirt shadow is gone from her first frame, and Mix lists it so you can keep or hide it.</li>
+<li>Mods that swap the game's UHD textures find them after one play at UHD, and learning textures costs your frame far less.</li>
+<li>Mods for Cartethyia's Fleurdelys form get their textures right on a fresh install of the game's latest version.</li>
+<li>What Overtone ships about each character now applies to your game on every PC, not only the one it was recorded on.</li>
+<li>The in-game Wardrobe now says when mods won't draw because Timbre and Overtone are different versions, and what to do.</li>
+<li>Parts are named for what they are, such as Face · Part 2, in Timbre, the game's Mix page and Blender.</li>
+<li>The In game page shows the game's own picture of a character no mod of yours dresses, and Take again takes a new one.</li>
+<li>Suoming's mods, and recent outfits of twelve more characters, get their textures right on a fresh install.</li>
+<li>Mods that draw from more than one of a character's meshes now get the same textures on every machine.</li>
+<li>Accessories and reworked pieces in mods get their textures right on a fresh install too.</li>
+<li>The Loadout page shows every character at once: open any loadout, dress it in place, and set the in-game wheel from Timbre.</li>
+<li>What a switch needs of another now names its positions as the overlay does, Chinese and pinyin names read.</li>
+<li>Every slanted edge in Timbre leans a little less, from the header's picture to the buttons.</li>
+<li>Every picture now has the same small corners as the buttons, and the import page's rows line up.</li>
+<li>Lists, highlights and warnings stand straight now; only buttons and the things you press keep the slanted cut.</li>
+<li>Buttons, fields, menus and rows share the header's slanted cut, and what is chosen lights along its edge.</li>
+<li>Report a problem is now a page that shows what goes with your report, the mods from your last game, and each report you sent.</li>
+<li>Settings is simpler: eight sections, a search, and in-game options kept for each game on its own.</li>
+<li>Unnamed pieces are called Part 3.017 in Blender and in descriptions, and your library moves to the new names on its own.</li>
+<li>A mod is set up again by itself when Overtone learns more about its character, instead of keeping an older guess.</li>
+<li>The log now lists the DirectX files a game loaded and says if it draws with DirectX 11, to find why mods do not show.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="better">Better</h3><a id="user-content-better" class="anchor" aria-label="Permalink: Better" href="#better"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>A large mod library loads into the game about a fifth faster.</li>
+<li>Dumping a character stalls the game far less: a large dump held the game for up to 20 ms, now under 1.</li>
+<li>Mods load about a fifth faster when the game starts and each time a change to them is picked up.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Dumping a mix of an older mod and a newer one now works instead of being refused.</li>
+<li>Mods that pick their textures draw by draw, such as Suoming's Distant Land Dancer, wear the right textures on every piece.</li>
+<li>Playing before Timbre has opened your library after an update no longer leaves what the game showed under the old version.</li>
+<li>Hsin - Velvet's borrowed body now moves with Hsin instead of standing still.</li>
+<li>Attacking or clicking while wearing a mod with its own help or menu no longer reloads your mods on every click.</li>
+<li>A mod's weapon no longer takes another part's colours after you play the character again on a new game version.</li>
+<li>Character screens show a mod's own textures: Denia's face and Zani's suit there now match what you see in the world.</li>
+<li>Overtone guesses fewer wrong texture roles; a texture it is unsure of is left for you to place.</li>
+<li>Mods whose key cycles back through a colour, like CHRONOPATTERN Alt's Fleurdelys colours, no longer fail to import.</li>
+<li>The runtime log no longer drops lines in busy scenes, and a session's log is about a fifth smaller.</li>
+<li>Hsin - Velvet, which puts Galbrena's body on Hsin, draws whole again, in Hsin's shading for now.</li>
+<li>A mod Overtone can draw only in part, like Hsin - Velvet, is put back as its author shipped it rather than drawn half.</li>
+<li>Iuno's sandals and other parts that share a texture with another part now wear a mod's or a dump's textures for it.</li>
+<li>Mods that keep their outfit in a subfolder, like Suoming's Summer swimsuit, show the whole outfit again, not only the hair.</li>
+<li>A mod whose pack holds a folder missing its mesh files updates again instead of stopping with "would name another piece".</li>
+<li>Suoming's mods are listed under Suoming, and a mod filed after installing is no longer refused when Overtone updates it.</li>
+<li>Reduce motion set to Never or Always in Settings now holds on every screen, whatever the system asks.</li>
+<li>After a power cut, a mod whose files were cut short is rebuilt the next time Timbre starts instead of drawing broken.</li>
+<li>An edited mod no longer draws stale bones far away or after a game update, and what the game learns of a mod is no longer lost.</li>
+<li>An older Overtone no longer changes a mod library that a newer Overtone or Timbre has already updated.</li>
+<li>A key press, a preset and Timbre writing a mod's switches at the same moment no longer lose one of them.</li>
+<li>A mods folder macOS keeps Timbre out of now says so, opens the setting that allows it, and never loses pictures in an update.</li>
+<li>A new mod is named for its character even where another mod of your library was filed under someone else.</li>
+<li>Suoming is known by name, so her mods and dumps are filed under her.</li>
+<li>Settings shows the Blender Timbre opens, or Not found; the recorder names its stop key; dump and Play messages follow your language.</li>
+<li>The in-game overlay's On screen tab, a worn mod's switches and Mix's highlights find your mods again whatever case their folders use.</li>
+<li>Play now starts Wuthering Waves on DirectX 12, which fixes mods not showing on PCs where the game picked DirectX 11.</li>
+<li>Timbre, the overlay and the MCP tools call each section of a character a part, as Blender and the guides do.</li>
+</ul></article><article class="card rel small rise" data-p="mcp"><div class="rel__head"><i class="dot"></i><h2>MCP server</h2><span>26.1028.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/mcp-v26.1028.0" aria-label="MCP server 26.1028.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>An AI tool that asks Overtone for something its version does not know is told so, rather than answered without it.</li>
+<li>Timbre and any number of AI tools can follow the game at once; a new one is no longer turned away as busy.</li>
+<li>Help's report on the last run keeps every fault and its start time while the game runs.</li>
+<li>Timbre's description pane and Borrow read a mod's switches and conditions however its description spells them.</li>
+</ul></article></div></section>
+<section class="day"><div class="when"><time datetime="2026-10-19">19 October</time><small>2026</small></div><div class="told"><article class="card rel small rise" data-p="timbre"><div class="rel__head"><i class="dot"></i><h2>Timbre</h2><span>26.1019.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/timbre-v26.1019.0" aria-label="Timbre 26.1019.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Updating Timbre keeps it in the folder you installed it in, and an old copy now offers to open the current one.</li>
+</ul></article><article class="card rel small rise" data-p="mcp"><div class="rel__head"><i class="dot"></i><h2>MCP server</h2><span>26.1019.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/mcp-v26.1019.0" aria-label="MCP server 26.1019.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><p>Maintenance: nothing a player would notice changed.</p></article></div></section>
+<section class="day"><div class="when"><time datetime="2026-10-18">18 October</time><small>2026</small></div><div class="told"><article class="card rel rise" data-p="timbre"><div class="rel__head"><i class="dot"></i><h2>Timbre</h2><span>26.1018.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/timbre-v26.1018.0" aria-label="Timbre 26.1018.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Save diagnostics now includes the game's own crash report and ReShade's log, and can include the hang dump.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Timbre's setup now shows the beta terms for you to accept before it installs.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Completing a choice of several words in a condition now writes it in quotes, so the condition still reads</li>
+<li>When the model view cannot draw a mod, Timbre says so and lets you close it, rather than going blank.</li>
+<li>A mod whose file ends in .INI is now named in Health with the rename it needs, and one named ~DISABLED is read as WWMI reads it.</li>
+<li>The texture picker and Paint name maps as modders do (Diffuse, Light map), and a Zenless Zone Zero mod's picker offers its own maps.</li>
+<li>A mod's Outfit row now names the outfit it is listed under, even after the outfit it was filed under is renamed.</li>
+</ul></article><article class="card rel rise" data-p="runtime"><div class="rel__head"><i class="dot"></i><h2>Overtone</h2><span>26.1018.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/runtime-v26.1018.0" aria-label="Overtone 26.1018.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Mix in game shows each outfit as a column of checkboxes, keeps what you point at lit, and asks before dropping changes.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Pointing at a piece in Timbre's Mix lights it in game without slowing the game.</li>
+<li>The saved diagnostics list the game's DirectX files, and the log says when the game has not used Overtone's after a minute.</li>
+<li>Timbre's runtime options now list only the settings a player changes; old troubleshooting switches are gone.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="better">Better</h3><a id="user-content-better" class="anchor" aria-label="Permalink: Better" href="#better"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>The Mix page opens faster, in game and in Timbre, most for a character with many outfits</li>
+<li>In game, the Mix page lights the piece you point at for as long as you point at it, without slowing the game.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>A mod's normal map on hair or a face, which the game never shows, is no longer put on them.</li>
+<li>Outfits that carry a bone remap no longer come out with twisted legs or bodies after an update.</li>
+<li>Mods that pick their textures by WWMI's format filters, like Slap's Hsin, Suisui and Yangyang outfits, wear their textures again.</li>
+<li>Rover (Male) mods now get their textures without anyone having to play him first.</li>
+<li>The Mix page in game and in Timbre agree on what a part shows, and no longer call a part bare where the game's own shows.</li>
+<li>With ray tracing on, a mod that changes one part of a character, such as her face, now draws.</li>
+<li>Aemeath mods whose hash fix moved a light map onto the normal map draw their own light map again.</li>
+<li>With ray tracing on, an accessory worn beside an outfit now draws, and the outfit with it, instead of the game's own.</li>
+<li>Mods with their own UV layout no longer turn see-through in a skill form, such as Suisui's knees in her ink form.</li>
+<li>Mods an earlier update left on outdated bone weights, like Hsin's Azur Bunny, are rebuilt so they no longer stretch.</li>
+<li>Mods that work out their bone map size, rather than writing it as a number, no longer stretch once made native.</li>
+<li>With ray tracing on, an outfit turned on while playing now shows instead of the character's own clothes.</li>
+<li>Mods that bring their own copy of WWMI's bone remapper, like Slap's Hsin outfits, no longer stretch or twist once made native.</li>
+<li>A key that steps through outfits is no longer dropped when one of its steps applies in every state</li>
+<li>An update's conflict over a look or a switch's condition now reads with your mod's own option and choice names</li>
+<li>An update no longer marks a look as changed when only the wording of its condition differs, and a look conflict reads as the file says it</li>
+<li>Timbre and the in-game Mix page agree on which pieces an outfit wears, and an outfit another one covers no longer shows as worn.</li>
+<li>A description written by hand reads a choice spelled as a number the same way in its looks, conditions and defaults.</li>
+<li>A greyscale PNG texture with a transparent shade now keeps its transparency.</li>
+<li>A texture picked for one outfit of a mod that ships several in one folder no longer lands on the others</li>
+<li>Mods that build more than one skeleton, like Setsuna no Chou for Shorekeeper, are no longer refused.</li>
+<li>Textures picked for a mod whose key moves several values land where that key's look shows them, and explain tells what it draws</li>
+<li>A mod split over two folders that stopped updating again after its other half updated updates again.</li>
+<li>Turning off Talk to Timbre during a session stops dumps and screenshots being reported to Timbre.</li>
+<li>With Talk to Timbre turned off, a dump or a screenshot no longer opens a channel to Timbre.</li>
+<li>A mod split across folders, such as Hsin - Morning Mist, now changes every folder when you switch an option in one.</li>
+<li>Mods split into several folders that share textures and switches, such as Hsin - Morning Mist, now wear them in every folder.</li>
+<li>A modded body weighted to the game's own face or hands no longer trails them by a frame in motion.</li>
+<li>A modded character no longer lags a frame behind the game's own face and hands while she moves.</li>
+<li>A modded part weighted to the game's own face or hands now follows them in motion instead of breaking away.</li>
+<li>A mod that edits the game's shaders, or binds a vertex buffer past the fifth, now behaves in Overtone as under WWMI.</li>
+<li>The overlay saves settings only when you press Save, F7 keeps its own choice, and improved defaults reach settings you never changed.</li>
+<li>A mod line with a note after a ; no longer hides a part XXMI shows, and shape keys work whatever their letter case or comments.</li>
+<li>Outfits that pick their textures through nested RabbitFX lists, like Hsin - Morning Mist, now wear their own textures.</li>
+<li>Hsin's Glimpse and Glimpse Ult mods can now be made native instead of being refused.</li>
+<li>A mod that replaces only part of a character's model, like an outfit for Hsin's ultimate form, is now recognised as hers.</li>
+<li>Settings you never changed now follow Overtone's defaults, so a better default reaches you with the update.</li>
+<li>A mod shows under the same name in Timbre and in the game's overlay: the name its author gave it, else its folder's.</li>
+<li>The overlay and Timbre agree on preset names: Beach and beach are one preset, and the wheel never makes a second Beach.</li>
+<li>A dump no longer takes in a mesh of another character that shares only unused bones with the one you picked.</li>
+<li>Mods turned on after the game started with none drawn now appear without restarting the game.</li>
+<li>Mixing outfits in Timbre now shows what the game draws: an outfit you mix in is never dropped for another when you wear it.</li>
+<li>The game always loads the mod library Timbre shows, even from an older settings file.</li>
+<li>The log, the shader cache and edited shaders are kept again when your Windows user folder has letters outside English.</li>
+</ul></article><article class="card rel rise" data-p="mcp"><div class="rel__head"><i class="dot"></i><h2>MCP server</h2><span>26.1018.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/mcp-v26.1018.0" aria-label="MCP server 26.1018.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>An AI assistant connected to Overtone can now reset a mod to what Overtone derives from its files, dropping every pick.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Proposed changes and kept edits name each texture by its folder in the mod and say a material's textures in words.</li>
+</ul></article></div></section>
+<section class="day"><div class="when"><time datetime="2026-10-17">17 October</time><small>2026</small></div><div class="told"><article class="card rel rise" data-p="timbre"><div class="rel__head"><i class="dot"></i><h2>Timbre</h2><span>26.1017.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/timbre-v26.1017.0" aria-label="Timbre 26.1017.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>The library has a Weapons tab beside Characters once you have a weapon mod, and a weapon inside an outfit switches on its own.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>A finished download can now be cancelled while it installs, and one interrupted mid-install is finished on the next start.</li>
+<li>A weapon inside a mod pack is shown with its outfit's name and cover, and Health files a pack's weapons by name.</li>
+<li>A weapon inside a mod pack gets a folder named for it, out of any empty folder it shipped in.</li>
+<li>Updating a mod pack keeps each weapon inside it, with its choices, even after its folder was renamed.</li>
+<li>Turning an outfit on now turns on the weapon that came with it, and you can still turn the weapon off on its own.</li>
+<li>Another mod manager's backup, temp and restore folders are no longer listed as mods, and Health offers to clear them. (#4)</li>
+<li>Health lists mod folders not named after their character and mod, and renames them all with one press.</li>
+<li>Renaming a mod or moving it to another character renames its folder to match, and an update still finds a renamed mod.</li>
+<li>A mod you import or download is named once, and Timbre files its folder as Character - Name, such as Chisa - Radiant.</li>
+<li>Importing several mods shows each one's progress, and Cancel stops an import before anything is added.</li>
+<li>Health can update a mod anyway past its warning, and Undo puts it back.</li>
+<li>Health lists the mods an update left as they were, with why, and the update's notice opens it.</li>
+<li>When you add a mod from an archive, Timbre shows the character it is for and fills in its author, link and version.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="better">Better</h3><a id="user-content-better" class="anchor" aria-label="Permalink: Better" href="#better"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Turning a mod on or off does less work behind the scenes, so the page settles sooner.</li>
+<li>The Loadout page updates faster after you turn a mod on or off.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>The Play button appears as soon as Timbre finds your game, without a restart.</li>
+<li>Health's Not updated list names each mod, shows its cover and opens it to say why.</li>
+<li>Renaming a choice now renames it in every condition, and the description pane stops warning about switches that exist.</li>
+<li>Turning a mod on or off moves its switch at once, and the mod's panel no longer flickers.</li>
+<li>Overtone guesses the roles of unlabelled mod textures by one set of rules, and its library check after an update runs faster.</li>
+<li>A mod deleted outside Timbre stops being drawn and leaves your presets, and turning mods on and off is quick again.</li>
+<li>Several mods dropped on a mod now ask whether they belong with it, and one dropped on a character's page lands under that character.</li>
+<li>Switching presets no longer prepares the same textures again each time.</li>
+<li>One press of Make native now makes every mod native it can, without pressing again.</li>
+<li>Mods that only hide or retexture the game's own parts are no longer listed as not native in Health.</li>
+<li>Mods without a cover show their character's art in Health instead of a black square.</li>
+<li>Downloading or updating a mod no longer freezes Timbre while the archive unpacks.</li>
+<li>Importing a mod no longer freezes Timbre, and the dialog shows that it is importing.</li>
+</ul></article><article class="card rel rise" data-p="runtime"><div class="rel__head"><i class="dot"></i><h2>Overtone</h2><span>26.1017.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/runtime-v26.1017.0" aria-label="Overtone 26.1017.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>A character dressed by several mods, a hair and an outfit say, moves as one on every piece</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>A modded part weighted to a bone only the game's own face or hands carry follows it instead of freezing.</li>
+<li>A mod keeps drawing right after a game update that renumbers a character's bones, near-identical bones included.</li>
+<li>Nested mods are named by their own words, such as Bow or Chakram, instead of their folder's path.</li>
+<li>Iuno's ring from an outfit mod wears the mod's own texture instead of the game's.</li>
+<li>The in-game Wardrobe lists and groups your mods as Timbre does, one row a mod with its parts inside. (#4)</li>
+<li>Weapons in packs you installed before keep your choices, picked textures and presets when they become mods of their own.</li>
+<li>Aemeath's and Denia's signature weapons in mods now wear the mod's textures.</li>
+<li>Weapons and props in mods like the Radiant packs now wear their own textures instead of the game's.</li>
+<li>Weapon recolours in the Radiant packs for Hiyuki, Jingran, Brant, Qiuyuan and Yuanwu now show in game.</li>
+<li>Weapon mods are now mods of their own, switched on and off apart from the outfit they came with.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="better">Better</h3><a id="user-content-better" class="anchor" aria-label="Permalink: Better" href="#better"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Modded characters cost less frame time to draw.</li>
+<li>Clone skills with many afterimages, like Qingxiao's, cost far less frame time.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>A mod split over two folders that stopped updating after an Overtone update updates again and draws all its textures.</li>
+<li>A mod you picked a texture for no longer loses it at some switch settings when Overtone updates.</li>
+<li>Denia's Customization And Mega Wardrobe wears its own outfit in the open world, not its material maps.</li>
+<li>Outfits whose texture files were renamed or re-saved by their author, or that turn a texture off, now show what the author shipped.</li>
+<li>Mods whose textures an ini names with a leading backslash, like Denia's Remiel Alt in the overworld, now draw them.</li>
+<li>A mod whose bone weights use the wide layout is paired with the game's bones correctly after a game update.</li>
+<li>A weapon mod that names its own weapon is listed and switched as that weapon, even where its model matches another one.</li>
+<li>Simple Hiyuki Sliders' Alt+4 puts back the switches Ctrl+Alt+4 saved, as it does in WWMI.</li>
+<li>Some outfits now show their own normal map, and a few no longer wear a texture meant for another part.</li>
+<li>A key that resets a mod's switches, like Ctrl+4 in Simple Hiyuki Sliders, now works in Overtone too.</li>
+<li>Mods that recolour their outfits in game, like Denia's Customization And Mega Wardrobe, wear their own textures again.</li>
+<li>Installing a mod whose key saves many sliders at once, like Simple Hiyuki Sliders, no longer hangs at Unpacking.</li>
+<li>The game's log and saved diagnostics now name Overtone's version instead of a commit.</li>
+<li>Keys that run a list kept in another of a mod's ini files now switch what that list changes.</li>
+<li>Qingxiao's Cheongsam Bunny wears its own normal, light and material maps on every piece.</li>
+<li>Mods whose extra ini files run shared lists, like Qingxiao - Crimson Blossom Decree, now wear the right textures on every piece.</li>
+<li>Iuno's chakram ring in Moonlit Crystal no longer wears the game's shiny reflection texture as its colour.</li>
+<li>Ciaccona's Dusty Bunny gun and staff wear the mod's own textures instead of her cloak, and its gun is a weapon mod of its own.</li>
+<li>An outfit whose body sits in its own folder beside its weapon no longer splits apart when it updates.</li>
+<li>Weapon mods that came inside an outfit are listed as their weapon's, not the character's.</li>
+<li>The Mix page, in game and in Timbre, now offers every outfit the Library shows for a character. (#4)</li>
+<li>A mod's keys now work beside another mod on the same character or her weapon, and a toggle key turns its part off again.</li>
+<li>A texture or switch you change by hand in a mod's description now stays through updates, and the game shows it as soon as you save.</li>
+<li>Hiding your UID no longer crashes the game now and then as it loads something new. (#4)</li>
+<li>Mods you add or change in Timbre while the game runs show in the in-game Wardrobe the next time you open it. (#4)</li>
+<li>The in-game Report's Mods cost shows a measured figure, or an estimate marked as one, instead of a made-up frame loss.</li>
+<li>Accessories a mod hangs on a character's own small parts, like Roccia's glasses and sandals, now stay on her instead of floating.</li>
+<li>Qingxiao's and Hiyuki's Radiant hair and eye colour options show in the normal form again instead of the second form's textures.</li>
+<li>Recolours of props in the Radiant packs, such as Carlotta's rifles and Augusta's crest, now show in game.</li>
+<li>Jingran's and Qingxiao's Radiant hair and eye colour options no longer show the other form's textures in the normal form.</li>
+<li>Eye colour choices of Qingxiao mods now show on a first import instead of the legs texture.</li>
+<li>Effect textures a mod ships for the game's shaders are no longer worn as a character's base colour, which tinted some halos and rings.</li>
+<li>A weapon mod now draws in game, whether it is installed on its own or inside a character's mod.</li>
+<li>The overlay says a preset was saved, worn or moved only once it was, and asks you to wear a mod before saving one.</li>
+<li>A preset can no longer be saved with no mods on, and one that was is gone; a preset tells you once about a mod you removed.</li>
+<li>Mods sitting side by side in one character's folder are no longer read as one mod.</li>
+</ul></article><article class="card rel rise" data-p="mcp"><div class="rel__head"><i class="dot"></i><h2>MCP server</h2><span>26.1017.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/mcp-v26.1017.0" aria-label="MCP server 26.1017.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Timbre asks you to update, and changes nothing, when a newer Timbre has already used your library.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="better">Better</h3><a id="user-content-better" class="anchor" aria-label="Permalink: Better" href="#better"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Timbre does less disk work after each mod you turn on or off, so it stays responsive while it prepares textures.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Timbre and AI assistants reach a game that has just started on their first try.</li>
+</ul></article></div></section>
+<section class="day"><div class="when"><time datetime="2026-10-15">15 October</time><small>2026</small></div><div class="told"><article class="card rel rise" data-p="timbre"><div class="rel__head"><i class="dot"></i><h2>Timbre</h2><span>26.1015.1</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/timbre-v26.1015.1" aria-label="Timbre 26.1015.1 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Report a problem in Settings saves your logs and opens a GitHub issue with your note already filled in.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Timbre's close, minimise and maximise buttons hide under the window and slide out when you rest the pointer at its top edge.</li>
+<li>Timbre can turn off a feature that misbehaves in one game without a new release, and releases no longer show the flags list.</li>
+<li>What's new links the issue a fix answers, and the issue is closed with the release that fixes it.</li>
+<li>Report a problem can include the game's hang dump when one exists, if you tick it.</li>
+<li>What's new can be narrowed to Overtone, Timbre or the MCP server, and lists everything since the Overtone you ran.</li>
+<li>Timbre now offers to report a problem when the game closes after one, and has a Report button at the foot of the left bar.</li>
+<li>Updates now show highlights for Overtone, Timbre and the MCP server to swipe through, and Play checks for an update first.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Timbre's model view shows a Zenless Zone Zero mod whole, its hair, body and weapon together.</li>
+<li>The highlight card in What's new no longer shows the next card through it.</li>
+</ul></article><article class="card rel rise" data-p="timbre"><div class="rel__head"><i class="dot"></i><h2>Timbre</h2><span>26.1015.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/timbre-v26.1015.0" aria-label="Timbre 26.1015.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>The texture question before Play lists SD, HD and UHD, with HD chosen; press Play to start.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Timbre looks for updates every hour, and soon after your PC wakes from sleep.</li>
+<li>Play asks which textures you downloaded when the game's folder doesn't show it, and remembers your answer.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>A folder holding mods for several characters, added to Timbre, becomes one mod per character, each under its own character.</li>
+<li>Timbre no longer fills its log with warnings before you choose a mods folder.</li>
+<li>Play from Timbre no longer stops the game at start with "Use launcher to start game"; it starts with HD textures where installed.</li>
+</ul></article><article class="card rel rise" data-p="runtime"><div class="rel__head"><i class="dot"></i><h2>Overtone</h2><span>26.1015.1</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/runtime-v26.1015.1" aria-label="Overtone 26.1015.1 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Hide the UID in Settings → Drawing keeps your player ID off the screen and out of screenshots, the rest of the HUD as it was.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>The game no longer hitches for a moment while a character's face is moving.</li>
+<li>The game no longer hitches for a moment while a mod's look is first prepared.</li>
+<li>The game no longer hitches for a moment when a character first comes into view.</li>
+<li>Mods with a separate ini per body now switch textures on every body, and liberation forms stay put between imports.</li>
+<li>The game no longer stutters for a moment when mods first load.</li>
+<li>Mods with several textures for one part keep every switch they had, and more of them show their own textures.</li>
+<li>More of the video memory that mods let go of now goes back to the game.</li>
+<li>Mods that swap several textures for one part, or ship a near-miss sheet beside it, now show the right texture instead of none.</li>
+</ul></article><article class="card rel rise" data-p="runtime"><div class="rel__head"><i class="dot"></i><h2>Overtone</h2><span>26.1015.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/runtime-v26.1015.0" aria-label="Overtone 26.1015.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>The game no longer crashes at start on DirectX 12 when ReShade is installed beside Overtone.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Diagnostics, in game and in Timbre, now shows how much video memory Overtone uses, slow frames and freezes.</li>
+</ul></article><article class="card rel rise" data-p="mcp"><div class="rel__head"><i class="dot"></i><h2>MCP server</h2><span>26.1015.1</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/mcp-v26.1015.1" aria-label="MCP server 26.1015.1 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Logs, About and diagnostics now name the real version, and a build from source shows what's new too.</strong></p>
+</blockquote></article><article class="card rel small rise" data-p="mcp"><div class="rel__head"><i class="dot"></i><h2>MCP server</h2><span>26.1015.0</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/mcp-v26.1015.0" aria-label="MCP server 26.1015.0 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><p>Maintenance: nothing a player would notice changed.</p></article></div></section>
+<section class="day"><div class="when"><time datetime="2026-10-14">14 October</time><small>2026</small></div><div class="told"><article class="card rel rise" data-p="timbre"><div class="rel__head"><i class="dot"></i><h2>Timbre</h2><span>26.1014.2</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/timbre-v26.1014.2" aria-label="Timbre 26.1014.2 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Timbre shows how far it is in preparing your mods' textures, and hides it while you play.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Settings › About says when the running game still uses an older Overtone.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Saving diagnostics no longer says overtone.log is missing after the game's log was set aside.</li>
+</ul></article><article class="card rel rise" data-p="timbre"><div class="rel__head"><i class="dot"></i><h2>Timbre</h2><span>26.1014.1</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/timbre-v26.1014.1" aria-label="Timbre 26.1014.1 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>When a Timbre update is ready, the Play button turns into Update.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Updating Timbre now shows what is new first, and Settings shows every product's version.</li>
+<li>Each release on GitHub now lists what is new, better and fixed.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Timbre suggests a mods folder outside the game launcher's folder and uses a library you already have instead of making a new one.</li>
+</ul></article><article class="card rel rise" data-p="runtime"><div class="rel__head"><i class="dot"></i><h2>Overtone</h2><span>26.1014.2</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/runtime-v26.1014.2" aria-label="Overtone 26.1014.2 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Mods with prepared textures show the moment they are switched on or come into view, and sharpen a moment later.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Mods off screen for a minute give back most of their video memory, and sooner when memory runs short.</li>
+<li>Mods worn last session whose textures are not prepared yet start loading at game start, as memory allows.</li>
+<li>A texture several mods or outfits share is loaded once, and a mod's other looks are ready the moment you switch to them.</li>
+<li>Overtone keeps at most three backup copies of a mod's files, and keeps an old model at an update only if you edited it in Blender.</li>
+<li>Each part of a character is headed the same way in Timbre and in game, by what it is and its number, like Body 3.</li>
+<li>Every mod piece shows its id beside its name, the same in Timbre and in game, and Chinese piece names read in English.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>A mod's eyes now show its own iris where the game's iris used to show through.</li>
+<li>Changing a switch no longer makes a mod's switch list in the overlay blink when the mod has switches for two forms.</li>
+<li>Free versions of mods that leave out a key, like Shiroho's Radiant trials, show in game again, their choice moved from Timbre.</li>
+<li>Colour switches of mods like Radiant Qingxiao now change her hair, eyes and outfit in game.</li>
+<li>The game closes two seconds sooner and no longer reports an error that never happened.</li>
+<li>Mods that fade a dress or top with their own see-through shader, as Hsin - Rouged Lips does, now draw it see-through.</li>
+<li>Characters wearing a mod now teach Overtone their textures as you play, like characters without one.</li>
+<li>The in-game overlay keeps working after the game restarts its graphics, and the old graphics memory is let go.</li>
+<li>The Diagnostics page shows what mods cost even when it is under one frame a second.</li>
+<li>If reloading your mods ever fails, the game now reads them once more rather than leaving new ones unloaded.</li>
+<li>A texture no longer stays blurry after you change outfits or mods while it was still loading.</li>
+<li>A Carlotta mod's crystal hair no longer draws over her normal hair.</li>
+</ul></article><article class="card rel rise" data-p="runtime"><div class="rel__head"><i class="dot"></i><h2>Overtone</h2><span>26.1014.1</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/runtime-v26.1014.1" aria-label="Overtone 26.1014.1 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><blockquote>
+<p><strong>Mods fixed for a newer game version by a fixer tool place their textures from what the fixer's backups say.</strong></p>
+</blockquote>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="new">New</h3><a id="user-content-new" class="anchor" aria-label="Permalink: New" href="#new"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Overtone remembers the texture names a game update replaces, so mods made before the update keep finding their textures.</li>
+<li>The log names what the game was compiling when it stalls, and a hung game writes its dump.</li>
+<li>When the game freezes, Overtone saves a file showing where it stopped, so the freeze can be found and fixed.</li>
+<li>Overtone learns the game's textures even from characters no mod dresses, so more mods find theirs.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="better">Better</h3><a id="user-content-better" class="anchor" aria-label="Permalink: Better" href="#better"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Characters seen for the first time in a session no longer stall the frame while their shaders are read.</li>
+<li>Overtone reads a character's textures in a fraction of a second, where it took two or three.</li>
+<li>Overtone no longer reloads your mods each time it learns one of the game's textures.</li>
+<li>A slider moved in game, or a switch flipped in Timbre, now takes effect without reloading every mod.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Changing outfits or mods often no longer slowly uses up graphics memory or makes characters take longer to appear.</li>
+<li>Mods on Zani's stockinged outfit now shade her skin and hands with their own textures in the character menu.</li>
+<li>Mods keep the textures Overtone placed for them when a game update or a new texture table arrives.</li>
+<li>Logs and diagnostics no longer contain your Windows user name.</li>
+<li>Switching a character's form no longer reports her textures as missing.</li>
+<li>A slider no longer snaps back while you drag it.</li>
+</ul></article><article class="card rel small rise" data-p="mcp"><div class="rel__head"><i class="dot"></i><h2>MCP server</h2><span>26.1014.2</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/mcp-v26.1014.2" aria-label="MCP server 26.1014.2 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>The runtime diagnostics in Timbre show the last run again after an update set its log aside.</li>
+<li>A crash while a mod is saved no longer leaves a broken backup copy behind.</li>
+</ul></article><article class="card rel small rise" data-p="mcp"><div class="rel__head"><i class="dot"></i><h2>MCP server</h2><span>26.1014.1</span><a href="https://github.com/tonewright/overtone-releases/releases/tag/mcp-v26.1014.1" aria-label="MCP server 26.1014.1 on GitHub"><span>On GitHub</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></div><div class="markdown-heading"><h3 class="heading-element" data-tag="fixed">Fixed</h3><a id="user-content-fixed" class="anchor" aria-label="Permalink: Fixed" href="#fixed"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>An AI client connected to Overtone no longer leaves gigabytes of memory held after checking or borrowing mods.</li>
+</ul></article></div></section></section>
+  <p class="empty wrap" id="empty" hidden>No release of this one yet.</p>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1028.0/Timbre_26.1028.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1028.0 · Overtone 26.1028.0 · MCP server 26.1028.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>
