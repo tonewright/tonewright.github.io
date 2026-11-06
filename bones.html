@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bone names · Tonewright</title>
+<meta name="description" content="What a bone's name says in Blender and everywhere else: every word a bone can have, what `~` in front of a name means, and how a WWMI number finds its bone.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/bones.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Bone names · Tonewright">
+<meta property="og:description" content="What a bone's name says in Blender and everywhere else: every word a bone can have, what `~` in front of a name means, and how a WWMI number finds its bone.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=a95a2f6dca">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a><a class="support" href="https://ko-fi.com/poisedmapple" aria-label="Support on Ko-fi" title="Support on Ko-fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 7.2a4.8 4.8 0 0 1 8.5 2.6C20.5 15.7 12 21 12 21z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1106.0/Timbre_26.1106.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="forms.html">A character's forms</a><a href="bones.html" aria-current="page">Bone names</a><a href="skeleton.html">The Wuthering Waves skeleton</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Bone names</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="forms.html">A character's forms</a><a href="bones.html" aria-current="page">Bone names</a><a href="skeleton.html">The Wuthering Waves skeleton</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">Bone names</h1>
+      <p class="lead rise" style="--i:2">What a bone's name says in Blender and everywhere else: every word a bone can have, what <code>~</code> in front of a name means, and how a WWMI number finds its bone.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">Reference</span><span>6 min read</span><span>Timbre 26.1106.0 · Overtone 26.1106.0</span></p>
+      
+      <div class="prose"><p>A bone's name says what the bone is. You read it on <code>Rig</code> in the Blender scene, and on each vertex group of a piece. Overtone ships a skeleton table of every character and reads each name from it, so two mods of one character and a dump of her call a bone the same. You do not edit a name: the game reads a bone's number, never its name.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="how-a-name-is-built"><a class="anchor" href="#how-a-name-is-built" aria-hidden="true">#</a>How a name is built</h2><a id="user-content-how-a-name-is-built" class="anchor" aria-label="Permalink: How a name is built" href="#how-a-name-is-built"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Form</th>
+<th align="left">Example</th>
+<th align="left">Used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">A word and a side</td>
+<td align="left"><code>thigh.L</code></td>
+<td align="left"><a href="#body">Body bones</a></td>
+</tr>
+<tr>
+<td align="left">A word, a number and a side</td>
+<td align="left">
+<code>forearm twist 2.L</code>, <code>index 2.R</code>
+</td>
+<td align="left">
+<a href="#twists">Twists</a> and <a href="#fingers">fingers</a>
+</td>
+</tr>
+<tr>
+<td align="left">A joint, a place and a side</td>
+<td align="left"><code>knee back.L</code></td>
+<td align="left"><a href="#helpers">Helpers</a></td>
+</tr>
+<tr>
+<td align="left">A group, a chain, a bone and a side</td>
+<td align="left"><code>hair 3.2.L</code></td>
+<td align="left"><a href="#chains">Chains</a></td>
+</tr>
+</tbody>
+</table>
+<p><code>.L</code> is the character's left and <code>.R</code> her right. A name with no side lies on her middle, such as <code>head</code>. Blender's own mirror tools read these sides, so a bone finds its image by name.</p>
+<p>A second number before the side, as in <code>upper arm twist 1 2.L</code>, tells apart two bones that would otherwise share one name.</p>
+<p><code>Rig</code> sorts its bones into collections by their first word: <strong>Body</strong>, <strong>Fingers</strong>, <strong>Face</strong>, <strong>Hair</strong>, <strong>Skirt</strong> and <strong>Cloth</strong>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="body"><a class="anchor" href="#body" aria-hidden="true">#</a>Body</h2><a id="user-content-body" class="anchor" aria-label="Permalink: Body" href="#body"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>These are in the <strong>Body</strong> collection, top to bottom.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Word</th>
+<th align="left">The bone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>head</code></td>
+<td align="left">The head.</td>
+</tr>
+<tr>
+<td align="left"><code>neck</code></td>
+<td align="left">The neck. Where it has two bones, <code>neck 1</code> and <code>neck 2</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>chest</code></td>
+<td align="left">The upper chest, where the arms and neck hang from.</td>
+</tr>
+<tr>
+<td align="left">
+<code>spine 1</code>, <code>spine 2</code>
+</td>
+<td align="left">The spine, counted up from the hips.</td>
+</tr>
+<tr>
+<td align="left"><code>hips</code></td>
+<td align="left">The root of the body. A guess may call it <code>pelvis</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>clavicle</code></td>
+<td align="left">The collarbone.</td>
+</tr>
+<tr>
+<td align="left"><code>upper arm</code></td>
+<td align="left">Shoulder to elbow.</td>
+</tr>
+<tr>
+<td align="left"><code>forearm</code></td>
+<td align="left">Elbow to wrist.</td>
+</tr>
+<tr>
+<td align="left"><code>hand</code></td>
+<td align="left">The hand.</td>
+</tr>
+<tr>
+<td align="left"><code>thigh</code></td>
+<td align="left">Hip to knee.</td>
+</tr>
+<tr>
+<td align="left"><code>calf</code></td>
+<td align="left">Knee to ankle.</td>
+</tr>
+<tr>
+<td align="left"><code>foot</code></td>
+<td align="left">The foot.</td>
+</tr>
+<tr>
+<td align="left"><code>toe</code></td>
+<td align="left">The toes, as one bone.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: <code>calf.L</code> hangs from <code>thigh.L</code> and carries <code>foot.L</code>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="twists"><a class="anchor" href="#twists" aria-hidden="true">#</a>Twists</h2><a id="user-content-twists" class="anchor" aria-label="Permalink: Twists" href="#twists"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A twist bone turns with a limb along its length, so the skin does not pinch as the limb rolls. They are in the <strong>Body</strong> collection, and are named <code>&lt;limb&gt; twist &lt;number&gt;</code>, counted down the limb.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Word</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>upper arm twist</code></td>
+<td align="left"><code>upper arm twist 1.L</code></td>
+</tr>
+<tr>
+<td align="left"><code>forearm twist</code></td>
+<td align="left"><code>forearm twist 2.R</code></td>
+</tr>
+<tr>
+<td align="left"><code>thigh twist</code></td>
+<td align="left"><code>thigh twist 1.L</code></td>
+</tr>
+<tr>
+<td align="left"><code>calf twist</code></td>
+<td align="left"><code>calf twist 1.R</code></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="helpers"><a class="anchor" href="#helpers" aria-hidden="true">#</a>Helpers</h2><a id="user-content-helpers" class="anchor" aria-label="Permalink: Helpers" href="#helpers"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A helper is a small bone beside a joint, which holds the skin in shape as the joint bends. They are in the <strong>Body</strong> collection, and are named <code>&lt;joint&gt; &lt;place&gt;</code>.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Joint</th>
+<th align="left">Between</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>hip</code></td>
+<td align="left">
+<code>thigh</code> and the hips</td>
+</tr>
+<tr>
+<td align="left"><code>knee</code></td>
+<td align="left">
+<code>calf</code> and <code>thigh</code>
+</td>
+</tr>
+<tr>
+<td align="left"><code>ankle</code></td>
+<td align="left">
+<code>foot</code> and <code>calf</code>
+</td>
+</tr>
+<tr>
+<td align="left"><code>shoulder</code></td>
+<td align="left">
+<code>upper arm</code> and the chest</td>
+</tr>
+<tr>
+<td align="left"><code>elbow</code></td>
+<td align="left">
+<code>forearm</code> and <code>upper arm</code>
+</td>
+</tr>
+<tr>
+<td align="left"><code>wrist</code></td>
+<td align="left">
+<code>hand</code> and <code>forearm</code>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">A joint has</th>
+<th align="left">Its helpers are named</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Two</td>
+<td align="left">
+<code>front</code> and <code>back</code>
+</td>
+</tr>
+<tr>
+<td align="left">Three</td>
+<td align="left">
+<code>front</code>, <code>mid</code> and <code>back</code>
+</td>
+</tr>
+<tr>
+<td align="left">One, or more than three</td>
+<td align="left">A number: <code>hip helper 1.L</code>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>front</code> lies ahead of the joint, the way the character faces, and <code>back</code> behind it: <code>knee front</code> is over the kneecap and <code>knee back</code> in the hollow behind it. <code>hip mid</code> lies on the hip's outer side.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="fingers"><a class="anchor" href="#fingers" aria-hidden="true">#</a>Fingers</h2><a id="user-content-fingers" class="anchor" aria-label="Permalink: Fingers" href="#fingers"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>These are in the <strong>Fingers</strong> collection, and are named <code>&lt;finger&gt; &lt;bone&gt;</code>. A finger's words are <code>thumb</code>, <code>index</code>, <code>middle</code>, <code>ring</code> and <code>pinky</code>. Its bones count out from the hand: <code>index 1.L</code> is nearest the palm and <code>index 3.L</code> is the tip.</p>
+<p>Two words come only from a guess (<a href="#marks">Marks</a>): <code>palm 1.L</code>, a bone in the palm, and <code>finger 6.1.R</code>, a sixth finger's first bone.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="chains"><a class="anchor" href="#chains" aria-hidden="true">#</a>Chains</h2><a id="user-content-chains" class="anchor" aria-label="Permalink: Chains" href="#chains"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A chain is a line of bones that hangs from the body and swings, or a line of the face's small bones. Each is named <code>&lt;group&gt; &lt;chain&gt;.&lt;bone&gt;</code>, with a side where it has one.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Group</th>
+<th align="left">Collection</th>
+<th align="left">Holds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>face</code></td>
+<td align="left"><strong>Face</strong></td>
+<td align="left">The face's small bones.</td>
+</tr>
+<tr>
+<td align="left"><code>hair</code></td>
+<td align="left"><strong>Hair</strong></td>
+<td align="left">Hair.</td>
+</tr>
+<tr>
+<td align="left"><code>skirt</code></td>
+<td align="left"><strong>Skirt</strong></td>
+<td align="left">Skirts.</td>
+</tr>
+<tr>
+<td align="left"><code>cloth</code></td>
+<td align="left"><strong>Cloth</strong></td>
+<td align="left">Other cloth.</td>
+</tr>
+</tbody>
+</table>
+<p>In <code>hair 3.2.L</code>, <code>3</code> is the chain and <code>2</code> its second bone. Bone <code>1</code> is nearest the body, and the numbers grow outward.</p>
+<ul>
+<li>
+<strong>A chain and its image share a number.</strong> <code>hair 3.1.L</code> and <code>hair 3.1.R</code> mirror each other.</li>
+<li>
+<strong>A whole chain has one side.</strong> Its first bone decides it. A chain with no image keeps that side, so a <code>.L</code> chain need not have a <code>.R</code>.</li>
+<li>
+<strong>A branch is a chain of its own.</strong> Its first bone hangs from a bone of the chain it leaves.</li>
+<li>
+<strong>A chain's number means one bone on one character.</strong> <code>hair 3.2.L</code> on another character is another bone. Only the group says the same thing on both.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="marks"><a class="anchor" href="#marks" aria-hidden="true">#</a>Marks</h2><a id="user-content-marks" class="anchor" aria-label="Permalink: Marks" href="#marks"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">On <code>Rig</code>
+</th>
+<th align="left">Means</th>
+<th align="left">Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>thigh.L</code></td>
+<td align="left">The table proves this bone.</td>
+<td align="left">Use it.</td>
+</tr>
+<tr>
+<td align="left"><code>~thigh.L</code></td>
+<td align="left">A guess. Overtone worked the name out, and the table does not prove it, usually for a mod made for an older game version or a character the table does not hold yet.</td>
+<td align="left">Use it, and pose <code>Rig</code> to check it.</td>
+</tr>
+<tr>
+<td align="left"><code>c3.b17</code></td>
+<td align="left">Nothing named this bone. It is number 17 of part 3.</td>
+<td align="left">Pose <code>Rig</code> to see what it moves.</td>
+</tr>
+<tr>
+<td align="left"><code>thigh.L own</code></td>
+<td align="left">A bone of yours held a name the model wants, so Overtone moved yours aside.</td>
+<td align="left">Rename it, or delete it.</td>
+</tr>
+</tbody>
+</table>
+<p>A bone marked <code>~</code> saves and draws like any other. A vertex group named <code>thigh.L</code> on a mesh you bring in counts as <code>~thigh.L</code>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="wwmi-numbers"><a class="anchor" href="#wwmi-numbers" aria-hidden="true">#</a>WWMI numbers</h2><a id="user-content-wwmi-numbers" class="anchor" aria-label="Permalink: WWMI numbers" href="#wwmi-numbers"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>WWMI-Tools calls a bone by a number within a <code>Component</code>, and <code>Component 3</code> is Overtone's <code>Part 3</code> (<a href="edit-in-blender.html#coming-from-wwmi-tools">Coming from WWMI-Tools</a>). A number means a bone only with its part: number 17 is one bone in <code>Part 3</code> and another in <code>Part 1</code>. There is no number for the whole mesh. A game update can move the numbers, and the name stays with the bone.</p>
+<p>The <strong>Weights</strong> panel, under <strong>Overtone</strong> in the sidebar of a Blender opened from Timbre, shows the bone a number is. Press <strong>N</strong> to open the sidebar. With a piece selected it speaks of the active vertex group's bone, and with <code>Rig</code> selected of the active bone:</p>
+<pre><code>upper arm.L
+Part 3 · 17
+Also Part 1 · 4
+</code></pre>
+<p>The first line is the name, the second the bone's number in its own part, and <code>Also</code> lists every other part that holds it.</p>
+<p>To find a bone by its WWMI number:</p>
+<ol>
+<li>Click a piece in the part the number belongs to. The panel shows that piece's active vertex group.</li>
+<li>Type the number into <strong>Find number</strong> and press <strong>Enter</strong>. The panel shows the bone's name and <code>Part 3 · 17</code>, and that bone's vertex group becomes the active one.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">The panel says</th>
+<th align="left">Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>No bone holds that number here</code></td>
+<td align="left">That part has no such number. Check you clicked a piece of the right part.</td>
+</tr>
+<tr>
+<td align="left">The same bone as before</td>
+<td align="left">The bone is active on <code>Rig</code>, but this piece has no weights on it, so it has no vertex group to show.</td>
+</tr>
+<tr>
+<td align="left"><code>Select a piece or a bone</code></td>
+<td align="left">Neither a piece nor <code>Rig</code> is active.</td>
+</tr>
+<tr>
+<td align="left"><code>No active bone</code></td>
+<td align="left">
+<code>Rig</code> has no active bone, or a piece's active vertex group names no bone.</td>
+</tr>
+</tbody>
+</table>
+<p>With <code>Rig</code> selected, <strong>Find number</strong> reads the number in the part of the active bone.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="when-a-name-changes"><a class="anchor" href="#when-a-name-changes" aria-hidden="true">#</a>When a name changes</h2><a id="user-content-when-a-name-changes" class="anchor" aria-label="Permalink: When a name changes" href="#when-a-name-changes"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">You see</th>
+<th align="left">Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">A bone you renamed has its old name back</td>
+<td align="left">Each open names every bone as the model does. Its vertex groups follow.</td>
+</tr>
+<tr>
+<td align="left">A dump's names do not match this page</td>
+<td align="left">A dump keeps the names it was made with. Dump the character again (<a href="create-a-mod.html">How to create a mod</a>).</td>
+</tr>
+<tr>
+<td align="left">A name lost its <code>~</code>, or <code>c3.b17</code> became a word</td>
+<td align="left">An Overtone update's table now holds the bone.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="skeleton.html">The Wuthering Waves skeleton</a>: how she stands, which bones hold the skin, and what catches authors out.</li>
+<li>
+<a href="edit-in-blender.html">Edit a mod in Blender</a>: weight-paint these bones and save.</li>
+<li>
+<a href="edit-in-blender.html#when-to-paint-weights-yourself">When to paint weights yourself</a>: which bones hair, skirts and rigid things want.</li>
+<li>
+<a href="from-wwmi.html">Coming from WWMI</a>: what else changes.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1106.0 and Overtone 26.1106.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="forms.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>A character's forms</strong></a><a class="card later" href="skeleton.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>The Wuthering Waves skeleton</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#how-a-name-is-built">How a name is built</a><a href="#body">Body</a><a href="#twists">Twists</a><a href="#helpers">Helpers</a><a href="#fingers">Fingers</a><a href="#chains">Chains</a><a href="#marks">Marks</a><a href="#wwmi-numbers">WWMI numbers</a><a href="#when-a-name-changes">When a name changes</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1106.0/Timbre_26.1106.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a><a href="https://ko-fi.com/poisedmapple">Support on Ko-fi</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1106.0 · Overtone 26.1106.0 · MCP server 26.1106.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>

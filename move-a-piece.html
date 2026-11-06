@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Move a piece to another character · Tonewright</title>
+<meta name="description" content="Move a skirt from one character's mod to another character in Blender, start to finish, and see it swing in game.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/move-a-piece.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Move a piece to another character · Tonewright">
+<meta property="og:description" content="Move a skirt from one character's mod to another character in Blender, start to finish, and see it swing in game.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=a95a2f6dca">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a><a class="support" href="https://ko-fi.com/poisedmapple" aria-label="Support on Ko-fi" title="Support on Ko-fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 7.2a4.8 4.8 0 0 1 8.5 2.6C20.5 15.7 12 21 12 21z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1106.0/Timbre_26.1106.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html" aria-current="page">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The Wuthering Waves skeleton</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Move a piece to another character</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html" aria-current="page">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="description.html">Write a description</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The Wuthering Waves skeleton</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">Move a piece to another character</h1>
+      <p class="lead rise" style="--i:2">Move a skirt from one character's mod to another character in Blender, start to finish, and see it swing in game.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">Tutorial</span><span>3 min read</span><span>Timbre 26.1106.0 · Overtone 26.1106.0</span></p>
+      
+      <div class="prose"><p>In about ten minutes the skirt of one mod is on another character, in game, swinging with her walk. You rename no
+vertex groups: Overtone moves the skirt's weights onto her skeleton as you save. A skirt is the example here. A top
+or a hat goes the same way.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Blender is set up (<a href="edit-in-blender.html#before-you-start">Before you start</a>).</li>
+<li>The wearer, the character who gets the skirt, is a mod of yours: a dump of her, or any mod you edit
+(<a href="create-a-mod.html#1-dump-the-character">Dump the character</a>). Its bones must include a skirt of her own to swing on.</li>
+<li>The donor, the mod the skirt comes from, is <a href="add-mods.html#what-native-means">native</a>, and the skirt is a <em>piece</em> of
+its own there: a mesh apart from the legs.</li>
+<li>The game is running with Overtone and the wearer's mod is on
+(<a href="play.html#see-your-changes-in-game">See your changes in game</a>).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="1-make-the-donors-model"><a class="anchor" href="#1-make-the-donors-model" aria-hidden="true">#</a><span class="n">1</span>Make the donor's model</h2><a id="user-content-1-make-the-donors-model" class="anchor" aria-label="Permalink: 1. Make the donor's model" href="#1-make-the-donors-model"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>In Timbre, press <strong>Blender</strong> on the donor, and wait for it to open.</li>
+<li>Close Blender.</li>
+<li>In Timbre, press <strong>Folder</strong> on the donor.</li>
+</ol>
+<p>The donor's folder is open, and it holds a <code>.glb</code> file, the model you take the skirt from.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="2-open-the-wearer"><a class="anchor" href="#2-open-the-wearer" aria-hidden="true">#</a><span class="n">2</span>Open the wearer</h2><a id="user-content-2-open-the-wearer" class="anchor" aria-label="Permalink: 2. Open the wearer" href="#2-open-the-wearer"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>In Timbre, press <strong>Blender</strong> on the wearer (<a href="edit-in-blender.html#what-keeps-the-weights-it-came-with">only Blender from Timbre takes a mesh in</a>).</li>
+</ol>
+<p>You see her <code>Part</code> collections and <code>Rig</code>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="3-bring-in-the-donor"><a class="anchor" href="#3-bring-in-the-donor" aria-hidden="true">#</a><span class="n">3</span>Bring in the donor</h2><a id="user-content-3-bring-in-the-donor" class="anchor" aria-label="Permalink: 3. Bring in the donor" href="#3-bring-in-the-donor"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Choose <strong>File → Import → glTF 2.0 (.glb/.gltf)</strong>.</li>
+<li>Pick the donor's <code>.glb</code> file.</li>
+</ol>
+<p>The donor's pieces and its skeleton appear on top of the wearer, outside every <code>Part</code> collection.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="4-keep-only-the-skirt"><a class="anchor" href="#4-keep-only-the-skirt" aria-hidden="true">#</a><span class="n">4</span>Keep only the skirt</h2><a id="user-content-4-keep-only-the-skirt" class="anchor" aria-label="Permalink: 4. Keep only the skirt" href="#4-keep-only-the-skirt"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Click one of the donor's pieces in the list at the top right. It lights up in the view.</li>
+<li>If it is not the skirt, press <strong>X</strong> in the view and confirm.</li>
+<li>Repeat until only the skirt's pieces and the donor's skeleton are left.</li>
+</ol>
+<p>The wearer stands in the view with the skirt on her. Keep the skeleton for now: Overtone reads it to place the weights.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="5-put-the-skirt-on-a-part"><a class="anchor" href="#5-put-the-skirt-on-a-part" aria-hidden="true">#</a><span class="n">5</span>Put the skirt on a part</h2><a id="user-content-5-put-the-skirt-on-a-part" class="anchor" aria-label="Permalink: 5. Put the skirt on a part" href="#5-put-the-skirt-on-a-part"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Select every piece of the skirt.</li>
+<li>Press <strong>M</strong> and pick a part of her clothes, such as <code>Lower body · Part 4</code>.</li>
+</ol>
+<p>The skirt's pieces now sit inside that <code>Part</code> collection.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="6-save"><a class="anchor" href="#6-save" aria-hidden="true">#</a><span class="n">6</span>Save</h2><a id="user-content-6-save" class="anchor" aria-label="Permalink: 6. Save" href="#6-save"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Press <strong>Ctrl+S</strong>.</li>
+</ol>
+<p>The status bar says what it took, such as <code>Skirt taken into Part 4: 9 groups by word, 27 groups by chain, 2 groups to the nearest bone</code>. <code>by chain</code> means a chain, a line of bones that swings, went onto a chain of hers. The game shows the
+skirt a moment later, in her part's textures, so it looks patchy for now.</p>
+<p>If the status bar says <code>not taken in:</code>, <code>not taken:</code> or <code>was not written:</code>, read the reason in
+<a href="edit-in-blender.html#when-a-save-is-not-taken">When a save is not taken</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="7-see-it-swing"><a class="anchor" href="#7-see-it-swing" aria-hidden="true">#</a><span class="n">7</span>See it swing</h2><a id="user-content-7-see-it-swing" class="anchor" aria-label="Permalink: 7. See it swing" href="#7-see-it-swing"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>In the game, walk and run.</li>
+</ol>
+<p>The skirt moves with her legs and swings on her own skirt bones. It keeps the donor's shape, so it can dip into her
+body in places. Longer than her own, it swings only so far down, and below that it follows her thighs. Half as long
+again and more, it swings on bones of its own
+(<a href="edit-in-blender.html#what-keeps-the-weights-it-came-with">What keeps the weights it came with</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element" id="8-delete-the-donors-skeleton"><a class="anchor" href="#8-delete-the-donors-skeleton" aria-hidden="true">#</a><span class="n">8</span>Delete the donor's skeleton</h2><a id="user-content-8-delete-the-donors-skeleton" class="anchor" aria-label="Permalink: 8. Delete the donor's skeleton" href="#8-delete-the-donors-skeleton"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Click the skeleton in the list that is not <code>Rig</code>.</li>
+<li>Press <strong>X</strong> in the view and confirm.</li>
+</ol>
+<p>Only <code>Rig</code> is left, and the skirt still moves with it.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="9-bring-its-textures"><a class="anchor" href="#9-bring-its-textures" aria-hidden="true">#</a><span class="n">9</span>Bring its textures</h2><a id="user-content-9-bring-its-textures" class="anchor" aria-label="Permalink: 9. Bring its textures" href="#9-bring-its-textures"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>In Timbre, open the donor's <strong>Inside</strong> and click a row: its description names the skirt's textures.</li>
+<li>Copy those files from the donor's folder into the wearer's.</li>
+<li>Follow <a href="edit-in-blender.html#give-a-piece-its-own-textures">Give a piece its own textures</a>.</li>
+</ol>
+<p>The skirt wears its own look in game.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Skin showing through, or the skirt cutting into her? Move the vertices in Edit Mode and save, and hide what the
+skirt covers (<a href="edit-in-blender.html#hide-or-remove-pieces">Hide or remove pieces</a>).</li>
+<li>A chain swings wrongly? <a href="paint-weights.html">Paint weights in Blender</a>, and see
+<a href="edit-in-blender.html#what-keeps-the-weights-it-came-with">What keeps the weights it came with</a> for what a save reads.</li>
+<li>
+<a href="skeleton.html">The Wuthering Waves skeleton</a>: which bones hold the skin, and what catches authors out.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1106.0 and Overtone 26.1106.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="edit-in-blender.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Edit a mod in Blender</strong></a><a class="card later" href="paint-weights.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Paint weights in Blender</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#1-make-the-donors-model">Make the donor's model</a><a href="#2-open-the-wearer">Open the wearer</a><a href="#3-bring-in-the-donor">Bring in the donor</a><a href="#4-keep-only-the-skirt">Keep only the skirt</a><a href="#5-put-the-skirt-on-a-part">Put the skirt on a part</a><a href="#6-save">Save</a><a href="#7-see-it-swing">See it swing</a><a href="#8-delete-the-donors-skeleton">Delete the donor's skeleton</a><a href="#9-bring-its-textures">Bring its textures</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1106.0/Timbre_26.1106.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a><a href="https://ko-fi.com/poisedmapple">Support on Ko-fi</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1106.0 · Overtone 26.1106.0 · MCP server 26.1106.0</span>
+    <span>No cookies, no tracking. Not affiliated with any game's publisher; game names and art belong to their owners.</span>
+  </div>
+</footer>
+</body>
+</html>
