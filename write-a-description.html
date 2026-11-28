@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Write a description · Tonewright</title>
+<meta name="description" content="Change a mod's description by hand: switches with several choices, textures that change with a switch, conditions, looks, the game's parts hidden, sliders, expressions and layers.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/write-a-description.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Write a description · Tonewright">
+<meta property="og:description" content="Change a mod's description by hand: switches with several choices, textures that change with a switch, conditions, looks, the game's parts hidden, sliders, expressions and layers.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=a95a2f6dca">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a><a class="support" href="https://ko-fi.com/poisedmapple" aria-label="Support on Ko-fi" title="Support on Ko-fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 7.2a4.8 4.8 0 0 1 8.5 2.6C20.5 15.7 12 21 12 21z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1123.0/Timbre_26.1123.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="faces.html">Give a character an expression</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="see-through.html">Make a piece see-through</a><a href="shaders.html">Draw with your own shader</a><a href="write-a-description.html" aria-current="page">Write a description</a><a href="description.html">Description reference</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The character skeleton</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Write a description</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="faces.html">Give a character an expression</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="see-through.html">Make a piece see-through</a><a href="shaders.html">Draw with your own shader</a><a href="write-a-description.html" aria-current="page">Write a description</a><a href="description.html">Description reference</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The character skeleton</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">Write a description</h1>
+      <p class="lead rise" style="--i:2">Change a mod's description by hand: switches with several choices, textures that change with a switch, conditions, looks, the game's parts hidden, sliders, expressions and layers.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">How-to</span><span>8 min read</span><span>Timbre 26.1123.0 · Overtone 26.1123.0</span></p>
+      
+      <div class="prose"><p>A mod's description, <code>overtone.mod.toml</code>, says what its switches show and wear. Timbre writes one for every mod it
+imports or dumps. Edit it to add what an import can't: more choices, keys, looks. Coming from WWMI ini files:</p>
+<ul>
+<li>
+<strong>Names, not hashes.</strong> Pieces go by their names in Blender and switches by names you choose; there is no buffer, hash
+or variable to track.</li>
+<li>
+<strong>Tables, not scripts.</strong> A switch is one table of choices, each listing what it shows; no <code>if</code> blocks to follow.</li>
+<li>
+<strong>Mistakes marked as you type.</strong> Timbre underlines a wrong line with a note, and refuses to save a file that would
+not draw.</li>
+<li>
+<strong>No reload.</strong> A saved change shows in game a moment later.</li>
+</ul>
+<p>Every key and value is in the <a href="description.html">Description reference</a>; this guide shows how they fit together.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>A mod in your library that Timbre has imported (<a href="add-mods.html">Add mods</a>) or dumped.
+<a href="create-a-mod.html">How to create a mod</a> covers making a piece switchable and swapping a texture.</li>
+<li>The game running with the mod on screen, to see each change.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="your-first-change"><a class="anchor" href="#your-first-change" aria-hidden="true">#</a>Your first change</h2><a id="user-content-your-first-change" class="anchor" aria-label="Permalink: Your first change" href="#your-first-change"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Give an existing switch another key.</p>
+<ol>
+<li>In Timbre, open the mod's page and its <strong>Inside</strong> tab. Its switches are listed.</li>
+<li>Click a switch's row. The description opens beside it at that switch, with a line such as <code>key = "5"</code>.</li>
+<li>Change <code>"5"</code> to <code>"Alt+5"</code>.</li>
+<li>Press <strong>Ctrl+S</strong>. The change is saved; a mistake would be underlined instead.</li>
+<li>In game, press <strong>Alt+5</strong>. The switch steps. <strong>5</strong> alone now does nothing, since a key fires only with exactly its
+modifiers held.</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="how-a-description-decides-what-you-see"><a class="anchor" href="#how-a-description-decides-what-you-see" aria-hidden="true">#</a>How a description decides what you see</h2><a id="user-content-how-a-description-decides-what-you-see" class="anchor" aria-label="Permalink: How a description decides what you see" href="#how-a-description-decides-what-you-see"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Pieces and parts.</strong> A piece is an object of yours, named as in Blender. A part is a section of the character the
+game draws, known by its number (<code>Part 3</code> in Blender and in Timbre's <strong>Model</strong>). A piece nothing mentions is always
+drawn.</li>
+<li>
+<strong>Switches and choices.</strong> A switch sits at one choice at a time. Each choice lists the pieces it shows and what parts
+or pieces wear while it is chosen. Your pick is kept beside the mod, so the description says only where it starts.</li>
+<li>
+<strong>Conditions.</strong> Where one switch is not enough, a condition combines switches. Write it in a piece's <code>when</code> or a
+rule, or name it under <code>[when]</code> (<a href="description.html#conditions">Conditions</a>).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="give-a-piece-several-looks"><a class="anchor" href="#give-a-piece-several-looks" aria-hidden="true">#</a>Give a piece several looks</h2><a id="user-content-give-a-piece-several-looks" class="anchor" aria-label="Permalink: Give a piece several looks" href="#give-a-piece-several-looks"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A switch with <code>choices</code> steps through them in order. Here <strong>/</strong> steps the hair from short to long to braided and back;
+<strong>Alt+/</strong> steps it the other way.</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">option</span>.<span class="pl-en">Hair</span>]
+<span class="pl-smi">name</span>       = <span class="pl-s"><span class="pl-pds">"</span>Hairstyle<span class="pl-pds">"</span></span>
+<span class="pl-smi">choices</span>    = [<span class="pl-s"><span class="pl-pds">"</span>Short<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Long<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Braid<span class="pl-pds">"</span></span>]
+<span class="pl-smi">default</span>    = <span class="pl-s"><span class="pl-pds">"</span>Long<span class="pl-pds">"</span></span>
+<span class="pl-smi">key</span>        = <span class="pl-s"><span class="pl-pds">"</span>/<span class="pl-pds">"</span></span>
+<span class="pl-smi">back</span>       = <span class="pl-s"><span class="pl-pds">"</span>Alt+/<span class="pl-pds">"</span></span>
+<span class="pl-smi">Short.show</span> = [<span class="pl-s"><span class="pl-pds">"</span>HairShort<span class="pl-pds">"</span></span>]
+<span class="pl-smi">Long.show</span>  = [<span class="pl-s"><span class="pl-pds">"</span>HairLong<span class="pl-pds">"</span></span>]
+<span class="pl-smi">Braid.show</span> = [<span class="pl-s"><span class="pl-pds">"</span>HairBraid<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Ribbon<span class="pl-pds">"</span></span>]</pre></div>
+<ul>
+<li>Each piece is drawn only at the choices that show it, so <code>Ribbon</code> shows only with the braid.</li>
+<li>It starts at <code>default</code>; the overlay's <strong>Wardrobe</strong> and Timbre show it as <code>name</code>.</li>
+<li>Set <code>wrap</code> to <code>false</code> to stop it at the last choice instead of going round.</li>
+<li>A switch with no <code>choices</code> is on or off: write what it shows under <code>on</code>, and set <code>default</code> to <code>off</code> to start it off.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="change-textures-with-two-switches"><a class="anchor" href="#change-textures-with-two-switches" aria-hidden="true">#</a>Change textures with two switches</h2><a id="user-content-change-textures-with-two-switches" class="anchor" aria-label="Permalink: Change textures with two switches" href="#change-textures-with-two-switches"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A choice's <code>wear</code> changes what a part wears while it is chosen
+(<a href="create-a-mod.html#4-swap-a-texture">Swap a texture</a>). Where a texture depends on two switches, write a rule for that
+combination. Here <code>Dye</code> recolours the jacket, part 3, and its buttons, and a rule gives the gold jacket another file while the hood
+is up:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">option</span>.<span class="pl-en">Dye</span>]
+<span class="pl-smi">choices</span>           = [<span class="pl-s"><span class="pl-pds">"</span>Plain<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Gold<span class="pl-pds">"</span></span>]
+<span class="pl-smi">key</span>               = <span class="pl-s"><span class="pl-pds">"</span>8<span class="pl-pds">"</span></span>
+<span class="pl-smi">Gold.wear.3</span>       = { <span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Jacket_Gold_D.dds<span class="pl-pds">"</span></span> }
+<span class="pl-smi">Gold.wear.Buttons</span> = { <span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Buttons_Gold_D.dds<span class="pl-pds">"</span></span> }
+
+[<span class="pl-en">option</span>.<span class="pl-en">Hood</span>]
+<span class="pl-smi">key</span>     = <span class="pl-s"><span class="pl-pds">"</span>7<span class="pl-pds">"</span></span>
+<span class="pl-smi">on.show</span> = [<span class="pl-s"><span class="pl-pds">"</span>Hood<span class="pl-pds">"</span></span>]
+
+[[<span class="pl-en">rule</span>]]
+<span class="pl-smi">when</span>   = <span class="pl-s"><span class="pl-pds">'</span>Dye is Gold and Hood<span class="pl-pds">'</span></span>
+<span class="pl-smi">wear.3</span> = { <span class="pl-smi">diffuse</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Jacket_Gold_Hood_D.dds<span class="pl-pds">"</span></span> }</pre></div>
+<ul>
+<li>Naming a piece, <code>Buttons</code>, changes that piece alone; naming a part, <code>3</code>, changes every piece in it.</li>
+<li>The narrower condition wins, so with the hood up the gold jacket wears the rule's file.</li>
+<li>If two switches set part 3's <code>diffuse</code> in tables and both can be on at once, the file is refused. Let one
+switch set it, and write each combination as a rule like this one
+(<a href="description.html#which-texture-wins">Which texture wins</a>).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="show-a-piece-only-when-two-switches-agree"><a class="anchor" href="#show-a-piece-only-when-two-switches-agree" aria-hidden="true">#</a>Show a piece only when two switches agree</h2><a id="user-content-show-a-piece-only-when-two-switches-agree" class="anchor" aria-label="Permalink: Show a piece only when two switches agree" href="#show-a-piece-only-when-two-switches-agree"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>With on-off switches <code>Socks</code> and <code>Skirt</code>, give the condition a name under <code>[when]</code>, then hold the piece to it:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">when</span>]
+<span class="pl-smi">bare_legs</span> = <span class="pl-s"><span class="pl-pds">'</span>not Socks and Skirt is Short<span class="pl-pds">'</span></span>
+
+[<span class="pl-en">piece</span>.<span class="pl-en">Tattoo</span>]
+<span class="pl-smi">when</span> = <span class="pl-s"><span class="pl-pds">'</span>bare_legs<span class="pl-pds">'</span></span></pre></div>
+<p><code>Tattoo</code> is drawn only while the socks are off and the skirt is short. A piece named by both a <code>when</code> and a switch's
+<code>show</code> draws only when both allow it. <code>[piece."*"]</code> holds every piece to a condition, and <code>[piece."3/*"]</code> every piece of
+part 3.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="put-on-a-whole-outfit-with-one-key"><a class="anchor" href="#put-on-a-whole-outfit-with-one-key" aria-hidden="true">#</a>Put on a whole outfit with one key</h2><a id="user-content-put-on-a-whole-outfit-with-one-key" class="anchor" aria-label="Permalink: Put on a whole outfit with one key" href="#put-on-a-whole-outfit-with-one-key"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A look sets several switches with one press. It sets only what it names; the rest stay where they are.</p>
+<p>Here <code>Top</code> is a switch with the choices <code>Bikini</code> and <code>Coat</code>, and <code>Shoes</code> an on-off switch:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">look</span>.<span class="pl-en">Beach</span>]
+<span class="pl-smi">key</span>   = <span class="pl-s"><span class="pl-pds">"</span>F5<span class="pl-pds">"</span></span>
+<span class="pl-smi">Top</span>   = <span class="pl-s"><span class="pl-pds">"</span>Bikini<span class="pl-pds">"</span></span>
+<span class="pl-smi">Shoes</span> = <span class="pl-c1">false</span>
+<span class="pl-smi">Hair</span>  = <span class="pl-s"><span class="pl-pds">"</span>Braid<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">look</span>.<span class="pl-en">Weather</span>]
+<span class="pl-smi">key</span>   = <span class="pl-s"><span class="pl-pds">"</span>F6<span class="pl-pds">"</span></span>
+<span class="pl-smi">steps</span> = [{ <span class="pl-smi">Top</span> = <span class="pl-s"><span class="pl-pds">"</span>Coat<span class="pl-pds">"</span></span>, <span class="pl-smi">Shoes</span> = <span class="pl-c1">true</span> }, { <span class="pl-smi">Top</span> = <span class="pl-s"><span class="pl-pds">"</span>Bikini<span class="pl-pds">"</span></span> }]</pre></div>
+<p><strong>F5</strong> puts on the beach look. <strong>F6</strong> steps through <code>steps</code>, one per press: the coat and shoes, then the bikini. Looks
+are also listed in the overlay's <strong>Wardrobe</strong> under the mod.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="hide-one-of-the-games-parts"><a class="anchor" href="#hide-one-of-the-games-parts" aria-hidden="true">#</a>Hide one of the game's parts</h2><a id="user-content-hide-one-of-the-games-parts" class="anchor" aria-label="Permalink: Hide one of the game's parts" href="#hide-one-of-the-games-parts"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Overtone already hides the game's parts your pieces replace. To hide one your mod leaves alone, name its number:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">remove</span>.<span class="pl-en">6</span>]</pre></div>
+<p>To hide a mesh the game wears under an outfit, such as a skirt's shadow, only while a switch allows, use the name
+<strong>Mix</strong> shows it under:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">remove</span>.<span class="pl-en">shadow</span>]
+<span class="pl-smi">underlayer</span> = <span class="pl-s"><span class="pl-pds">"</span>skirt shadow<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">mesh</span>.<span class="pl-en">shadow</span>]
+<span class="pl-smi">when</span> = <span class="pl-s"><span class="pl-pds">'</span>Skirt is Short<span class="pl-pds">'</span></span></pre></div>
+<p>The <code>[mesh]</code> table with the same key, <code>shadow</code>, holds the condition. While it fails, the game's mesh stays.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="make-a-body-shape-slider-move-smoothly"><a class="anchor" href="#make-a-body-shape-slider-move-smoothly" aria-hidden="true">#</a>Make a body-shape slider move smoothly</h2><a id="user-content-make-a-body-shape-slider-move-smoothly" class="anchor" aria-label="Permalink: Make a body-shape slider move smoothly" href="#make-a-body-shape-slider-move-smoothly"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A WWMI mod that changes her shape gets a slider when imported. Give it keys that move it while held:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">slider</span>.<span class="pl-en">Chest</span>]
+<span class="pl-smi">range</span>   = [<span class="pl-c1">0.0</span>, <span class="pl-c1">1.0</span>]
+<span class="pl-smi">default</span> = <span class="pl-c1">0.0</span>
+<span class="pl-smi">key</span>     = <span class="pl-s"><span class="pl-pds">"</span>Up<span class="pl-pds">"</span></span>
+<span class="pl-smi">back</span>    = <span class="pl-s"><span class="pl-pds">"</span>Down<span class="pl-pds">"</span></span>
+<span class="pl-smi">rate</span>    = <span class="pl-c1">0.5</span>
+<span class="pl-smi">drives</span>  = [{ <span class="pl-smi">shapekey</span> = <span class="pl-c1">110</span> }]</pre></div>
+<p>Holding <strong>Up</strong> raises it by <code>rate</code> a second, half its range here; without <code>rate</code> it crosses the range in a second. Write
+<code>stops = [0.0, 0.5, 1.0]</code> instead to step it a press at a time. The overlay's <strong>Wardrobe</strong> shows it as a slider too.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="give-her-an-expression"><a class="anchor" href="#give-her-an-expression" aria-hidden="true">#</a>Give her an expression</h2><a id="user-content-give-her-an-expression" class="anchor" aria-label="Permalink: Give her an expression" href="#give-her-an-expression"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>An expression is a face for the mod's character, offered while the mod is drawn
+(<a href="faces.html#wear-an-expression-a-mod-ships">Wear an expression a mod ships</a>). Its keys are her face's shape keys by the
+game's names, as Timbre's <strong>Expressions</strong> page lists them under <strong>Shape keys</strong>. Here <code>Wink</code> closes her left eye and
+half smiles:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">expression</span>.<span class="pl-en">Wink</span>]
+<span class="pl-smi">keys</span>  = { <span class="pl-smi">E_Close_L</span> = <span class="pl-c1">1.0</span>, <span class="pl-smi">M_Smile_L</span> = <span class="pl-c1">0.5</span> }
+<span class="pl-smi">takes</span> = <span class="pl-c1">0.2</span>
+
+[<span class="pl-en">expression</span>.<span class="pl-en">Cheeky</span>]
+<span class="pl-smi">keys</span>   = { <span class="pl-smi">B_Happy</span> = <span class="pl-c1">0.4</span> }
+<span class="pl-smi">varies</span> = [{ <span class="pl-smi">to</span> = <span class="pl-s"><span class="pl-pds">"</span>Wink<span class="pl-pds">"</span></span>, <span class="pl-smi">every</span> = [<span class="pl-c1">8</span>, <span class="pl-c1">20</span>], <span class="pl-smi">hold</span> = <span class="pl-c1">0.4</span> }]
+
+[<span class="pl-en">expression</span>.<span class="pl-en">Chew</span>]
+<span class="pl-smi">steps</span> = [{ <span class="pl-smi">keys</span> = { <span class="pl-smi">A</span> = <span class="pl-c1">0.3</span> }, <span class="pl-smi">takes</span> = <span class="pl-c1">0.25</span> }, { <span class="pl-smi">keys</span> = { <span class="pl-smi">M_Nutcracker</span> = <span class="pl-c1">0.4</span> }, <span class="pl-smi">takes</span> = <span class="pl-c1">0.25</span> }]
+<span class="pl-smi">ends</span>  = <span class="pl-s"><span class="pl-pds">"</span>loop<span class="pl-pds">"</span></span></pre></div>
+<ul>
+<li>
+<code>Wink</code> eases in over 0.2 seconds and stays.</li>
+<li>
+<code>Cheeky</code> is a mood: every 8 to 20 seconds she winks for 0.4 seconds and goes back.</li>
+<li>
+<code>Chew</code> is a sequence: she plays its steps and, since its <code>ends</code> is <code>loop</code>, starts over.</li>
+</ul>
+<p>The top of the file must name her <code>object</code>, or the mod offers none.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="add-a-wet-or-oil-layer"><a class="anchor" href="#add-a-wet-or-oil-layer" aria-hidden="true">#</a>Add a wet or oil layer</h2><a id="user-content-add-a-wet-or-oil-layer" class="anchor" aria-label="Permalink: Add a wet or oil layer" href="#add-a-wet-or-oil-layer"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A layer draws a second material on top of a part or piece, with a shader your mod ships. Here it lays a sheen on the
+body while an on-off switch called <code>Oil</code> is on:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">sheen</span>]
+<span class="pl-smi">over</span>        = <span class="pl-s"><span class="pl-pds">"</span>own<span class="pl-pds">"</span></span>
+<span class="pl-smi">hlsl</span>        = { <span class="pl-smi">pixel</span> = <span class="pl-s"><span class="pl-pds">"</span>Shaders/Oil.hlsl<span class="pl-pds">"</span></span> }
+<span class="pl-smi">blend</span>       = <span class="pl-s"><span class="pl-pds">"</span>alpha<span class="pl-pds">"</span></span>
+<span class="pl-smi">depth_write</span> = <span class="pl-c1">false</span>
+<span class="pl-smi">depth</span>       = <span class="pl-s"><span class="pl-pds">"</span>equal<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">layer</span>.<span class="pl-en">Oil</span>]
+<span class="pl-smi">on</span>       = <span class="pl-s"><span class="pl-pds">"</span>Body<span class="pl-pds">"</span></span>
+<span class="pl-smi">material</span> = <span class="pl-s"><span class="pl-pds">"</span>sheen<span class="pl-pds">"</span></span>
+<span class="pl-smi">when</span>     = <span class="pl-s"><span class="pl-pds">'</span>Oil<span class="pl-pds">'</span></span></pre></div>
+<p>Timbre compiles the shader on Windows; until then the layer is not drawn, and the log says why. A layer whose material
+has neither an <code>hlsl</code> nor a <code>game_shader</code> is never drawn. Writing the shader itself is
+<a href="shaders.html">Draw with your own shader</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="fix-what-an-import-wrote"><a class="anchor" href="#fix-what-an-import-wrote" aria-hidden="true">#</a>Fix what an import wrote</h2><a id="user-content-fix-what-an-import-wrote" class="anchor" aria-label="Permalink: Fix what an import wrote" href="#fix-what-an-import-wrote"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Timbre writes the description of a WWMI mod from its ini files. Where that is not enough:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Case</th>
+<th align="left">What you see</th>
+<th align="left">Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">A switch is named after the ini's section</td>
+<td align="left">A name such as <code>Legs</code> that says little</td>
+<td align="left">Add <code>name</code>, or right-click its row in <strong>Inside</strong> for <strong>Rename a switch</strong>
+</td>
+</tr>
+<tr>
+<td align="left">Its choices are numbers</td>
+<td align="left">
+<code>0</code>, <code>1</code>, <code>2</code> in the <strong>Wardrobe</strong>
+</td>
+<td align="left">Add <code>names</code>, a name for each number</td>
+</tr>
+<tr>
+<td align="left">A slider moves too fast or too slow while its key is held</td>
+<td align="left">It overshoots, or crawls</td>
+<td align="left">Change <code>rate</code>, how far it moves a second</td>
+</tr>
+<tr>
+<td align="left">An update changed what you changed</td>
+<td align="left">It is listed under <strong>Changed by you and the update</strong>
+</td>
+<td align="left">Pick <strong>Yours</strong> or <strong>Update</strong> for each, then <strong>Apply</strong>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="what-you-cant-do-yet"><a class="anchor" href="#what-you-cant-do-yet" aria-hidden="true">#</a>What you can't do yet</h2><a id="user-content-what-you-cant-do-yet" class="anchor" aria-label="Permalink: What you can't do yet" href="#what-you-cant-do-yet"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Add a part or a shape key.</strong> Only the game's own parts and her own shape keys can be used
+(<a href="edit-in-blender.html#what-you-cant-do-yet">Edit a mod in Blender</a>).</li>
+<li>
+<strong>Give a part a glow of its own.</strong> <code>glow</code> is kept but never drawn; a <code>glowmask</code> changes where the game's glow shows.</li>
+<li>
+<strong>Change the outline.</strong> Every <code>outline</code> is kept and not drawn yet.</li>
+<li>
+<strong>Set the order pieces are drawn in.</strong> It is the model's.</li>
+<li>
+<strong>Make a slider that only your shader reads.</strong> A slider that moves no shape key or scale is ignored.</li>
+<li>
+<strong>Give a slider two keys.</strong> A slider takes one <code>key</code> and one <code>back</code>; of a list, only the first works.</li>
+<li>
+<strong>Draw a mod of a game Overtone does not draw yet.</strong> Its description is read and edited, never drawn.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="description.html">Description reference</a>: every key, value and limit.</li>
+<li>
+<a href="see-through.html">Make a piece see-through</a>: fade a piece, or make it sheer cloth.</li>
+<li>
+<a href="troubleshoot.html#a-change-to-a-description-does-not-show">When a mod does not draw right</a>: a change that does not show.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1123.0 and Overtone 26.1123.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="shaders.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Draw with your own shader</strong></a><a class="card later" href="description.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Description reference</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#your-first-change">Your first change</a><a href="#how-a-description-decides-what-you-see">How a description decides what you see</a><a href="#give-a-piece-several-looks">Give a piece several looks</a><a href="#change-textures-with-two-switches">Change textures with two switches</a><a href="#show-a-piece-only-when-two-switches-agree">Show a piece only when two switches agree</a><a href="#put-on-a-whole-outfit-with-one-key">Put on a whole outfit with one key</a><a href="#hide-one-of-the-games-parts">Hide one of the game's parts</a><a href="#make-a-body-shape-slider-move-smoothly">Make a body-shape slider move smoothly</a><a href="#give-her-an-expression">Give her an expression</a><a href="#add-a-wet-or-oil-layer">Add a wet or oil layer</a><a href="#fix-what-an-import-wrote">Fix what an import wrote</a><a href="#what-you-cant-do-yet">What you can't do yet</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1123.0/Timbre_26.1123.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a><a href="https://ko-fi.com/poisedmapple">Support on Ko-fi</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1123.0 · Overtone 26.1123.0 · MCP server 26.1123.0</span>
+    <span>No cookies, no tracking. Not affiliated with or endorsed by any game's developer or publisher. Game names, characters and art belong to their owners; mods to their authors.</span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Make a piece see-through · Tonewright</title>
+<meta name="description" content="Make a piece or part of a mod see-through, the same all over or as sheer cloth, and move it with a slider of its own.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/see-through.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Make a piece see-through · Tonewright">
+<meta property="og:description" content="Make a piece or part of a mod see-through, the same all over or as sheer cloth, and move it with a slider of its own.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=a95a2f6dca">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a><a class="support" href="https://ko-fi.com/poisedmapple" aria-label="Support on Ko-fi" title="Support on Ko-fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 7.2a4.8 4.8 0 0 1 8.5 2.6C20.5 15.7 12 21 12 21z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1123.0/Timbre_26.1123.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="faces.html">Give a character an expression</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="see-through.html" aria-current="page">Make a piece see-through</a><a href="shaders.html">Draw with your own shader</a><a href="write-a-description.html">Write a description</a><a href="description.html">Description reference</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The character skeleton</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Make a piece see-through</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="faces.html">Give a character an expression</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="see-through.html" aria-current="page">Make a piece see-through</a><a href="shaders.html">Draw with your own shader</a><a href="write-a-description.html">Write a description</a><a href="description.html">Description reference</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The character skeleton</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">Make a piece see-through</h1>
+      <p class="lead rise" style="--i:2">Make a piece or part of a mod see-through, the same all over or as sheer cloth, and move it with a slider of its own.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">How-to</span><span>7 min read</span><span>Timbre 26.1123.0 · Overtone 26.1123.0</span></p>
+      
+      <div class="prose"><p>Make stockings, a veil or a visor see-through. One line in a mod's description does it, and you can write that line on
+any mod, yours or someone else's:</p>
+<ul>
+<li>
+<strong>Only what you name changes.</strong> The rest of the mod stays solid.</li>
+<li>
+<strong>No export, no ini.</strong> You save a text file and see it in game a moment later.</li>
+<li>
+<strong>A slider for each thing you made see-through.</strong> It appears in Timbre and the overlay. A mod that states nothing has none.</li>
+<li>
+<strong>Cloth, not a ghost.</strong> Sheer cloth lets what is behind show through its gaps, and stays lit like cloth.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>The mod is in your library and draws in game (<a href="add-mods.html">Add your mods</a>).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Word</th>
+<th align="left">Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><em>part</em></td>
+<td align="left">One section of the character the game draws, such as hair or body: <code>Part 3</code> in Timbre's <strong>Model</strong>
+</td>
+</tr>
+<tr>
+<td align="left"><em>piece</em></td>
+<td align="left">One object of a part, by its name in Blender</td>
+</tr>
+<tr>
+<td align="left"><em>description</em></td>
+<td align="left">
+<code>overtone.mod.toml</code>, the mod's settings file</td>
+</tr>
+<tr>
+<td align="left"><em><code>fx</code> texture</em></td>
+<td align="left">A texture a part can wear as a mask, read for its alpha</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="your-first-see-through-part"><a class="anchor" href="#your-first-see-through-part" aria-hidden="true">#</a>Your first see-through part</h2><a id="user-content-your-first-see-through-part" class="anchor" aria-label="Permalink: Your first see-through part" href="#your-first-see-through-part"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>This makes one whole part half see-through.</p>
+<ol>
+<li>
+<p>In Timbre, open the mod's <strong>Model</strong>. Each part is headed by its number, such as <code>Part 3</code> or <code>Face · Part 2</code>. Pick one.</p>
+</li>
+<li>
+<p>Open the mod's <strong>Inside</strong>.</p>
+</li>
+<li>
+<p>Click a row. Its description opens beside it.</p>
+</li>
+<li>
+<p>Add this at the end of the file, with your part's number:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">piece</span>.<span class="pl-en">"3/*"</span>]
+<span class="pl-smi">opacity</span> = <span class="pl-c1">0.5</span></pre></div>
+<p>If the file has a heading for that part by name, such as <code>[part.skirt]</code>, write that name for the number: <code>[piece."skirt/*"]</code>.</p>
+</li>
+<li>
+<p>Press <strong>Save</strong>. In game, that part is half see-through a moment later.</p>
+</li>
+<li>
+<p>Press <strong>Home</strong>. The overlay opens.</p>
+</li>
+<li>
+<p>In <strong>Wardrobe</strong>, open the mod's row. A slider <code>Part 3 · Opacity</code> stands at 0.5.</p>
+</li>
+<li>
+<p>Drag it to 1. The part is solid again, and the rest of the mod never moved.</p>
+</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="a-number-or-a-table"><a class="anchor" href="#a-number-or-a-table" aria-hidden="true">#</a>A number or a table</h2><a id="user-content-a-number-or-a-table" class="anchor" aria-label="Permalink: A number or a table" href="#a-number-or-a-table"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p><code>opacity</code> takes a number or a table. Both draw the piece as the game fades a character up close: a fine pattern of
+dots, so what is behind shows through the gaps and the piece stays lit as itself. The table says more.</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">A number: <code>opacity = 0.5</code>
+</th>
+<th align="left">A table: <code>opacity = { density = 0.5 }</code>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">How see-through</td>
+<td align="left">The same all over</td>
+<td align="left">
+<code>density</code> all over, or less where a mask says, and more at the edges with <code>edge</code>
+</td>
+</tr>
+<tr>
+<td align="left">Up close</td>
+<td align="left">Dots, in nine steps from thin to dense</td>
+<td align="left">The same</td>
+</tr>
+</tbody>
+</table>
+<p>Both run from 1, solid, down to 0. At 0 the piece is gone and has no slider.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="choose-what-it-covers"><a class="anchor" href="#choose-what-it-covers" aria-hidden="true">#</a>Choose what it covers</h2><a id="user-content-choose-what-it-covers" class="anchor" aria-label="Permalink: Choose what it covers" href="#choose-what-it-covers"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The heading says what the line covers, and names the slider.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Heading</th>
+<th align="left">Covers</th>
+<th align="left">Slider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>[piece."3/Frills"]</code></td>
+<td align="left">The piece <code>Frills</code> in part 3</td>
+<td align="left"><code>Frills · Opacity</code></td>
+</tr>
+<tr>
+<td align="left"><code>[piece.Frills]</code></td>
+<td align="left">Every piece named <code>Frills</code>
+</td>
+<td align="left"><code>Frills · Opacity</code></td>
+</tr>
+<tr>
+<td align="left"><code>[piece."3/*"]</code></td>
+<td align="left">Every piece of part 3</td>
+<td align="left"><code>Part 3 · Opacity</code></td>
+</tr>
+<tr>
+<td align="left"><code>[piece."*"]</code></td>
+<td align="left">Every piece of the mod</td>
+<td align="left"><code>Opacity</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<strong>The narrowest heading wins.</strong> A piece with a line of its own keeps its own slider, and its part's slider does not move it.</li>
+<li>
+<strong>A heading the file already has takes the line under it.</strong> Don't write the same heading twice.</li>
+<li>
+<strong>A slider can go by another name.</strong> Add <code>name = "Lace"</code> under the piece's heading.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="make-cloth-sheer"><a class="anchor" href="#make-cloth-sheer" aria-hidden="true">#</a>Make cloth sheer</h2><a id="user-content-make-cloth-sheer" class="anchor" aria-label="Permalink: Make cloth sheer" href="#make-cloth-sheer"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+<th align="left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>density</code></td>
+<td align="left">How much of the cloth is there, from 0 to 1</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left"><code>mask</code></td>
+<td align="left">
+<code>true</code> reads how much is there at each pixel from the alpha of the part's <code>fx</code> texture</td>
+<td align="left"><code>false</code></td>
+</tr>
+<tr>
+<td align="left"><code>edge</code></td>
+<td align="left">From 0 to 1, how much denser the cloth gets where it turns away from you, as woven cloth does at 1</td>
+<td align="left">0</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h3 class="heading-element" id="paint-where-it-is-thin"><a class="anchor" href="#paint-where-it-is-thin" aria-hidden="true">#</a>Paint where it is thin</h3><a id="user-content-paint-where-it-is-thin" class="anchor" aria-label="Permalink: Paint where it is thin" href="#paint-where-it-is-thin"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>
+<p>In an image editor, open the diffuse texture of the piece, so what you paint lies where the piece does.</p>
+</li>
+<li>
+<p>Paint the alpha channel: opaque where the cloth is whole, transparent where it is open.</p>
+</li>
+<li>
+<p>Save it in the mod's folder as a DDS in BC7 or BC3, for example <code>Textures/Skirt mask.dds</code>.</p>
+</li>
+<li>
+<p>In the description, add the texture to the part's heading and the mask to the piece:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">part</span>.<span class="pl-en">3</span>]
+<span class="pl-smi">fx</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/Skirt mask.dds<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">piece</span>.<span class="pl-en">"3/Skirt"</span>]
+<span class="pl-smi">opacity</span> = { <span class="pl-smi">density</span> = <span class="pl-c1">0.8</span>, <span class="pl-smi">mask</span> = <span class="pl-c1">true</span>, <span class="pl-smi">edge</span> = <span class="pl-c1">0.5</span> }</pre></div>
+</li>
+<li>
+<p>Press <strong>Save</strong>. In game, the skirt is open where you painted it open, and 0.8 dense where you left it whole.</p>
+</li>
+</ol>
+<p>A part has one <code>fx</code> texture, for all its pieces. Each piece still has its own <code>density</code>.</p>
+<p>Sheer is not always possible:</p>
+<table>
+<thead>
+<tr>
+<th align="left">The piece</th>
+<th align="left">What you get</th>
+<th align="left">Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Is also cut out by the mask (<code>cut</code>)</td>
+<td align="left">The cut wins and the piece fades flat</td>
+<td align="left">Write <code>cut = false</code> on the piece</td>
+</tr>
+<tr>
+<td align="left">Has <code>mask = true</code>, and its part has no <code>fx</code>
+</td>
+<td align="left">Sheer at its <code>density</code>, the same all over</td>
+<td align="left">Add <code>fx</code> to the part</td>
+</tr>
+<tr>
+<td align="left">Has a mask saved as BC1</td>
+<td align="left">Each pixel all there or not at all</td>
+<td align="left">Save it as BC7 or BC3</td>
+</tr>
+<tr>
+<td align="left">Is drawn in a shader the mod ships, its own drawing code</td>
+<td align="left">A flat fade at its <code>density</code>
+</td>
+<td align="left">Leave its shader out</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="change-it-with-a-switch"><a class="anchor" href="#change-it-with-a-switch" aria-hidden="true">#</a>Change it with a switch</h2><a id="user-content-change-it-with-a-switch" class="anchor" aria-label="Permalink: Change it with a switch" href="#change-it-with-a-switch"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A choice can say how see-through the pieces it shows are. This is what a mod's author does for a thin and a thick version:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">option</span>.<span class="pl-en">Stockings</span>]
+<span class="pl-smi">choices</span>       = [<span class="pl-s"><span class="pl-pds">"</span>Thick<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Thin<span class="pl-pds">"</span></span>]
+<span class="pl-smi">key</span>           = <span class="pl-s"><span class="pl-pds">"</span>6<span class="pl-pds">"</span></span>
+<span class="pl-smi">Thick.show</span>    = [<span class="pl-s"><span class="pl-pds">"</span>Stockings<span class="pl-pds">"</span></span>]
+<span class="pl-smi">Thin.show</span>     = [<span class="pl-s"><span class="pl-pds">"</span>Stockings<span class="pl-pds">"</span></span>]
+<span class="pl-smi">Thin.opacity</span>  = { <span class="pl-smi">density</span> = <span class="pl-c1">0.3</span> }</pre></div>
+<ul>
+<li>The choice wins over the piece's own line while it is chosen. Where two chosen choices say it, the lowest wins.</li>
+<li>A choice's <code>opacity</code> has no slider: the switch is its control.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="move-the-slider"><a class="anchor" href="#move-the-slider" aria-hidden="true">#</a>Move the slider</h2><a id="user-content-move-the-slider" class="anchor" aria-label="Permalink: Move the slider" href="#move-the-slider"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The slider is under the mod's row in the overlay's <strong>Wardrobe</strong>, and in the mod's <strong>Variants</strong> in Timbre.</p>
+<ul>
+<li>It starts at what the description says, and runs from 0.1 to 1. A description below 0.1 lowers the bottom to its own value.</li>
+<li>On a table it moves <code>density</code>. The mask and <code>edge</code> stay as written.</li>
+<li>Your value is kept with the mod when you let go, and an update of the mod keeps it.</li>
+</ul>
+<p>An imported WWMI mod that is see-through in places shows that as it always did, with no slider. Write an <code>opacity</code> for
+that piece to get one.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="when-it-does-not-look-right"><a class="anchor" href="#when-it-does-not-look-right" aria-hidden="true">#</a>When it does not look right</h2><a id="user-content-when-it-does-not-look-right" class="anchor" aria-label="Permalink: When it does not look right" href="#when-it-does-not-look-right"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A line that cannot be used is marked beside it in <strong>Inside</strong>, and says why.</p>
+<table>
+<thead>
+<tr>
+<th align="left">You see</th>
+<th align="left">What it means</th>
+<th align="left">Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>opacity = 1.5 is not a number from 0 to 1</code></td>
+<td align="left">The value is out of range</td>
+<td align="left">Write a value from 0 to 1</td>
+</tr>
+<tr>
+<td align="left"><code>Skirt is cut and sheer, so the cut wins and it fades flat</code></td>
+<td align="left">The piece is cut, by this file or by the mod's import</td>
+<td align="left">Write <code>cut = false</code> on the piece</td>
+</tr>
+<tr>
+<td align="left"><code>Stockings Thin states opacity and shows no piece, so it fades nothing</code></td>
+<td align="left">That choice shows nothing</td>
+<td align="left">Add the piece's <code>show</code> to every choice that should draw it</td>
+</tr>
+<tr>
+<td align="left"><code>[piece.3/*] names no piece</code></td>
+<td align="left">The mod has several meshes, or the part has a heading by name</td>
+<td align="left">Use the part's name, or name the piece outright</td>
+</tr>
+<tr>
+<td align="left">No slider</td>
+<td align="left">The line says 0, or a narrower heading covers every piece</td>
+<td align="left">Check the headings</td>
+</tr>
+<tr>
+<td align="left">The slider moves nothing</td>
+<td align="left">A switch's choice is saying the opacity</td>
+<td align="left">Leave that choice, or change it in the description</td>
+</tr>
+<tr>
+<td align="left">The slider moves nothing, on a part that is already see-through</td>
+<td align="left">The game, or the mod's own settings, blend it their own way</td>
+<td align="left">Nothing: it keeps its own strength</td>
+</tr>
+<tr>
+<td align="left">The piece is missing</td>
+<td align="left">
+<strong>See-through parts</strong> is off</td>
+<td align="left"><a href="troubleshoot.html#parts-flicker-stretch-or-vanish">Parts flicker, stretch or vanish</a></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="what-you-cant-do-yet"><a class="anchor" href="#what-you-cant-do-yet" aria-hidden="true">#</a>What you can't do yet</h2><a id="user-content-what-you-cant-do-yet" class="anchor" aria-label="Permalink: What you can't do yet" href="#what-you-cant-do-yet"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Make the game's own parts see-through.</strong> Only a mod's own pieces.</li>
+<li>
+<strong>Give the slider a key.</strong> It moves by dragging.</li>
+<li>
+<strong>Keep a slider's value in a loadout or a shared mod.</strong> Those start at what the description says. Write your value into the description to send it.</li>
+<li>
+<strong>See the slider in Timbre's Model.</strong> It shows what a piece's own line says, not the slider or a choice.</li>
+<li>
+<strong>See through a <code>[layer]</code>.</strong> One drawn over a sheer part covers its gaps.</li>
+<li>
+<strong>Take the outline off a see-through piece.</strong> It keeps the game's outline.</li>
+<li>
+<strong>Fade a piece smooth, as glass.</strong> A number draws dots too.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="description.html#pieces-piecename">Description reference</a>: every other key a piece takes.</li>
+<li>
+<a href="create-a-mod.html">How to create a mod</a>: dump a character and name its pieces in Blender.</li>
+<li>
+<a href="troubleshoot.html">When a mod does not draw right</a>.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1123.0 and Overtone 26.1123.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="paint.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Paint a mod's textures</strong></a><a class="card later" href="shaders.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Draw with your own shader</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#your-first-see-through-part">Your first see-through part</a><a href="#a-number-or-a-table">A number or a table</a><a href="#choose-what-it-covers">Choose what it covers</a><a href="#make-cloth-sheer">Make cloth sheer</a><a href="#change-it-with-a-switch">Change it with a switch</a><a href="#move-the-slider">Move the slider</a><a href="#when-it-does-not-look-right">When it does not look right</a><a href="#what-you-cant-do-yet">What you can't do yet</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1123.0/Timbre_26.1123.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a><a href="https://ko-fi.com/poisedmapple">Support on Ko-fi</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1123.0 · Overtone 26.1123.0 · MCP server 26.1123.0</span>
+    <span>No cookies, no tracking. Not affiliated with or endorsed by any game's developer or publisher. Game names, characters and art belong to their owners; mods to their authors.</span>
+  </div>
+</footer>
+</body>
+</html>

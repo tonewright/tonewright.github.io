@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Give a character an expression · Tonewright</title>
+<meta name="description" content="Choose a character's expression in game: the overlay's **Expressions** page and the face wheel, Timbre's **Expressions** page, the expressions Overtone ships, strength, faces of your own, a mod's, her tongue.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/faces.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Give a character an expression · Tonewright">
+<meta property="og:description" content="Choose a character's expression in game: the overlay's **Expressions** page and the face wheel, Timbre's **Expressions** page, the expressions Overtone ships, strength, faces of your own, a mod's, her tongue.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=a95a2f6dca">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a><a class="support" href="https://ko-fi.com/poisedmapple" aria-label="Support on Ko-fi" title="Support on Ko-fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 7.2a4.8 4.8 0 0 1 8.5 2.6C20.5 15.7 12 21 12 21z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1123.0/Timbre_26.1123.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="faces.html" aria-current="page">Give a character an expression</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="see-through.html">Make a piece see-through</a><a href="shaders.html">Draw with your own shader</a><a href="write-a-description.html">Write a description</a><a href="description.html">Description reference</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The character skeleton</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Give a character an expression</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="faces.html" aria-current="page">Give a character an expression</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="see-through.html">Make a piece see-through</a><a href="shaders.html">Draw with your own shader</a><a href="write-a-description.html">Write a description</a><a href="description.html">Description reference</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The character skeleton</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Play with mods</span></p>
+      <h1 class="rise" style="--i:1">Give a character an expression</h1>
+      <p class="lead rise" style="--i:2">Choose a character's expression in game: the overlay's **Expressions** page and the face wheel, Timbre's **Expressions** page, the expressions Overtone ships, strength, faces of your own, a mod's, her tongue.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">How-to</span><span>14 min read</span><span>Timbre 26.1123.0 · Overtone 26.1123.0</span></p>
+      
+      <div class="prose"><p>Give any character a smile, a wink or a pout while you play, with no face mod made for each one. A <em>face mod</em> is a
+mod that replaces a character's face, often as part of an outfit.</p>
+<ul>
+<li>
+<strong>Dozens of expressions for every character.</strong> One list, worn on her own face or a face mod's.</li>
+<li>
+<strong>She still blinks.</strong> The game goes on closing her eyes as she blinks, over the expression.</li>
+<li>
+<strong>Faces that move.</strong> Some drift to another face now and then; others play a few faces in turn, such as a blown kiss.</li>
+<li>
+<strong>One press in game.</strong> Pick from the overlay, or hold a key and point at one of eight on a wheel.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>The game runs with Overtone (<a href="play.html">Play with Overtone</a>).</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="your-first-expression"><a class="anchor" href="#your-first-expression" aria-hidden="true">#</a>Your first expression</h2><a id="user-content-your-first-expression" class="anchor" aria-label="Permalink: Your first expression" href="#your-first-expression"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>About a minute, in game.</p>
+<ol>
+<li>Press <strong>Home</strong>. The overlay opens.</li>
+<li>Open <strong>Wardrobe</strong>. It shows the character on screen; <strong>Q</strong> and <strong>E</strong> step to another.</li>
+<li>Click <strong>Expressions</strong>, the third page of <strong>Wardrobe</strong>. The page lists the game's under <strong>Built in</strong>, yours above
+them.</li>
+<li>Click <code>Smile</code>. She eases into it in game, and the line under her name says what she wears.</li>
+<li>Click <code>Smile</code> again. She goes back to her own face, and the line says <code>Her own face</code>.</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element" id="how-an-expression-sits-on-her-face"><a class="anchor" href="#how-an-expression-sits-on-her-face" aria-hidden="true">#</a>How an expression sits on her face</h2><a id="user-content-how-an-expression-sits-on-her-face" class="anchor" aria-label="Permalink: How an expression sits on her face" href="#how-an-expression-sits-on-her-face"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>An expression is a whole face.</strong> It sets her brows, eyes, where she looks, her mouth and, in some, her tongue.
+What it leaves alone stays the game's.</li>
+<li>
+<strong>Strength is hers, not the expression's.</strong> <strong>Strength</strong>, under the lists, sets how far she wears it, from 0 to
+100%; it starts at 80%. Wear another expression and she keeps the strength.</li>
+<li>
+<strong>What she wears is kept.</strong> Your library holds it as soon as you pick it, with no <strong>Save</strong>: she wears it the next
+time you play.</li>
+<li>
+<strong>The page lists only what her face can wear.</strong> A few expressions need a shape some faces lack, such as puffed
+cheeks, so two characters may see different lists; Timbre lists the rest under <strong>She can't wear</strong>. What a
+character wears is hers alone.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="pick-from-the-games-expressions"><a class="anchor" href="#pick-from-the-games-expressions" aria-hidden="true">#</a>Pick from the game's expressions</h2><a id="user-content-pick-from-the-games-expressions" class="anchor" aria-label="Permalink: Pick from the game's expressions" href="#pick-from-the-games-expressions"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Overtone ships these. The page shows them under <strong>Built in</strong>, the kinds mixed; Timbre marks the moods and moving faces:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="left">Expressions</th>
+<th align="left">While worn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Still faces</td>
+<td align="left">
+<code>Smile</code>, <code>Grin</code>, <code>Wink</code>, <code>Smug</code>, <code>Surprised</code>, <code>Angry</code>, <code>Sad</code>, <code>Content</code>, <code>Bored</code>, <code>Scared</code>, <code>Crossed eyes</code>, <code>Sultry</code>, <code>Laugh</code>, <code>Blissful</code>, <code>Dazed</code>, <code>Blank</code>, <code>Shocked</code>, <code>Scream</code>, <code>Tearful</code>, <code>Worried</code>, <code>Puppy eyes</code>, <code>Embarrassed</code>, <code>Pout</code>, <code>Disgusted</code>, <code>Gritted teeth</code>, <code>Determined</code>, <code>Suspicious</code>, <code>Kiss</code>, <code>Yawn</code>, <code>Asleep</code>, <code>Cat smile</code>, <code>Puffed cheeks</code>, <code>Puzzled</code>, <code>Bedroom eyes</code>, <code>Shy</code>, <code>Wince</code>, <code>Whistle</code>
+</td>
+<td align="left">She holds it.</td>
+</tr>
+<tr>
+<td align="left">Tongue faces</td>
+<td align="left">
+<code>Ahegao</code>, <code>Tongue out</code>, <code>Bleh</code>, <code>Lick left</code>, <code>Lick right</code>, <code>Tongue tip</code>, <code>Cheeky</code>
+</td>
+<td align="left">She holds it, her tongue out (<a href="#her-tongue">Her tongue</a>).</td>
+</tr>
+<tr>
+<td align="left">Moods</td>
+<td align="left">
+<code>Cheerful</code>, <code>Flirty</code>, <code>Drowsy</code>, <code>Nervous</code>, <code>Naughty</code>, <code>Hungry</code>, <code>Taunting</code>, <code>Side eye</code>
+</td>
+<td align="left">At random moments she drifts to another face, holds it a moment and comes back. Each mood keeps its own pace: <code>Taunting</code> flicks to a lick several times a second, the others every several seconds.</td>
+</tr>
+<tr>
+<td align="left">Moving faces</td>
+<td align="left">
+<code>Panting</code>, <code>Lick lips</code>, <code>Chewing</code>, <code>Blown kiss</code>, <code>Slow wink</code>, <code>Rolling eyes</code>, <code>Moaning</code>, <code>Gasp</code>, <code>Giggle</code>
+</td>
+<td align="left">She plays through a few faces in turn, starting from the face she has. <code>Lick lips</code>, <code>Blown kiss</code>, <code>Slow wink</code> and <code>Gasp</code> play once and stay on their last face; the others repeat.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="change-one-part-of-her-face"><a class="anchor" href="#change-one-part-of-her-face" aria-hidden="true">#</a>Change one part of her face</h2><a id="user-content-change-one-part-of-her-face" class="anchor" aria-label="Permalink: Change one part of her face" href="#change-one-part-of-her-face"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Under <strong>Piece by piece</strong> is a row for each part her face can change: <code>Brows</code>, <code>Eyes</code>, <code>Gaze</code>, <code>Mouth</code> and, where
+Overtone can move her tongue, <code>Tongue</code>. Step a row with the arrows beside its choice, or point at it and press
+<strong>Left</strong> or <strong>Right</strong>. Each row offers the worn expression's own for that part, as <code>As Smile</code> while she wears
+<code>Smile</code>, then <strong>Her own</strong>, which gives the part back to the game, then these, where her face has them:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Row</th>
+<th align="left">Choices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Brows</code></td>
+<td align="left">
+<code>Happy</code>, <code>Raised</code>, <code>One raised</code>, <code>Flat</code>, <code>Sad</code>, <code>Angry</code>
+</td>
+</tr>
+<tr>
+<td align="left"><code>Eyes</code></td>
+<td align="left">
+<code>Smiling</code>, <code>Half closed</code>, <code>Closed</code>, <code>Wink</code>, <code>Wide</code>, <code>Angry</code>
+</td>
+</tr>
+<tr>
+<td align="left"><code>Gaze</code></td>
+<td align="left">
+<code>Up</code>, <code>Down</code>, <code>Left</code>, <code>Right</code>, <code>Crossed</code>, <code>Small pupils</code>
+</td>
+</tr>
+<tr>
+<td align="left"><code>Mouth</code></td>
+<td align="left">
+<code>Smile</code>, <code>Smirk</code>, <code>Laugh</code>, <code>Open</code>, <code>Round</code>, <code>Angry</code>
+</td>
+</tr>
+<tr>
+<td align="left"><code>Tongue</code></td>
+<td align="left">
+<code>Out</code>, <code>Down</code>, <code>Up</code>, <code>Left</code>, <code>Right</code>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The line under her name then says the expression is changed, or <code>Wears your own mix</code> where none is worn. A changed
+row lasts until you quit the game, or until you wear an expression or press the worn one again, which clears every
+changed row. To keep them, save them.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="save-a-face-of-your-own"><a class="anchor" href="#save-a-face-of-your-own" aria-hidden="true">#</a>Save a face of your own</h2><a id="user-content-save-a-face-of-your-own" class="anchor" aria-label="Permalink: Save a face of your own" href="#save-a-face-of-your-own"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>Change one or more rows under <strong>Piece by piece</strong>. <strong>Save</strong> turns on.</li>
+<li>Press <strong>Save</strong>, or <strong>Ctrl+S</strong>. A field opens with a name filled in.</li>
+<li>Type a name.</li>
+<li>Press <strong>Enter</strong>. She wears it, and it joins <strong>Yours</strong>, at the top of the page.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">The name</th>
+<th align="left">Under the field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Blank</td>
+<td align="left"><code>Give it a name.</code></td>
+</tr>
+<tr>
+<td align="left">One the game, a mod drawn now or one of yours already uses, whatever its capitals</td>
+<td align="left">
+<code>Smile is taken. Pick another name.</code>, with the name you typed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cancel</strong> or <strong>Esc</strong> closes the field. A face of yours is offered on every character whose face can wear it.</p>
+<p>To remove one, point at it under <strong>Yours</strong> and press <strong>Delete</strong>. It leaves every character who wore it, every loadout
+and the face wheel.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="edit-her-expressions-in-timbre"><a class="anchor" href="#edit-her-expressions-in-timbre" aria-hidden="true">#</a>Edit her expressions in Timbre</h2><a id="user-content-edit-her-expressions-in-timbre" class="anchor" aria-label="Permalink: Edit her expressions in Timbre" href="#edit-her-expressions-in-timbre"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>On her page in Timbre, click <strong>Expressions</strong>. Her expressions are listed under <strong>Yours</strong>, <code>From</code> and each mod's name, and
+<strong>Built in</strong>, with a <strong>Mood</strong> or <strong>Moves</strong> mark on those that move.</li>
+<li>Click an expression. Her model beside the list shows it, framed on her face; <strong>Whole body</strong> shows all of her, and
+<strong>Face</strong> frames her face again. While the game runs she shows it in game too, and the page says
+<code>Shown on Shorekeeper in game.</code>
+</li>
+<li>Press <strong>Wear</strong>. A check marks it in the list, and <strong>Strength</strong> under <strong>On her</strong> sets how far she wears it.</li>
+<li>Change a row under <strong>Piece by piece</strong>, or a shape under <strong>Shape keys</strong>, by the game's name for it, such as
+<code>E_Close_L</code>. The page says <code>Shown on Shorekeeper in game as you change it.</code>
+</li>
+<li>Press <strong>Save</strong>. One of yours is saved in place. A game's or a mod's asks for a <strong>Name</strong>, filled with <code>My face</code>.</li>
+<li>Type a name and press <strong>Save</strong> again. It joins <strong>Yours</strong>, and she wears it.</li>
+</ol>
+<p><strong>Add a shape key</strong> sets one it leaves alone. <strong>Take off</strong> gives her own face back. <strong>Kept in</strong> lists what holds it.
+<strong>Delete</strong> removes one of yours after asking.</p>
+<p><strong>A change you haven't saved is kept while Timbre runs.</strong> Click another expression to compare: a dot after the changed
+one's name marks it, and clicking it again shows the change on her model. In game she shows only the expression you
+are looking at, and wears what you saved. <strong>Discard</strong> lets the change go. Quitting Timbre asks first, and <strong>Save and
+quit</strong> keeps every changed expression, a game's or a mod's under a new name, without changing what she wears.</p>
+<p>Timbre judges her face before the game does:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Case</th>
+<th align="left">Result</th>
+<th align="left">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Her face lacks a shape it needs</td>
+<td align="left">Listed under <strong>She can't wear</strong>; click it for why</td>
+<td align="left">Pick another, or wear her own face for a tongue face</td>
+</tr>
+<tr>
+<td align="left">A face mod that reshapes her face</td>
+<td align="left">The game may still refuse one the page offers</td>
+<td align="left">Read her face's line in the log (<a href="troubleshoot.html#where-to-look">Where to look</a>)</td>
+</tr>
+<tr>
+<td align="left">No game folder set in Timbre</td>
+<td align="left">Every expression is listed as wearable, and her model holds still</td>
+<td align="left">Set it in <strong>Settings → Folders</strong>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Her model is her as she wears the outfit chosen on her page: the mods you have on her there, at the switches you
+set, without her weapon. With none on, it is a dump of her made with her mods off and close to
+the camera (<a href="create-a-mod.html#1-dump-the-character">Dump the character</a>). When it can't show a face, it says why:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Case</th>
+<th align="left">Her model</th>
+<th align="left">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">You have mods on for several of her outfits</td>
+<td align="left">The outfit chosen on her page</td>
+<td align="left">Choose another outfit on her page, then click <strong>Expressions</strong>
+</td>
+</tr>
+<tr>
+<td align="left">No mod on her and no dump of her</td>
+<td align="left"><code>No face to show here yet</code></td>
+<td align="left">Turn on a mod that dresses her, or dump her in game</td>
+</tr>
+<tr>
+<td align="left">The mods on her leave her face to the game</td>
+<td align="left">Her model holds still</td>
+<td align="left">Turn on her face mod, or see the expression in game</td>
+</tr>
+<tr>
+<td align="left">Her face mod was made before a game update, and no dump of her since the update is in your library</td>
+<td align="left">Her face at rest, and <code>This mod's face was made for another version of the game, so its expressions can't be shown on it here.</code>
+</td>
+<td align="left">Dump her in game; the dump names its shapes</td>
+</tr>
+<tr>
+<td align="left">An expression she can't wear</td>
+<td align="left">Her face at rest, and <code>She can't wear it, so her face is shown at rest.</code>
+</td>
+<td align="left">Pick another</td>
+</tr>
+<tr>
+<td align="left">A tongue face, on a face mod with no dump of her in your library</td>
+<td align="left">Her model shows it without her tongue</td>
+<td align="left">Dump her in game</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="make-a-new-expression-in-timbre"><a class="anchor" href="#make-a-new-expression-in-timbre" aria-hidden="true">#</a>Make a new expression in Timbre</h2><a id="user-content-make-a-new-expression-in-timbre" class="anchor" aria-label="Permalink: Make a new expression in Timbre" href="#make-a-new-expression-in-timbre"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>On her <strong>Expressions</strong> page, click <strong>New expression</strong>, at the top of <strong>Yours</strong>. Her model shows her own face, and
+<strong>Add a shape key</strong> opens under <strong>Shape keys</strong>.</li>
+<li>Type part of a shape's name in <strong>Search shape keys</strong>, or click a part of her face, <code>Brows</code> to <code>Tongue</code>.</li>
+<li>Point at a shape. Her model shows it at full until you point away from the list.</li>
+<li>Click it. It joins <strong>Shape keys</strong> at 50%, and her model wears it; while the game runs, she does too.</li>
+<li>Drag its slider. Her model follows.</li>
+<li>Press <strong>Save</strong>. A <strong>Name</strong> field opens, filled with <code>My face</code>.</li>
+<li>Type a name and press <strong>Save</strong> again. It joins <strong>Yours</strong>, and she wears it.</li>
+</ol>
+<p>Click a lit shape in the list again to take it out. <strong>Piece by piece</strong> works here as on any expression. <strong>Save</strong> and
+<strong>Discard</strong> show once the face moves something; <strong>Discard</strong> starts again from her own face. The new expression is kept
+as any change is (<a href="#edit-her-expressions-in-timbre">Edit her expressions in Timbre</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element" id="use-the-face-wheel"><a class="anchor" href="#use-the-face-wheel" aria-hidden="true">#</a>Use the face wheel</h2><a id="user-content-use-the-face-wheel" class="anchor" aria-label="Permalink: Use the face wheel" href="#use-the-face-wheel"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The face wheel puts eight expressions round a ring over the game, for the character on screen.</p>
+<ol>
+<li>In the overlay, open <strong>Settings → Keys</strong> and set <strong>Face wheel</strong> (<a href="play.html#in-game-keys">In-game keys</a>).</li>
+<li>Press <strong>Save 1 change</strong>.</li>
+<li>In game, hold that key. The wheel shows.</li>
+<li>Point at a slot. She wears its expression as you point: at a quarter strength next to the middle, rising to full
+at the rim.</li>
+<li>Let go. She keeps that expression at that strength.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">You let go</th>
+<th align="left">She</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">On a slot</td>
+<td align="left">Keeps its expression at the strength you pointed at</td>
+</tr>
+<tr>
+<td align="left">In the middle, once you have pointed away from it</td>
+<td align="left">Takes her expression off</td>
+</tr>
+<tr>
+<td align="left">Anywhere else, or on a slot whose expression her face can't wear</td>
+<td align="left">Stays as she was</td>
+</tr>
+</tbody>
+</table>
+<p>A mood does not drift while you hold it.</p>
+<p>The slots start as the first eight expressions: <code>Smile</code>, <code>Grin</code>, <code>Wink</code>, <code>Smug</code>, <code>Surprised</code>, <code>Angry</code>, <code>Sad</code> and
+<code>Content</code>. To change one, point at an expression on the overlay's <strong>Expressions</strong> page and press a number key, <strong>1</strong>
+to <strong>8</strong>: it goes into that slot. The slots are the same for every character.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="wear-an-expression-a-mod-ships"><a class="anchor" href="#wear-an-expression-a-mod-ships" aria-hidden="true">#</a>Wear an expression a mod ships</h2><a id="user-content-wear-an-expression-a-mod-ships" class="anchor" aria-label="Permalink: Wear an expression a mod ships" href="#wear-an-expression-a-mod-ships"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A mod's author can give her outfit expressions of its own. While that mod is drawn on her, they are listed under
+<code>From</code> and the mod's name, between <strong>Yours</strong> and <strong>Built in</strong>, and one with a game
+expression's name takes its place on her. Turn the mod off and
+they leave the list; one she wore gives way to her own face until the mod is worn again.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Case</th>
+<th align="left">What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">You saved an expression of that name</td>
+<td align="left">Yours is worn; the mod's is not listed.</td>
+</tr>
+<tr>
+<td align="left">Two drawn mods give her one name</td>
+<td align="left">The first drawn keeps it; the log names both.</td>
+</tr>
+<tr>
+<td align="left">The mod names no <code>object</code>, or another mod over the same parts is drawn first</td>
+<td align="left">None listed.</td>
+</tr>
+<tr>
+<td align="left">Her face lacks a key it names</td>
+<td align="left">Not listed.</td>
+</tr>
+<tr>
+<td align="left">Overtone cannot move her tongue (<a href="#her-tongue">Her tongue</a>)</td>
+<td align="left">Its tongue keys are left out; an expression of tongue keys alone is not listed.</td>
+</tr>
+<tr>
+<td align="left">A mood drifts, or a sequence steps, to an expression nothing holds</td>
+<td align="left">The mood never drifts there; the sequence is not listed.</td>
+</tr>
+</tbody>
+</table>
+<p>To write your own, see <a href="write-a-description.html#give-her-an-expression">Give her an expression</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="keep-a-face-in-a-loadout"><a class="anchor" href="#keep-a-face-in-a-loadout" aria-hidden="true">#</a>Keep a face in a loadout</h2><a id="user-content-keep-a-face-in-a-loadout" class="anchor" aria-label="Permalink: Keep a face in a loadout" href="#keep-a-face-in-a-loadout"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A loadout keeps the expression each character wears when you save it, and puts it back when you wear it
+(<a href="outfits.html#loadouts">Loadouts</a>). The face wheel's slots stay as they are.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="her-tongue"><a class="anchor" href="#her-tongue" aria-hidden="true">#</a>Her tongue</h2><a id="user-content-her-tongue" class="anchor" aria-label="Permalink: Her tongue" href="#her-tongue"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The game's faces hold a tongue but never move it. Overtone works out how to move it from the shape of each face,
+the game's own or a face mod's, and a tongue face opens her mouth as far as the tongue needs.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Her face</th>
+<th align="left">What you get</th>
+<th align="left">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Her own face, or a face mod that keeps her mouth</td>
+<td align="left">The <code>Tongue</code> row and every tongue face</td>
+<td align="left">Nothing.</td>
+</tr>
+<tr>
+<td align="left">A face mod that reshaped her mouth</td>
+<td align="left">Overtone finds the mouth in the mod's own shape and moves the tongue there</td>
+<td align="left">Nothing.</td>
+</tr>
+<tr>
+<td align="left">A face mod whose mouth Overtone cannot find, such as one that cut it away</td>
+<td align="left">No <code>Tongue</code> row. <code>Tongue out</code>, <code>Bleh</code>, <code>Lick left</code>, <code>Lick right</code> and <code>Lick lips</code> are not listed; other tongue faces and moods are worn without the tongue</td>
+<td align="left">Pick a face without a tongue, or wear her own face for a tongue face.</td>
+</tr>
+<tr>
+<td align="left">Her face, her own or a mod's, after a game update that changed it</td>
+<td align="left">The <code>Tongue</code> row and every tongue face, once Overtone has matched her face (<a href="#after-a-game-update">After a game update</a>)</td>
+<td align="left">Nothing.</td>
+</tr>
+<tr>
+<td align="left">The same, where Overtone could not match the shapes that open her mouth</td>
+<td align="left">No <code>Tongue</code> row. <code>Tongue out</code>, <code>Bleh</code>, <code>Lick left</code>, <code>Lick right</code> and <code>Lick lips</code> are not listed; other tongue faces and moods are worn without the tongue</td>
+<td align="left">Update Overtone when Timbre offers it, or install the mod's update once its author makes one.</td>
+</tr>
+<tr>
+<td align="left">A face whose tongue lies in a part of it the game never draws</td>
+<td align="left">The <code>Tongue</code> row and the tongue faces are listed, and no tongue shows</td>
+<td align="left">Pick a face without a tongue.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="after-a-game-update"><a class="anchor" href="#after-a-game-update" aria-hidden="true">#</a>After a game update</h2><a id="user-content-after-a-game-update" class="anchor" aria-label="Permalink: After a game update" href="#after-a-game-update"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>An update can change a character's face. Overtone matches what it can by how each shape of her face moves.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Case</th>
+<th align="left">What happens</th>
+<th align="left">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">She wears a face mod</td>
+<td align="left">Overtone matches the mod's face to the new one, so she keeps her expressions. Until it has seen her face in game, the page says <code>No expressions for her yet</code>. An expression needing a shape it could not match is left out.</td>
+<td align="left">Install the mod's update once its author makes one (<a href="add-mods.html#update-a-mod">Update a mod</a>).</td>
+</tr>
+<tr>
+<td align="left">No face mod</td>
+<td align="left">Overtone matches her own face to the new one the first time each game session it sees her with the overlay's <strong>Expressions</strong> page or the face wheel open, or while she wears an expression. Until then the page says <code>No expressions for her yet</code> and <code>A game update changed her face. Her expressions come back with the next Overtone update.</code> An expression needing a shape it could not match is left out.</td>
+<td align="left">Open the overlay's <strong>Expressions</strong> page while she is on screen.</td>
+</tr>
+<tr>
+<td align="left">No face mod, and those words stay while she is on screen with the overlay's <strong>Expressions</strong> page open</td>
+<td align="left">Overtone cannot find her face.</td>
+<td align="left">Update Overtone when Timbre offers it; the next <strong>Play</strong> installs it.</td>
+</tr>
+<tr>
+<td align="left">No face mod, and the page says <code>Overtone cannot read her face's shape keys yet.</code>
+</td>
+<td align="left">Overtone found her face and could not match it.</td>
+<td align="left">The same.</td>
+</tr>
+<tr>
+<td align="left">A character new to the game</td>
+<td align="left">The page says <code>Overtone cannot read her face's shape keys yet.</code>
+</td>
+<td align="left">The same.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="keys-on-the-expressions-page-in-game"><a class="anchor" href="#keys-on-the-expressions-page-in-game" aria-hidden="true">#</a>Keys on the Expressions page in game</h2><a id="user-content-keys-on-the-expressions-page-in-game" class="anchor" aria-label="Permalink: Keys on the Expressions page in game" href="#keys-on-the-expressions-page-in-game"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+<strong>Q</strong>, <strong>E</strong>
+</td>
+<td align="left">The character before or after</td>
+</tr>
+<tr>
+<td align="left">Arrow keys</td>
+<td align="left">Move through the expressions and rows; on a row, <strong>Left</strong> and <strong>Right</strong> step it, and on <strong>Strength</strong> move it by 5%</td>
+</tr>
+<tr>
+<td align="left">
+<strong>Space</strong>, <strong>Enter</strong>
+</td>
+<td align="left">Wear the expression; on the one she wears, take it off</td>
+</tr>
+<tr>
+<td align="left">
+<strong>1</strong> to <strong>8</strong>
+</td>
+<td align="left">Put the expression in that slot of the face wheel</td>
+</tr>
+<tr>
+<td align="left"><strong>Ctrl+S</strong></td>
+<td align="left">Save what she wears under a name</td>
+</tr>
+<tr>
+<td align="left"><strong>Delete</strong></td>
+<td align="left">Take her expression off; on one of yours, remove it</td>
+</tr>
+<tr>
+<td align="left"><strong>Ctrl+PgDn</strong></td>
+<td align="left">The next section, <strong>Loadouts</strong>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="what-you-cant-do-yet"><a class="anchor" href="#what-you-cant-do-yet" aria-hidden="true">#</a>What you can't do yet</h2><a id="user-content-what-you-cant-do-yet" class="anchor" aria-label="Permalink: What you can't do yet" href="#what-you-cant-do-yet"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th align="left">You try to</th>
+<th align="left">What happens instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Rename a face of yours</td>
+<td align="left">There is no rename yet.</td>
+</tr>
+<tr>
+<td align="left">Find a shape in Timbre by what it does</td>
+<td align="left">Shapes go by the game's names, such as <code>M_Laugh</code>; point at one to see it on her model.</td>
+</tr>
+<tr>
+<td align="left">Undo a face change in <strong>History</strong>
+</td>
+<td align="left">
+<strong>History</strong> takes back mods only.</td>
+</tr>
+<tr>
+<td align="left">See her mood drift on her model in Timbre</td>
+<td align="left">Her model holds the mood's own face; the drifts come only in game.</td>
+</tr>
+<tr>
+<td align="left">Hide a weapon inside one of the mods you mixed on her</td>
+<td align="left">Her model shows the weapon with that mod.</td>
+</tr>
+<tr>
+<td align="left">See all of her in a skin no dump of yours shows</td>
+<td align="left">Her model shows only the piece holding her face; dump her in that skin to see her whole.</td>
+</tr>
+<tr>
+<td align="left">Save a mood or a moving face of your own</td>
+<td align="left">A face you save holds still.</td>
+</tr>
+<tr>
+<td align="left">Wear, from a loadout, an expression her face can't wear</td>
+<td align="left">She keeps her own face, and the log says the expression is not worn and which shape her face lacks (<a href="troubleshoot.html#where-to-look">Where to look</a>).</td>
+</tr>
+<tr>
+<td align="left">Keep her tongue clear of her lips while they purse, close or move aside</td>
+<td align="left">On some faces her tongue passes through her lips.</td>
+</tr>
+<tr>
+<td align="left">Keep her tongue out with her mouth shut</td>
+<td align="left">A tongue face always opens her mouth.</td>
+</tr>
+<tr>
+<td align="left">Have her eyes follow the camera</td>
+<td align="left">Her gaze is the expression's or the game's.</td>
+</tr>
+<tr>
+<td align="left">Keep her expression from far away</td>
+<td align="left">Far from the camera she goes back to the game's own face.</td>
+</tr>
+<tr>
+<td align="left">Wear an expression on her own face with ray tracing on</td>
+<td align="left">The page says <code>Faces are off with ray tracing</code>.</td>
+</tr>
+<tr>
+<td align="left">Wear one over a face mod with no shapes of its own</td>
+<td align="left">The page says <code>Her mod's face has none</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="outfits.html">Mix outfits and loadouts</a>: several outfits on one character, and loadouts that keep her expression.</li>
+<li>
+<a href="play.html">Play with Overtone</a>: the overlay and every in-game key.</li>
+<li>
+<a href="write-a-description.html#give-her-an-expression">Write a description</a>: give a mod expressions of its own.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1123.0 and Overtone 26.1123.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="outfits.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Mix outfits and loadouts</strong></a><a class="card later" href="share-a-mod.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Share a mod</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#your-first-expression">Your first expression</a><a href="#how-an-expression-sits-on-her-face">How an expression sits on her face</a><a href="#pick-from-the-games-expressions">Pick from the game's expressions</a><a href="#change-one-part-of-her-face">Change one part of her face</a><a href="#save-a-face-of-your-own">Save a face of your own</a><a href="#edit-her-expressions-in-timbre">Edit her expressions in Timbre</a><a href="#make-a-new-expression-in-timbre">Make a new expression in Timbre</a><a href="#use-the-face-wheel">Use the face wheel</a><a href="#wear-an-expression-a-mod-ships">Wear an expression a mod ships</a><a href="#keep-a-face-in-a-loadout">Keep a face in a loadout</a><a href="#her-tongue">Her tongue</a><a href="#after-a-game-update">After a game update</a><a href="#keys-on-the-expressions-page-in-game">Keys on the Expressions page in game</a><a href="#what-you-cant-do-yet">What you can't do yet</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1123.0/Timbre_26.1123.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a><a href="https://ko-fi.com/poisedmapple">Support on Ko-fi</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1123.0 · Overtone 26.1123.0 · MCP server 26.1123.0</span>
+    <span>No cookies, no tracking. Not affiliated with or endorsed by any game's developer or publisher. Game names, characters and art belong to their owners; mods to their authors.</span>
+  </div>
+</footer>
+</body>
+</html>

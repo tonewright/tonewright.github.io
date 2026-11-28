@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draw with your own shader · Tonewright</title>
+<meta name="description" content="A mod's own HLSL shader in Overtone: turning on a mod's water or oil effect, and writing one, as a layer over a part or in place of the part's own shader.">
+<meta name="theme-color" content="#07080b">
+<link rel="canonical" href="https://tonewright.dev/shaders.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tonewright">
+<meta property="og:title" content="Draw with your own shader · Tonewright">
+<meta property="og:description" content="A mod's own HLSL shader in Overtone: turning on a mod's water or oil effect, and writing one, as a layer over a part or in place of the part's own shader.">
+<meta property="og:image" content="https://tonewright.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Timbre showing a mod on its character under the words: Every mod you own, on the right character.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=a95a2f6dca">
+<link rel="stylesheet" href="guides.css?v=920c5116c6">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js?v=163686e29c" defer></script>
+</head>
+<body class="reading">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+  <nav class="links" aria-label="Site"><a href="guides.html" aria-current="page">Guides</a><a href="whats-new.html">What's new</a><a class="discord" href="https://discord.gg/QrD7CSGAbC" aria-label="Discord" title="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.2-.3 13.8.1 18.3a19.9 19.9 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.9zM8 15.5c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.7 8 10.7s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a><a class="support" href="https://ko-fi.com/poisedmapple" aria-label="Support on Ko-fi" title="Support on Ko-fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 7.2a4.8 4.8 0 0 1 8.5 2.6C20.5 15.7 12 21 12 21z"/></svg></a></nav>
+  <a class="btn btn--gold btn--small" href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1123.0/Timbre_26.1123.0_x64-setup.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</div></header>
+<main id="main">
+  <div class="doc">
+    <nav class="side" aria-label="Guides"><p class="title">Start</p><a href="getting-started.html">Getting started</a><p class="title">Play with mods</p><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="faces.html">Give a character an expression</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><p class="title">Make mods</p><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="see-through.html">Make a piece see-through</a><a href="shaders.html" aria-current="page">Draw with your own shader</a><a href="write-a-description.html">Write a description</a><a href="description.html">Description reference</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The character skeleton</a><p class="title">When something's wrong</p><a href="troubleshoot.html">When a mod does not draw right</a></nav>
+    <article class="article">
+      <details class="picker"><summary><span>Guides · <b>Draw with your own shader</b></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary><a href="getting-started.html">Getting started</a><a href="from-wwmi.html">Coming from WWMI</a><a href="play.html">Play with Overtone</a><a href="add-mods.html">Add your mods</a><a href="outfits.html">Mix outfits and loadouts</a><a href="faces.html">Give a character an expression</a><a href="share-a-mod.html">Share a mod</a><a href="mac-and-linux.html">Timbre on a Mac or Linux</a><a href="create-a-mod.html">How to create a mod</a><a href="edit-in-blender.html">Edit a mod in Blender</a><a href="move-a-piece.html">Move a piece to another character</a><a href="paint-weights.html">Paint weights in Blender</a><a href="paint.html">Paint a mod's textures</a><a href="see-through.html">Make a piece see-through</a><a href="shaders.html" aria-current="page">Draw with your own shader</a><a href="write-a-description.html">Write a description</a><a href="description.html">Description reference</a><a href="forms.html">A character's forms</a><a href="bones.html">Bone names</a><a href="skeleton.html">The character skeleton</a><a href="troubleshoot.html">When a mod does not draw right</a></details>
+      <p class="crumbs rise"><a href="guides.html">Guides</a><span>/</span><span>Make mods</span></p>
+      <h1 class="rise" style="--i:1">Draw with your own shader</h1>
+      <p class="lead rise" style="--i:2">A mod's own HLSL shader in Overtone: turning on a mod's water or oil effect, and writing one, as a layer over a part or in place of the part's own shader.</p>
+      <p class="meta rise" style="--i:3"><span class="kind">How-to</span><span>9 min read</span><span>Timbre 26.1123.0 · Overtone 26.1123.0</span></p>
+      
+      <div class="prose"><p>Some mods bring a shader of their own: water running over skin, an oil sheen, a glint. Overtone draws it from the
+mod's HLSL file:</p>
+<ul>
+<li>
+<strong>A WWMI mod's effect comes across.</strong> Timbre reads its ini, and the key or switch that turned the effect on still does.</li>
+<li>
+<strong>Your HLSL as you wrote it for 3DMigoto.</strong> The same <code>main</code>, the same <code>IniParams</code>, the same registers.</li>
+<li>
+<strong>No hashes and no shader overrides.</strong> A few lines of the mod's description say which part wears the shader.</li>
+<li>
+<strong>The game never compiles.</strong> Timbre does, as it opens, and keeps the result for the game to read.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="before-you-start"><a class="anchor" href="#before-you-start" aria-hidden="true">#</a>Before you start</h2><a id="user-content-before-you-start" class="anchor" aria-label="Permalink: Before you start" href="#before-you-start"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Timbre on Windows. A Mac or Linux Timbre compiles no shader.</li>
+<li>
+<strong>Settings → Play → Add-ons → Shader compiler</strong> says <strong>Ready</strong>. If it says <strong>Missing</strong>, press <strong>Download</strong>.</li>
+<li>The mod is in your library and draws in game (<a href="add-mods.html">Add your mods</a>).</li>
+<li>To write a shader: you can edit the mod's description (<a href="write-a-description.html">Write a description</a>), and you
+know HLSL.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Word</th>
+<th align="left">Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><em>description</em></td>
+<td align="left">
+<code>overtone.mod.toml</code>, the mod's settings file</td>
+</tr>
+<tr>
+<td align="left"><em>part</em></td>
+<td align="left">One section of the character the game draws, such as her body: <code>Part 3</code> in Timbre's <strong>Model</strong>
+</td>
+</tr>
+<tr>
+<td align="left"><em>piece</em></td>
+<td align="left">One object of a part, by its name in Blender</td>
+</tr>
+<tr>
+<td align="left"><em>material</em></td>
+<td align="left">A named set of textures and, here, a shader, which parts and pieces wear</td>
+</tr>
+<tr>
+<td align="left"><em>layer</em></td>
+<td align="left">A material drawn again over a part or a piece, after it: how water lies on skin</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="turn-on-a-mods-effect"><a class="anchor" href="#turn-on-a-mods-effect" aria-hidden="true">#</a>Turn on a mod's effect</h2><a id="user-content-turn-on-a-mods-effect" class="anchor" aria-label="Permalink: Turn on a mod's effect" href="#turn-on-a-mods-effect"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>An effect a WWMI mod turned on with a key is a switch in Overtone, named as its ini named it. Start the game with
+mods (<a href="play.html">Play with mods</a>), then turn the switch on either way:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Way</th>
+<th align="left">Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Its key</td>
+<td align="left">Press the key the mod's author gave it</td>
+</tr>
+<tr>
+<td align="left">The overlay</td>
+<td align="left">Press <strong>Home</strong>, open the mod's row in <strong>Wardrobe</strong>, turn the switch on</td>
+</tr>
+</tbody>
+</table>
+<p>The effect shows on the character a moment later.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="when-an-effect-does-not-show"><a class="anchor" href="#when-an-effect-does-not-show" aria-hidden="true">#</a>When an effect does not show</h2><a id="user-content-when-an-effect-does-not-show" class="anchor" aria-label="Permalink: When an effect does not show" href="#when-an-effect-does-not-show"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The log names the shader and why it did not draw (<a href="troubleshoot.html#where-to-look">Where to look</a>). Search it for
+the shader's file name.</p>
+<table>
+<thead>
+<tr>
+<th align="left">What you see</th>
+<th align="left">Why</th>
+<th align="left">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">The log says <code>is not compiled yet</code>
+</td>
+<td align="left">Timbre has not opened since the mod came in, or its shader compiler is missing</td>
+<td align="left">Check <strong>Shader compiler</strong> says <strong>Ready</strong>, close the game, close and open Timbre, start the game</td>
+</tr>
+<tr>
+<td align="left">The log says <code>did not compile:</code> and an error</td>
+<td align="left">The HLSL has a fault the compiler names</td>
+<td align="left">Tell the mod's author, with the error</td>
+</tr>
+<tr>
+<td align="left">In Timbre's <strong>Model</strong>, the piece says <code>Not drawn here: its shader is made for another of the game's shaders</code>
+</td>
+<td align="left">It reads a buffer the game's shader for that part does not hold</td>
+<td align="left">Tell the mod's author</td>
+</tr>
+<tr>
+<td align="left">A layer you wrote does not draw, and <strong>Inside</strong> marks it</td>
+<td align="left">Its <code>on</code> names no part or piece, or one found twice in the mod</td>
+<td align="left">Name one piece by its part: <code>"3/Skin"</code>
+</td>
+</tr>
+<tr>
+<td align="left">The effect covers the whole body, where it should cover a patch</td>
+<td align="left">A layer covers all of its part or piece</td>
+<td align="left">Nothing yet: see <a href="#what-you-cant-do-yet">What you can't do yet</a>
+</td>
+</tr>
+<tr>
+<td align="left">The game's own shader draws, changed</td>
+<td align="left">The mod patched the game's shader (<code>[ShaderRegex]</code>), which Overtone never does</td>
+<td align="left">Nothing: that part of the mod is left out</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading"><h2 class="heading-element" id="your-first-shader"><a class="anchor" href="#your-first-shader" aria-hidden="true">#</a>Your first shader</h2><a id="user-content-your-first-shader" class="anchor" aria-label="Permalink: Your first shader" href="#your-first-shader"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>This lays a red tint over one part. It takes about a minute.</p>
+<ol>
+<li>
+<p>In Timbre, open the mod's <strong>Model</strong> and note a part's number, such as <code>Part 3</code>.</p>
+</li>
+<li>
+<p>In the mod's folder, make <code>Shaders/Tint.hlsl</code>:</p>
+<div class="highlight highlight-source-hlsl"><pre><span class="pl-k">float4</span> <span class="pl-c1">main</span>(<span class="pl-k">float4</span> pos : <span class="pl-c1">SV_Position</span>) : <span class="pl-c1">SV_Target0</span>
+{
+    <span class="pl-k">return</span> <span class="pl-k">float4</span>(<span class="pl-c1">0.25</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>);
+}</pre></div>
+</li>
+<li>
+<p>Open the mod's <strong>Inside</strong> and click a row. Its description opens beside it.</p>
+</li>
+<li>
+<p>Add this at the end, with your part's number alone:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">tint</span>]
+<span class="pl-smi">over</span>  = <span class="pl-s"><span class="pl-pds">"</span>own<span class="pl-pds">"</span></span>
+<span class="pl-smi">hlsl</span>  = { <span class="pl-smi">pixel</span> = <span class="pl-s"><span class="pl-pds">"</span>Shaders/Tint.hlsl<span class="pl-pds">"</span></span> }
+<span class="pl-smi">blend</span> = <span class="pl-s"><span class="pl-pds">"</span>add<span class="pl-pds">"</span></span>
+<span class="pl-smi">depth</span> = <span class="pl-s"><span class="pl-pds">"</span>equal<span class="pl-pds">"</span></span>
+<span class="pl-smi">write</span> = <span class="pl-s"><span class="pl-pds">"</span>rgb<span class="pl-pds">"</span></span>
+
+[<span class="pl-en">layer</span>.<span class="pl-en">Tint</span>]
+<span class="pl-smi">on</span>       = <span class="pl-s"><span class="pl-pds">"</span>3<span class="pl-pds">"</span></span>
+<span class="pl-smi">material</span> = <span class="pl-s"><span class="pl-pds">"</span>tint<span class="pl-pds">"</span></span></pre></div>
+<p>If the file has a heading for that part by name, such as <code>[part.skirt]</code>, write that name, <code>"skirt"</code>.</p>
+</li>
+<li>
+<p>Press <strong>Save (Ctrl+S)</strong>.</p>
+</li>
+<li>
+<p>Close the game if it runs, then close and open Timbre. Timbre compiles the shader as it opens.</p>
+</li>
+<li>
+<p>Start the game. The part is redder.</p>
+</li>
+</ol>
+<p>Timbre compiles a mod's shaders only as it opens, and only while the game is closed, so repeat steps 6 and 7 after
+each edit of an <code>.hlsl</code> file.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="how-overtone-runs-your-shader"><a class="anchor" href="#how-overtone-runs-your-shader" aria-hidden="true">#</a>How Overtone runs your shader</h2><a id="user-content-how-overtone-runs-your-shader" class="anchor" aria-label="Permalink: How Overtone runs your shader" href="#how-overtone-runs-your-shader"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<p><strong>It replaces the stages you ship, in the colour pass alone.</strong> Shadows, depth and the outline keep the game's shader.</p>
+</li>
+<li>
+<p><strong>A stage you leave out is the part's own.</strong> A pixel shader alone reads what the game's vertex shader writes, by
+semantic. In the game, a character's first UV is <code>TEXCOORD0</code> and its normal, in the
+world's axes, <code>TEXCOORD11</code>. Where your pixel shader reads an input the vertex shader does not write, the part
+draws in its own shader and a layer is left out.</p>
+</li>
+<li>
+<p><strong>It compiles as 3DMigoto compiles it.</strong> Entry <code>main</code>, <code>VERTEX_SHADER</code> or <code>PIXEL_SHADER</code> defined as 1, read as fxc
+reads HLSL (no short-circuit <code>&amp;&amp;</code>, <code>||</code> and <code>?:</code>, and a vector condition taken per component), to shader model 6.0.
+<code>hlsl = "Shaders/Water.hlsl"</code> compiles one file as both stages, so it holds both under <code>#if VERTEX_SHADER</code> and
+<code>#if PIXEL_SHADER</code>. A pixel shader alone is named as <code>pixel</code> in a table, as in your first shader.</p>
+</li>
+<li>
+<p><strong>A register reads the first of these that has it:</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">The register</th>
+<th align="left">Reads</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">One the material's <code>inputs</code> names</td>
+<td align="left">That file, game texture or nothing</td>
+</tr>
+<tr>
+<td align="left"><code>t120</code></td>
+<td align="left">The parameters, as <code>IniParams</code> (<a href="#read-a-switch-a-number-or-the-clock">Read a switch, a number or the clock</a>)</td>
+</tr>
+<tr>
+<td align="left">In the pixel stage, one the part's textures sit at</td>
+<td align="left">That texture: its colour, normal map, light map</td>
+</tr>
+<tr>
+<td align="left">One the game's shader for that stage also reads</td>
+<td align="left">The game's, as it bound it</td>
+</tr>
+<tr>
+<td align="left">Any other</td>
+<td align="left">Zeros</td>
+</tr>
+</tbody>
+</table>
+<p>A constant buffer your <code>inputs</code> leave alone is the game's at that register. A sampler is the game's where its
+shader declares one, else <code>s0</code> to <code>s15</code> in DirectX 11's default state.</p>
+</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="lay-an-effect-over-a-part"><a class="anchor" href="#lay-an-effect-over-a-part" aria-hidden="true">#</a>Lay an effect over a part</h2><a id="user-content-lay-an-effect-over-a-part" class="anchor" aria-label="Permalink: Lay an effect over a part" href="#lay-an-effect-over-a-part"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A layer draws its material over a part or a piece after the part is drawn. Its material says how it mixes in:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">Value</th>
+<th align="left">For an effect over the part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>over</code></td>
+<td align="left"><code>"own"</code></td>
+<td align="left">The textures are those of what wears it</td>
+</tr>
+<tr>
+<td align="left"><code>blend</code></td>
+<td align="left">
+<code>"add"</code>, <code>"alpha"</code>, <code>"multiply"</code>
+</td>
+<td align="left">Add light (a glint), cover by your alpha, or darken</td>
+</tr>
+<tr>
+<td align="left"><code>depth</code></td>
+<td align="left"><code>"equal"</code></td>
+<td align="left">Draws only on the part's own surface, never in front of it</td>
+</tr>
+<tr>
+<td align="left"><code>write</code></td>
+<td align="left"><code>"rgb"</code></td>
+<td align="left">Writes colour only, of the first target; the rest of the pass stays the game's</td>
+</tr>
+</tbody>
+</table>
+<p>A layer draws while its <code>when</code> holds, as <code>'Oil'</code> for an on-off switch called <code>Oil</code>, and always without one. Its
+<code>opacity</code>, 0 to 1, counts only where its material has no <code>blend</code>. Two layers over two pieces are two tables:
+<code>[layer.water]</code> and <code>[layer."water.2"]</code>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="read-the-parts-own-textures"><a class="anchor" href="#read-the-parts-own-textures" aria-hidden="true">#</a>Read the part's own textures</h2><a id="user-content-read-the-parts-own-textures" class="anchor" aria-label="Permalink: Read the part's own textures" href="#read-the-parts-own-textures"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>A part's textures sit at the registers the game's shader reads them at, which differ from part to part. To read one
+at a register of your choice, name its role:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">wet</span>]
+<span class="pl-smi">over</span>          = <span class="pl-s"><span class="pl-pds">"</span>own<span class="pl-pds">"</span></span>
+<span class="pl-smi">inputs.ps-t12</span> = { <span class="pl-smi">worn</span> = <span class="pl-s"><span class="pl-pds">"</span>diffuse<span class="pl-pds">"</span></span> }</pre></div>
+<p><code>t12</code> then holds the colour texture the part wears now: the mod's, your Paint, or the game's where neither gives
+one. Without <code>over</code>, it is the material's own <code>diffuse</code>, else the game's. It works at a pixel texture below
+<code>ps-t64</code>, by a role of <a href="description.html#roles">Roles</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="read-a-texture-of-your-own"><a class="anchor" href="#read-a-texture-of-your-own" aria-hidden="true">#</a>Read a texture of your own</h2><a id="user-content-read-a-texture-of-your-own" class="anchor" aria-label="Permalink: Read a texture of your own" href="#read-a-texture-of-your-own"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Name the file at the register your shader declares it at:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">wet</span>]
+<span class="pl-smi">inputs.ps-t10</span> = <span class="pl-s"><span class="pl-pds">"</span>Textures/WetMask.dds<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-source-hlsl"><pre><span class="pl-c1">Texture2D</span>&lt;<span class="pl-k">float4</span>&gt; WetMask : <span class="pl-c1">register</span>(t10);</pre></div>
+<p>A file starts at the mod's folder; <code>..</code> reaches beside it, within the mod's pack (<a href="#ship-your-shaders">Ship your shaders</a>). A cube map is read as a cube, and a
+buffer by its <code>format</code> (<a href="description.html#materials-materialname">Materials</a>). <code>false</code> binds nothing there.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="read-a-switch-a-number-or-the-clock"><a class="anchor" href="#read-a-switch-a-number-or-the-clock" aria-hidden="true">#</a>Read a switch, a number or the clock</h2><a id="user-content-read-a-switch-a-number-or-the-clock" class="anchor" aria-label="Permalink: Read a switch, a number or the clock" href="#read-a-switch-a-number-or-the-clock"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p><code>params</code> sets the lanes <code>x0</code> to <code>w255</code> your shader reads from <code>t120</code>:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">wet</span>]
+<span class="pl-smi">params</span> = { <span class="pl-smi">x200</span> = <span class="pl-s"><span class="pl-pds">"</span>Wet<span class="pl-pds">"</span></span>, <span class="pl-smi">y200</span> = <span class="pl-c1">0.5</span>, <span class="pl-smi">x255</span> = { <span class="pl-smi">time</span> = <span class="pl-c1">1</span> } }</pre></div>
+<div class="highlight highlight-source-hlsl"><pre><span class="pl-c1">Texture1D</span>&lt;<span class="pl-k">float4</span>&gt; IniParams : <span class="pl-c1">register</span>(t120);
+<span class="pl-k">float</span> wet = IniParams[<span class="pl-c1">200</span>].x;   <span class="pl-c">// the Wet switch: 0 off, 1 on</span>
+<span class="pl-k">float</span> t   = IniParams[<span class="pl-c1">255</span>].x;   <span class="pl-c">// the clock in seconds, times 1</span></pre></div>
+<p>A lane takes a number, the name of a switch, <code>{ time = 1 }</code> for the clock times that number, or a list of rows,
+each a <code>when</code> and a <code>value</code>, the first that holds setting it. A switch gives its choice: 1 on and 0 off, a numbered choice its number, a
+named one its WWMI value, or its place from 0 in a switch you wrote. A slider cannot be named. A lane you leave out reads 0.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="read-the-games-textures-and-buffers"><a class="anchor" href="#read-the-games-textures-and-buffers" aria-hidden="true">#</a>Read the game's textures and buffers</h2><a id="user-content-read-the-games-textures-and-buffers" class="anchor" aria-label="Permalink: Read the game's textures and buffers" href="#read-the-games-textures-and-buffers"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">wet</span>]
+<span class="pl-smi">inputs.ps-t13</span>  = { <span class="pl-smi">game</span> = <span class="pl-s"><span class="pl-pds">"</span>matcap<span class="pl-pds">"</span></span>, <span class="pl-smi">part</span> = <span class="pl-c1">3</span> }   <span class="pl-c"><span class="pl-c">#</span> the game's matcap of part 3</span>
+<span class="pl-smi">inputs.ps-cb13</span> = { <span class="pl-smi">game</span> = <span class="pl-s"><span class="pl-pds">"</span>ps-cb4<span class="pl-pds">"</span></span> }             <span class="pl-c"><span class="pl-c">#</span> the game's pixel buffer 4, read at b13</span></pre></div>
+<p><code>game</code> at a texture takes a role of <a href="description.html#roles">Roles</a>, and <code>part</code> a part by its number or its name. The
+game's texture binds once play has kept it on this machine, and only where the mod names its <code>object</code>; until then
+your shader is passed over. A game buffer at the register the game binds it at needs no line.</p>
+<p>A game buffer you read must be one the game's shader for that part declares, read no further than the 256-byte
+block its declaration ends in. Otherwise the part draws in its own shader, and its piece in <strong>Model</strong> says
+<code>In the part's own shader: its shader is made for another of the game's shaders</code>.</p>
+<div class="markdown-heading"><h2 class="heading-element" id="replace-a-parts-own-shader"><a class="anchor" href="#replace-a-parts-own-shader" aria-hidden="true">#</a>Replace a part's own shader</h2><a id="user-content-replace-a-parts-own-shader" class="anchor" aria-label="Permalink: Replace a part's own shader" href="#replace-a-parts-own-shader"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Give the part or piece the material, rather than a layer:</p>
+<div class="highlight highlight-source-toml"><pre>[<span class="pl-en">material</span>.<span class="pl-en">glass</span>]
+<span class="pl-smi">over</span> = <span class="pl-s"><span class="pl-pds">"</span>own<span class="pl-pds">"</span></span>
+<span class="pl-smi">hlsl</span> = { <span class="pl-smi">pixel</span> = <span class="pl-s"><span class="pl-pds">"</span>Shaders/Glass.hlsl<span class="pl-pds">"</span></span> }
+
+[<span class="pl-en">piece</span>.<span class="pl-en">Visor</span>]
+<span class="pl-smi">material</span> = <span class="pl-s"><span class="pl-pds">"</span>glass<span class="pl-pds">"</span></span></pre></div>
+<p>Where your shader cannot draw, the part's own draws it. Add <code>only</code> to the <code>hlsl</code> table, and it is drawn by your
+shader or not at all, and casts no shadow:</p>
+<div class="highlight highlight-source-toml"><pre><span class="pl-smi">hlsl</span> = { <span class="pl-smi">pixel</span> = <span class="pl-s"><span class="pl-pds">"</span>Shaders/Glass.hlsl<span class="pl-pds">"</span></span>, <span class="pl-smi">only</span> = <span class="pl-c1">true</span> }</pre></div>
+<div class="markdown-heading"><h2 class="heading-element" id="ship-your-shaders"><a class="anchor" href="#ship-your-shaders" aria-hidden="true">#</a>Ship your shaders</h2><a id="user-content-ship-your-shaders" class="anchor" aria-label="Permalink: Ship your shaders" href="#ship-your-shaders"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Every file in the pack.</strong> A mod's <em>pack</em> is the folder it lies nested in with its other versions, else its own
+folder. A shader and the files it <code>#include</code>s are read from inside it; a path out of it is refused.</li>
+<li>
+<strong>Sizes.</strong> Each file up to 4 MiB, a shader and its includes up to 16 MiB and 64 files.</li>
+<li>
+<strong>Kept.</strong> Timbre keeps each compiled stage on this machine and compiles it again once its file changes.</li>
+<li>
+<strong>DXBC alone.</strong> A shader shipped only as fxc's compiled file, or 3DMigoto's cache beside HLSL that does not compile,
+is converted and drawn.</li>
+<li>
+<strong>Room.</strong> A material reads at most 16 inputs and one game buffer by <code>game</code>. A vertex shader reads only what the
+game's vertex layout for the part carries, and one that leaves the shape keys unread draws in the part's own shader.</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="what-you-cant-do-yet"><a class="anchor" href="#what-you-cant-do-yet" aria-hidden="true">#</a>What you can't do yet</h2><a id="user-content-what-you-cant-do-yet" class="anchor" aria-label="Permalink: What you can't do yet" href="#what-you-cant-do-yet"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<strong>Cover part of a piece.</strong> A layer covers all of its part or piece.</li>
+<li>
+<strong>Patch the game's own shader.</strong> A <code>[ShaderRegex]</code> section is left out.</li>
+<li>
+<strong>Draw in another pass.</strong> Your shader draws in the colour pass alone.</li>
+<li>
+<strong>Blend another way.</strong> A WWMI layer blending any way but alpha, add, multiply, premultiplied or a fixed strength
+is left out.</li>
+<li>
+<strong>Move a parameter by a key that steps it.</strong> A variable no switch offers is sent at its first value.</li>
+<li><strong>Draw it on a Mac or Linux.</strong></li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element" id="next"><a class="anchor" href="#next" aria-hidden="true">#</a>Next</h2><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="description.html#materials-materialname">Description reference</a>: every key a material and a layer take.</li>
+<li>
+<a href="write-a-description.html">Write a description</a>: switches and conditions to show an effect by.</li>
+<li>
+<a href="troubleshoot.html">When a mod does not draw right</a>.</li>
+</ul></div>
+      <p class="applies">Applies to Timbre 26.1123.0 and Overtone 26.1123.0.</p>
+      <nav class="pager" aria-label="More guides"><a class="card earlier" href="see-through.html"><small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Previous</small><strong>Make a piece see-through</strong></a><a class="card later" href="write-a-description.html"><small>Next<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></small><strong>Write a description</strong></a></nav>
+    </article>
+    <nav class="toc" aria-label="On this page"><p class="title">On this page</p><a href="#before-you-start">Before you start</a><a href="#turn-on-a-mods-effect">Turn on a mod's effect</a><a href="#when-an-effect-does-not-show">When an effect does not show</a><a href="#your-first-shader">Your first shader</a><a href="#how-overtone-runs-your-shader">How Overtone runs your shader</a><a href="#lay-an-effect-over-a-part">Lay an effect over a part</a><a href="#read-the-parts-own-textures">Read the part's own textures</a><a href="#read-a-texture-of-your-own">Read a texture of your own</a><a href="#read-a-switch-a-number-or-the-clock">Read a switch, a number or the clock</a><a href="#read-the-games-textures-and-buffers">Read the game's textures and buffers</a><a href="#replace-a-parts-own-shader">Replace a part's own shader</a><a href="#ship-your-shaders">Ship your shaders</a><a href="#what-you-cant-do-yet">What you can't do yet</a><a href="#next">Next</a><a class="report" href="https://github.com/tonewright/overtone-releases/issues"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4V4zM12 8v3M12 13.5v.01"/></svg>Something wrong here? Tell us</a></nav>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28"><span>Tonewright</span></a>
+      <p>Overtone draws your mods in the game. Timbre keeps them on your desktop.</p>
+    </div>
+    <nav aria-label="Get it"><p>Get it</p><a href="https://github.com/tonewright/overtone-releases/releases/download/timbre-v26.1123.0/Timbre_26.1123.0_x64-setup.exe">Download</a><a href="whats-new.html">What's new</a><a href="https://github.com/tonewright/overtone-releases/releases">All releases</a></nav>
+    <nav aria-label="Help"><p>Help</p><a href="guides.html">Guides</a><a href="https://github.com/tonewright/overtone-releases/issues">Report a problem</a><a href="https://discord.gg/QrD7CSGAbC">Discord</a><a href="https://ko-fi.com/poisedmapple">Support on Ko-fi</a></nav>
+    <nav aria-label="Legal"><p>Legal</p><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav>
+  </div>
+  <div class="wrap foot__base">
+    <span>Beta · Timbre 26.1123.0 · Overtone 26.1123.0 · MCP server 26.1123.0</span>
+    <span>No cookies, no tracking. Not affiliated with or endorsed by any game's developer or publisher. Game names, characters and art belong to their owners; mods to their authors.</span>
+  </div>
+</footer>
+</body>
+</html>
